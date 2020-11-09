@@ -1,0 +1,41 @@
+---
+layout: default
+---
+<header class="bg-primary text-white">
+  <div class="container d-flex align-items-center flex-column">
+    <img class="my-4" src="img/clair-logo.svg" width="230"/>
+    <h1>{{ site.data.home.synopsis.title }}</h1>
+    <p class="text-center">
+      {{ site.data.home.synopsis.description }}
+    </p>
+    <h1 class="my-4">{{ site.data.home.synopsis.how.title }}</h1>
+    <table>
+    {% for item in site.data.home.synopsis.how.steps %}
+    <tr>
+      <td>
+          {{ forloop.index }}.
+          {{ item.description }}
+      </td>
+      <td>
+          <i class="{{ item.class }} ml-4 h4"></i>
+      </td>
+    </tr>
+    {% endfor %}
+    </table>
+    <div class="text-center my-5">
+    <a class="btn btn-xl btn-outline-light" href="{{ site.data.home.synopsis.button.url }}">
+      {{ site.data.home.synopsis.button.title }}
+    </a>
+    </div>
+  </div>
+</header>
+{% for section in site.data.home.sections %}
+<section class="py-3 bg-light">
+  <div class="container d-flex align-items-center flex-column">
+    <h1 class="my-4">{{ section.title }}</h1>
+    <p>
+      {{ section.paragraph | markdownify }}
+    </p>
+  </div>
+</section>
+{% endfor %}

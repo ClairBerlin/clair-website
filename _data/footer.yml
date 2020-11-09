@@ -1,0 +1,11 @@
+links:
+  - title: Impressum
+    url: /impressum.html
+  - title: Datenschutz
+    url: /datenschutz.html
+
+social:
+  - fa_class: fab fa-github
+    url: https://github.com/ClairBerlin
+  - fa_class: fab fa-twitter
+    url: https://twitter.com/clairberlin

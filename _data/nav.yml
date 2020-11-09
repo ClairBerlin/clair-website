@@ -1,0 +1,16 @@
+links:
+  - title: Mitmachen
+    url: /mitmachen.html
+
+  - title: Hintergrund
+    url: /hintergrund.html
+
+  - title: Development
+    url: /development.html
+
+  - title: Blog
+    url: /blog.html
+
+login:
+  title: Mein Konto
+  url: /admin/

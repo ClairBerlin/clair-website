@@ -1,0 +1,41 @@
+synopsis:
+  title: Alles Clairchen?
+  description: >
+    Clair Berlin ist eine gemeinnützige Initiative zur Messung der
+    Luftqualität<br>in öffentlichen Räumen wie z.&nbsp;B. Restaurants, Gallerien
+    und Schulungsräumen.<br>Die regelmäßige Frischluftzufuhr ist so für die
+    Betreiber der Räume gezielter zu steuern<br>und für Besucher jederzeit
+    nachvollziehbar.
+  how:
+    title: So funktioniert's
+    steps:
+      - description: CO2-Sensor installieren und Lüften lernen
+        class: fas fa-wind
+      - description: Clairchen-Widget einbinden, Vertrauen schaffen
+        class: fas fa-cloud
+      - description: Daten bereitstellen, Erkenntnisse sammeln
+        class: fas fa-chart-line
+  button:
+    url: mitmachen.html
+    title: Jetzt mitmachen
+
+sections:
+  - title: Hintergrund
+    paragraph: >
+      Der CO2-Gehalt in Räumen ist nach derzeitigem wissenschaftlichem
+      Erkenntnisstand korreliert zum Risiko einer COVID-19-Infektion unter der
+      Annahme, dass sich mindestens eine infizierte Person im Raum aufhält.
+  - title: Wer ist Clair Berlin?
+    paragraph: >
+      Clair Berlin wurde im September 2020 von Ulrich Schuster und Jan Weil
+      initiiert. Mittlerweile ist Clair Berlin ein
+      [CityLAB](https://www.citylab-berlin.org/)-Projekt. Es wird unterstützt
+      von der [Hochschule für Technik und Wirtschaft
+      Berlin](https://www.htw-berlin.de/) und der [IHK
+      Berlin](https://www.ihk-berlin.de/).
+  - title: Technik
+    paragraph: >
+      Clair Berlin verwendet das Berliner [The Things
+      Network](https://www.thethingsnetwork.org/), um CO2-Sensoren in einfacher
+      Weise weiträumig anzubinden. Der gesamte Quellcode ist [auf
+      GitHub](https://github.com/ClairBerlin) verfügbar.
