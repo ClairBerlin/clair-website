@@ -1,0 +1,12 @@
+- name: CityLAB Berlin
+  image: citylab-logo.svg
+  width: 220
+  url: https://www.citylab-berlin.org/
+- name: Hochschule für Technik und Wirtschaft Berlin
+  image: htw-logo.png
+  width: 220
+  url: https://www.htw-berlin.de/
+- name: IHK Berlin
+  image: ihk-logo.png
+  width: 130
+  url: https://www.ihk-berlin.de/
