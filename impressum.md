@@ -16,7 +16,7 @@ Hauptstr. 139
 
 Telefon: (+49 30) 72 29 36 21  
 Telefax: (+49 30) 22 02 25 43  
-E-Mail: kontakt@clair-berlin.de
+E-Mail: <{{ site.email }}>
 
 ## Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
