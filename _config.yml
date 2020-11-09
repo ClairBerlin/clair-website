@@ -1,2 +1,7 @@
 title: Clair Berlin
+copyright: 2020 Clair Berlin
+email: kontakt@clair-berlin.de
+description: Clair Berlin Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen
 show_excerpts: true
+plugins:
+  - jekyll-feed

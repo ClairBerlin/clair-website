@@ -8,7 +8,7 @@ layout: default
     <p class="text-center">
       {{ site.data.home.synopsis.description }}
     </p>
-    <h1 class="my-4">{{ site.data.home.synopsis.how.title }}</h1>
+    <h1 class="mt-5">{{ site.data.home.synopsis.how.title }}</h1>
     <table>
     {% for item in site.data.home.synopsis.how.steps %}
     <tr>
@@ -23,19 +23,39 @@ layout: default
     {% endfor %}
     </table>
     <div class="text-center my-5">
-    <a class="btn btn-xl btn-outline-light" href="{{ site.data.home.synopsis.button.url }}">
-      {{ site.data.home.synopsis.button.title }}
-    </a>
+      <a class="btn btn-lg btn-light" href="{{ site.data.home.synopsis.button.url }}">
+        {{ site.data.home.synopsis.button.title }}
+      </a>
     </div>
   </div>
 </header>
 {% for section in site.data.home.sections %}
 <section class="py-3 bg-light">
   <div class="container d-flex align-items-center flex-column">
-    <h1 class="my-4">{{ section.title }}</h1>
+    <h1 class="mt-5">{{ section.title }}</h1>
     <p>
       {{ section.paragraph | markdownify }}
     </p>
+    <div class="text-center">
+      <a class="btn btn-lg btn-primary" href="{{ section.button.url }}">
+        {{ section.button.title }}
+      </a>
+    </div>
   </div>
 </section>
 {% endfor %}
+<section class="py-3 bg-light">
+  <div class="container d-flex align-items-center flex-column">
+    <h1 class="mt-5">{{ site.data.home.about.title }}</h1>
+    <p>
+      {{ site.data.home.about.paragraph | markdownify }}
+    </p>
+    <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around">
+    {% for partner in site.data.partners %}
+      <a href="{{ partner.url }}">
+        <img src="/img/{{ partner.image }}" alt="{{ partner.name }}" width="{{ partner.width }}"/>
+      </a>
+    {% endfor %}
+    </div>
+  </div>
+</section>

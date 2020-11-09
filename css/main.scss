@@ -1,7 +1,7 @@
 ---
 ---
 
-$primary: #729fcf;
+$primary: #007cb0;
 $secondary: #43a047;
 @import 'bootstrap/bootstrap';
 
@@ -16,8 +16,8 @@ html, body {
   font-size: 110%;
 }
 
-h1, h2, h3, h4, h5 {
-  font-family: 'Lato', sans-serif;
+h1, h2, h3, h4, h5, .navbar {
+  font-family: 'Open Sans', sans-serif;
 }
 
 h1 {
@@ -28,8 +28,4 @@ h1 {
 .logo {
   font-family: 'Megrim', cursive;
   font-size: 24pt;
-}
-
-.navbar {
-  font-size: 18pt;
 }

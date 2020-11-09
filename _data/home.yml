@@ -1,11 +1,11 @@
 synopsis:
   title: Alles Clairchen?
   description: >
-    Clair Berlin ist eine gemeinnützige Initiative zur Messung der
-    Luftqualität<br>in öffentlichen Räumen wie z.&nbsp;B. Restaurants, Gallerien
-    und Schulungsräumen.<br>Die regelmäßige Frischluftzufuhr ist so für die
-    Betreiber der Räume gezielter zu steuern<br>und für Besucher jederzeit
-    nachvollziehbar.
+    Clair Berlin ist eine gemeinnützige Initiative zur Messung der Luftqualität
+    in öffentlichen Räumen<br>und wendet sich an Betreiber von z.&nbsp;B.
+    Restaurants, Gallerien oder Schulungsräumen.<br>Werben Sie mit dem
+    Clairchen-Label<br>und zeigen Sie Ihren Besuchern, dass Ihre Räume gut
+    gelüftet sind.
   how:
     title: So funktioniert's
     steps:
@@ -22,20 +22,30 @@ synopsis:
 sections:
   - title: Hintergrund
     paragraph: >
-      Der CO2-Gehalt in Räumen ist nach derzeitigem wissenschaftlichem
-      Erkenntnisstand korreliert zum Risiko einer COVID-19-Infektion unter der
-      Annahme, dass sich mindestens eine infizierte Person im Raum aufhält.
-  - title: Wer ist Clair Berlin?
-    paragraph: >
-      Clair Berlin wurde im September 2020 von Ulrich Schuster und Jan Weil
-      initiiert. Mittlerweile ist Clair Berlin ein
-      [CityLAB](https://www.citylab-berlin.org/)-Projekt. Es wird unterstützt
-      von der [Hochschule für Technik und Wirtschaft
-      Berlin](https://www.htw-berlin.de/) und der [IHK
-      Berlin](https://www.ihk-berlin.de/).
+      Der CO<sub>2</sub>-Gehalt in Räumen ist nach derzeitigem
+      wissenschaftlichem Erkenntnisstand korreliert zum Risiko einer
+      COVID-19-Infektion unter der Annahme, dass sich mindestens eine
+      infizierte Person im jeweiligen Raum aufhält. Regelmäßiges Lüften
+      reduziert das Risiko einer Infektion.
+    button:
+      url: hintergrund.html
+      title: Mehr Informationen
   - title: Technik
     paragraph: >
-      Clair Berlin verwendet das Berliner [The Things
-      Network](https://www.thethingsnetwork.org/), um CO2-Sensoren in einfacher
-      Weise weiträumig anzubinden. Der gesamte Quellcode ist [auf
-      GitHub](https://github.com/ClairBerlin) verfügbar.
+      Clair Berlin entwickelt und betreibt eine offene Plattform für vernetzte
+      Sensoren zur Messung der Luftqualität mit Schwerpunkt auf
+      CO<sub>2</sub>-Messwerten.  Zur Kommunikation wird primär das Berliner
+      [The Things Network](https://www.thethingsnetwork.org/) genutzt, es
+      können aber auch andere IP-kompatible Kommunikationsprotokolle über eine
+      REST-Programmierschnittstelle angebunden werden. Der gesamte Quellcode
+      steht als Freie Software [auf GitHub](https://github.com/ClairBerlin) zur
+      Verfügung.
+    button:
+      url: development.html
+      title: Informationen für Entwickler
+about:
+  title: Wer ist Clair Berlin?
+  paragraph: >
+    Clair Berlin wurde im September 2020 von [Ulrich
+    Schuster](https://koing.de) und [Jan Weil](https://jawebada.de) initiiert
+    und wird von folgenden Partnern unterstützt:
