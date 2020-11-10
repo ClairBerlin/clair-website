@@ -4,7 +4,7 @@
       <div class="col-12 col-sm-4 my-2">
         <nav class="nav flex-column">
           {% for item in site.data.footer.links %}
-            <a class="nav-link" href="{{ item.url }}">{{ item.title }}</a>
+            <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
           {% endfor %}
         </nav>
       </div>
@@ -13,7 +13,7 @@
       </div>
       <div class="col-12 col-sm-4 my-2">
         {% for item in site.data.footer.social %}
-          <a class="mx-2" href="{{ item.url }}"><i class="h2 {{ item.fa_class }}"></i></a>
+          <a class="mx-2" href="{{ item.url | relative_url }}"><i class="h2 {{ item.fa_class }}"></i></a>
         {% endfor %}
       </div>
     </div>

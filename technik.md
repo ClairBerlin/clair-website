@@ -22,7 +22,7 @@ ggf. die Software für ihre Anforderungen anzupassen.
 
 Die folgende Abbildung zeigt das Systemschaubild des Clair-Netzwerks.
 
-![Systemschaubild Clair-Netwerk](/img/clair-network.png)
+![Systemschaubild Clair-Netwerk]({{ "/img/clair-network.png" | relative_url }})
 
 Kern des Systems ist der _Clair Berlin Server_, intern `managair` genannt, der
 eine
@@ -42,7 +42,7 @@ können aber in einfacher Weise ergänzt werden.
 Das Clair Berlin Datenmodell ist in der folgenden Abbildung in vereinfachter
 Weise als Entity-Relationship-Diagramm dargestellt.
 
-![Clair Berlin Entity-Relationship-Diagramm](/img/clair-er-diagram.png)
+![Clair Berlin Entity-Relationship-Diagramm]({{ "/img/clair-er-diagram.png" | relative_url }})
 
 Organisationen verwalten Räumlichkeiten (_Sites_), die eine Adresse haben und
 aus mehreren Räumen bestehen können. Ihnen gehören die Sensoren (_Nodes_), die
