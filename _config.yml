@@ -5,3 +5,4 @@ description: Clair Berlin Initiative zur Messung der Luftqualität in öffentlic
 show_excerpts: true
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
