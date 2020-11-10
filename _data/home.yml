@@ -29,20 +29,20 @@ sections:
       reduziert das Risiko einer Infektion.
     button:
       url: hintergrund.html
-      title: Mehr Informationen
+      title: Mehr Hintergrundinformationen
   - title: Technik
     paragraph: >
       Clair Berlin entwickelt und betreibt eine offene Plattform für vernetzte
       Sensoren zur Messung der Luftqualität mit Schwerpunkt auf
-      CO<sub>2</sub>-Messwerten.  Zur Kommunikation wird primär das Berliner
+      CO<sub>2</sub>-Messwerten. Zur Kommunikation wird primär das Berliner
       [The Things Network](https://www.thethingsnetwork.org/) genutzt, es
       können aber auch andere IP-kompatible Kommunikationsprotokolle über eine
       REST-Programmierschnittstelle angebunden werden. Der gesamte Quellcode
       steht als Freie Software [auf GitHub](https://github.com/ClairBerlin) zur
       Verfügung.
     button:
-      url: development.html
-      title: Informationen für Entwickler
+      url: technik.html
+      title: Mehr Informationen zur Technik
 about:
   title: Wer ist Clair Berlin?
   paragraph: >
