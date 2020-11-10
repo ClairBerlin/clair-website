@@ -29,3 +29,9 @@ h1 {
   font-family: 'Megrim', cursive;
   font-size: 24pt;
 }
+
+main img {
+  @include img-fluid();
+  display: block;
+  margin: 0 auto 0 auto;
+}
