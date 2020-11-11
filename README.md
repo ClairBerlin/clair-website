@@ -33,6 +33,15 @@ Das derzeitige Design verwendet [Bootstrap](https://getbootstrap.com/) und
 SCSS)](https://sass-lang.com/)-Dateien im [\_sass-Verzeichnis](_sass) liegen
 und in [main.scss](css/main.scss) eingebunden werden.
 
+_Partials_, die in mehreren Layouts verwendet werden, wie z. B. Footer und
+Navigation liegen im [\_includes-Verzeichnis](_includes).
+
+## Navigation
+
+Die Links der Navigation werden in der Datei [nav.yml](_data/nav.yml) gepflegt.
+Bei Bedarf muss [das dazu gehörige Partial](_includes/nav.html) angepasst
+werden.
+
 ## Bilder und Downloads
 
 Grundsätzlich kopiert Jekyll im Wesentlichen sämtliche Dateien ohne _Front
@@ -57,3 +66,13 @@ Die Verwendung des [Liquid](https://jekyllrb.com/docs/liquid/)-Filters
 Unterverzeichnis, für das die
 [`baseurl`-Konfiguration](https://jekyllrb.com/docs/configuration/options/)
 verwendet wird, die Links korrekt funktionieren.
+
+## Neuigkeiten (Blog)
+
+Neuigkeiten bzw. anekdotische Blog-Posts sollten Jekylls
+[Standard-Post-Mechanismus](https://jekyllrb.com/docs/posts/) folgen.
+
+Folgende Kategorien sollten verwendet werden:
+
+* Technik
+* Presse
