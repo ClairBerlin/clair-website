@@ -35,3 +35,9 @@ main img {
   display: block;
   margin: 0 auto 0 auto;
 }
+
+blockquote {
+  border-left: 1px solid grey;
+  padding-left: 2em;
+  font-style: italic;
+}
