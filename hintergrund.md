@@ -35,8 +35,8 @@ deshalb zusätzliche Parameter wie die Raumgröße und die Personenkapazität
 berücksichtigen, um so aktuelle Modelle des tatsächlichen Infektionsrisikos (s.
 u.) berücksichtigen zu können.
 
-Clair Berlin möchte so im Rahmen des Projektes eine Datengrundlage für
-konkretere Handlungsempfehlungen schaffen.
+Ziel ist es, auf diese Weise im Rahmen des Projektes eine Datengrundlage für
+konkretere Handlungsempfehlungen zu schaffen.
 
 ## Weiterführende Informationen
 
