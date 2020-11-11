@@ -10,3 +10,7 @@
   image: ihk-logo.png
   width: 200
   url: https://www.ihk-berlin.de/
+- name: HPI E-School
+  image: hpi-logo.png
+  width: 150
+  url: https://hpi.de/entrepreneurship/
