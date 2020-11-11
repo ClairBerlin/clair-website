@@ -15,7 +15,7 @@ zu erleichtern.
 
 Die Mitarbeit in allen Bereichen der Initiative - Entwicklung, Design,
 Kommunikation etc. - ist herzlich willkommen. Ebenso sind Gemeinschaften in
-anderen Städten eingeladen, eine eigent Instanz des Systems zu betreiben und
+anderen Städten eingeladen, eine eigene Instanz des Systems zu betreiben und
 ggf. die Software für ihre Anforderungen anzupassen.
 
 ## Sytemüberblick
