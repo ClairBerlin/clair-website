@@ -52,7 +52,7 @@ layout: default
     </p>
     <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around">
     {% for partner in site.data.partners %}
-      <a href="{{ partner.url }}">
+      <a class="my-2" href="{{ partner.url }}">
         <img src="{{ site.baseurl }}/img/{{ partner.image }}" alt="{{ partner.name }}" width="{{ partner.width }}"/>
       </a>
     {% endfor %}
