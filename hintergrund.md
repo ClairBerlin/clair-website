@@ -3,3 +3,46 @@ layout: page
 title: Hintergrund
 ---
 # Hintergrund
+
+## Übertragung von SARS-CoV-2 durch Aerosole
+
+Einer der relevantesten Übertragungswege von SARS-CoV-2 ist
+[laut Robert-Koch-Institut](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Steckbrief.html)
+der Kontakt mit schon beim Atmen und Sprechen, insbesondere aber beim Schreien
+und beim Singen ausgeschiedenen Aerosolen.
+
+> Bei längerem Aufenthalt in kleinen, schlecht oder nicht belüfteten Räumen
+> kann sich die Wahrscheinlichkeit einer Übertragung durch Aerosole auch über
+> eine größere Distanz als 1,5 m erhöhen, insbesondere dann, wenn eine
+> infektiöse Person besonders viele kleine Partikel (Aerosole) ausstößt, sich
+> längere Zeit in dem Raum aufhält und exponierte Personen besonders tief oder
+> häufig einatmen.
+
+## CO<sub>2</sub>-Konzentration als Indikator des Infektionsrisikos
+
+Die CO<sub>2</sub>-Konzentration gilt seit langem als guter Indikator für den
+Luftwechsel und die Luftqualität und somit im Kontext der SARS-CoV-2-Pandemie
+auch als Indikator für das Infektionsrisiko, vgl.
+[Stellungnahme zu geeigneten Lüftungsmaßnahmen]({{ "/downloads/irk-lueften-sars-cov-2.pdf" | relative_url }}).
+Für Räume mit hoher Personenbelegung verweist die [Kommission
+Innenraumlufthygiene](https://www.umweltbundesamt.de/themen/gesundheit/kommissionen-arbeitsgruppen/kommission-innenraumlufthygiene)
+deshalb auf CO<sub>2</sub>-Ampeln als groben Anhaltspunkt für gute Lüftung.
+
+Die in solchen CO<sub>2</sub>-Ampeln typischerweise verwendeten
+Messwertschwellen (z. B. etwa 1000 ppm) können jedoch nicht die konkreten
+Rahmenbedingunen des jeweiligen Raumes berücksichtigen. Clair Berlin möchte
+deshalb zusätzliche Parameter wie die Raumgröße und die Personenkapazität
+berücksichtigen, um so aktuelle Modelle des tatsächlichen Infektionsrisikos (s.
+u.) berücksichtigen zu können.
+
+Clair Berlin möchte so im Rahmen des Projektes eine Datengrundlage für
+konkretere Handlungsempfehlungen schaffen.
+
+## Weiterführende Informationen
+
+* [SARS-CoV-2 Steckbrief zur Coronavirus-Krankheit-2019 (COVID-19)](https://www.rki.de/DE/Content/InfAZ/N/Neuartiges_Coronavirus/Steckbrief.html) des [Robert-Koch-Instituts](https://www.rki.de)
+* [Stellungnahme zu geeigneten Lüftungsmaßnahmen]({{ "/downloads/irk-lueften-sars-cov-2.pdf" | relative_url }}) der [Kommission Innenraumlufthygiene](https://www.umweltbundesamt.de/themen/gesundheit/kommissionen-arbeitsgruppen/kommission-innenraumlufthygiene) des [Umweltbundesamtes](https://www.umweltbundesamt.de/)
+* [SARS-CoV-2-Blog](https://blogs.tu-berlin.de/hri_sars-cov-2/) des [Hermann-Rietschel-Instituts](https://www.hri.tu-berlin.de/menue/home/) der TU Berlin
+* [Lidia Morawska, Donald K Milton "It Is Time to Address Airborne Transmission of Coronavirus Disease 2019 (COVID-19)"](https://doi.org/10.1093/cid/ciaa939)
+* [Anne Hartmann, Martin Kriegel "Beispielhafte Risikobewertung für verschiedene Alltagssituationen"](https://doi.org/10.14279/depositonce-10714)
+* [Martin Kriegel, Udo Buchholz, Petra Gastmeier, Peter Bischoff, Inas Abdelgawad, Anne Hartmann "Predicted Infection Risk for Aerosol Transmission of SARS-CoV-2"](https://doi.org/10.1101/2020.10.08.20209106)
