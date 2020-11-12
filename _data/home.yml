@@ -9,7 +9,7 @@ synopsis:
   how:
     title: So funktioniert's
     steps:
-      - description: CO2-Sensor installieren und Lüften lernen
+      - description: CO<sub>2</sub>-Sensor installieren und Lüften lernen
         class: fas fa-wind
       - description: Clairchen-Widget einbinden, Vertrauen schaffen
         class: fas fa-cloud
