@@ -17,13 +17,13 @@ Gründen auf den Raum Berlin beschränken.
 
 ## Registrierung
 
-<form class="needs-validation" action="https://usebasin.com/f/e2ea6ee517a9" method="POST">
+<form id="registration-form" action="https://usebasin.com/f/e2ea6ee517a9" method="POST">
   <div class="form-group">
-    <label for="operatorEmail">Ihre Email-Adresse:</label>
-    <input type="operatorEmail" class="form-control" id="operatorEmail" name="operatorEmail" required aria-describedby="operatorEmailHelp">
+    <label for="email">Ihre Email-Adresse:</label>
+    <input type="email" class="form-control" id="email" name="email" required aria-describedby="operatorEmailHelp">
     <small id="operatorEmailHelp" class="form-text text-muted">
       Wir verwenden Ihre Email-Adresse ausschließlich dazu, um Sie einmalig zu
-      kontaktieren, wenn wir bereit sind, bla bla.
+      kontaktieren, sobald Ihr Konto freigeschaltet werden kann.
     </small>
   </div>
   <div class="form-group">
@@ -49,23 +49,50 @@ Gründen auf den Raum Berlin beschränken.
     <small id="locationsHelp" class="form-text text-muted">Berliner Bezirk, außerhalb von Berlin etc.</small>
   </div>
   <button type="submit" class="btn btn-primary">Registrieren</button>
+  <div id="formMessage" class="my-4"></div>
 </form>
-<script>
+<script type="text/javascript">
+const form = document.getElementById("registration-form");
 (function() {
-  'use strict';
-  window.addEventListener('load', function() {
-    // Fetch all the forms we want to apply custom Bootstrap validation styles to
-    var forms = document.getElementsByClassName('needs-validation');
-    // Loop over them and prevent submission
-    var validation = Array.prototype.filter.call(forms, function(form) {
-      form.addEventListener('submit', function(event) {
-        if (form.checkValidity() === false) {
-          event.preventDefault();
-          event.stopPropagation();
-        }
-        form.classList.add('was-validated');
-      }, false);
-    });
-  }, false);
-})();
+ 'use strict';
+ window.addEventListener('load', function() {
+     form.addEventListener('submit', function(event) {
+         if (form.checkValidity() === false) {
+         event.preventDefault();
+         event.stopPropagation();
+         }
+         form.classList.add('was-validated');
+         }, false);
+     }, false);
+ })();
+var formMessage = document.getElementById("formMessage");
+form.onsubmit = function(event) {
+  event.preventDefault();
+  var formData = new FormData(form);
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", form.action, true);
+  xhr.onload = function(e) {
+    console.log(xhr);
+    var response = JSON.parse(xhr.response);
+    if (xhr.status === 200) {
+      formMessage.innerHTML = '\
+<div class="alert alert-success alert-dismissible fade show" role="alert">\
+  Wir haben Ihre Daten erhalten und danken für Ihr Interesse.\
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">\
+    <span aria-hidden="true">&times;</span>\
+  </button>\
+</div>'
+    } else {
+      formMessage.innerHTML = '\
+<div class="alert alert-warning alert-dismissible fade show" role="alert">\
+  Ihre Daten konnten leider nicht entgegen genommen werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.\
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">\
+    <span aria-hidden="true">&times;</span>\
+  </button>\
+</div>'
+      console.error(response.error)
+    }
+  };
+  xhr.send(formData);
+};
 </script>
