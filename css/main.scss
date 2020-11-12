@@ -30,6 +30,10 @@ h1 {
   font-size: 24pt;
 }
 
+main {
+  margin-top: 77px;
+}
+
 main img {
   @include img-fluid();
   display: block;

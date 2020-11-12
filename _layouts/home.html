@@ -1,61 +1,63 @@
 ---
 layout: default
 ---
-<header class="bg-primary text-white">
-  <div class="container d-flex align-items-center flex-column">
-    <img class="my-4" src="img/clair-logo.svg" width="230"/>
-    <h1>{{ site.data.home.synopsis.title }}</h1>
-    <p class="text-center">
+<main>
+  <header class="bg-primary text-white">
+    <div class="container d-flex align-items-center flex-column">
+      <img class="my-4" src="img/clair-logo.svg" width="230"/>
+      <h1>{{ site.data.home.synopsis.title }}</h1>
+      <p class="text-center">
       {{ site.data.home.synopsis.description }}
-    </p>
-    <h1 class="mt-5">{{ site.data.home.synopsis.how.title }}</h1>
-    <table>
-    {% for item in site.data.home.synopsis.how.steps %}
-    <tr>
-      <td>
-          {{ forloop.index }}.
-          {{ item.description }}
-      </td>
-      <td>
-          <i class="{{ item.class }} ml-4 h4"></i>
-      </td>
-    </tr>
-    {% endfor %}
-    </table>
-    <div class="text-center my-5">
-      <a class="btn btn-lg btn-light" href="{{ site.data.home.synopsis.button.url }}">
-        {{ site.data.home.synopsis.button.title }}
-      </a>
+      </p>
+      <h1 class="mt-5">{{ site.data.home.synopsis.how.title }}</h1>
+      <table>
+        {% for item in site.data.home.synopsis.how.steps %}
+        <tr>
+          <td>
+            {{ forloop.index }}.
+            {{ item.description }}
+          </td>
+          <td>
+            <i class="{{ item.class }} ml-4 h4"></i>
+          </td>
+        </tr>
+        {% endfor %}
+      </table>
+      <div class="text-center my-5">
+        <a class="btn btn-lg btn-light" href="{{ site.data.home.synopsis.button.url }}">
+          {{ site.data.home.synopsis.button.title }}
+        </a>
+      </div>
     </div>
-  </div>
-</header>
-{% for section in site.data.home.sections %}
-<section class="py-3 bg-light">
-  <div class="container d-flex align-items-center flex-column">
-    <h1 class="mt-5">{{ section.title }}</h1>
-    <p>
+  </header>
+  {% for section in site.data.home.sections %}
+  <section class="py-3 bg-light">
+    <div class="container d-flex align-items-center flex-column">
+      <h1 class="mt-5">{{ section.title }}</h1>
+      <p>
       {{ section.paragraph | markdownify }}
-    </p>
-    <div class="text-center">
-      <a class="btn btn-lg btn-primary" href="{{ section.button.url }}">
-        {{ section.button.title }}
-      </a>
+      </p>
+      <div class="text-center">
+        <a class="btn btn-lg btn-primary" href="{{ section.button.url }}">
+          {{ section.button.title }}
+        </a>
+      </div>
     </div>
-  </div>
-</section>
-{% endfor %}
-<section class="py-3 bg-light">
-  <div class="container d-flex align-items-center flex-column">
-    <h1 class="mt-5">{{ site.data.home.about.title }}</h1>
-    <p>
+  </section>
+  {% endfor %}
+  <section class="py-3 bg-light">
+    <div class="container d-flex align-items-center flex-column">
+      <h1 class="mt-5">{{ site.data.home.about.title }}</h1>
+      <p>
       {{ site.data.home.about.paragraph | markdownify }}
-    </p>
-    <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around">
-    {% for partner in site.data.partners %}
-      <a class="my-2" href="{{ partner.url }}">
-        <img src="{{ site.baseurl }}/img/{{ partner.image }}" alt="{{ partner.name }}" width="{{ partner.width }}"/>
-      </a>
-    {% endfor %}
+      </p>
+      <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around">
+        {% for partner in site.data.partners %}
+        <a class="my-2" href="{{ partner.url }}">
+          <img src="{{ site.baseurl }}/img/{{ partner.image }}" alt="{{ partner.name }}" width="{{ partner.width }}"/>
+        </a>
+        {% endfor %}
+      </div>
     </div>
-  </div>
-</section>
+  </section>
+</main>
