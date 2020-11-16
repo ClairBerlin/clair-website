@@ -7,18 +7,22 @@ synopsis:
     <br>
     <br>
     Mit Hilfe der CO-Sensoren von Clair kann die Luftqualität in geschlossenen Räumen in Echtzeit
-    gemessen und pandemische Hygiene-Standards eingehalten werden. Durch ein interaktives Widget auf dem 
-    die aktuellen Messwerte visualisiert werden, sollen in Zukunft nicht nur Betreiberinnen und Betreiber,
-    sondern auch deren Besucherinnen und Besucher die Luftqualität analysieren und besser einschätzen können.
+    gemessen und die gestiegenen Hygiene-Standards während der Covid19-Pandemie eingehalten werden.
+    Die Messwerte sollen künftig in einem interaktiven Widget visualisiert werden, sodass Betreiberinnen und Betreiber,
+    ihren Besucherinnen und Besuchern auf direktem Wege zeigen können, dass sie regelmäßig Lüften.
 
   how:
-    title: So funktioniert's
+    title: Wie kann ich mitmachen?
+    description: Prinzipiell kann mitmachen, wer Betreiber:in eines öffentlichen Raumes ist und Platz zur Anbringung eines CO2-Sensors hat.
     steps:
-      - description: CO<sub>2</sub>-Sensor installieren und Lüften lernen
-        class: fas fa-wind
-      - description: Clairchen-Widget einbinden, Vertrauen schaffen
+      - subtitle: Formuler ausfüllen
+        description: description 1
         class: fas fa-cloud
-      - description: Daten bereitstellen, Erkenntnisse sammeln
+      - subtitle: Sensor installieren und Lüften lernen
+        description: description 2
+        class: fas fa-wind
+      - subtitle: Messwerte veröffentlichen
+        description: description 3
         class: fas fa-chart-line
   button:
     url: mitmachen.html

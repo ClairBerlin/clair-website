@@ -6,6 +6,7 @@ verwenden [Jekyll](https://jekyllrb.com/) als _Static Site Generator_.
 ## How To Development
 
 Install dependencies: `gem install jekyll bundler`
+
 Deploy locally: `jekyll serve --livereload`
 
 Server will listen on `http://127.0.0.1:4000`
