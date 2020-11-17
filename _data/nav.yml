@@ -1,12 +1,12 @@
 links:
   - title: Mitmachen
     url: /mitmachen.html
-
   - title: Hintergrund
     url: /hintergrund.html
-
   - title: Neuigkeiten
     url: /neuigkeiten.html
+  - title: FAQ
+    url: /#faq
 
 login:
   title: Mein Konto
