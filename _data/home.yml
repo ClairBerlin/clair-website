@@ -2,16 +2,17 @@ title: Alles Clairchen?
 subtitle: Die Luft ist rein,<br>hier geh ich rein.
 synopsis:
   title: Worum geht es?
-  description: >
+  description: |
     Clair Berlin ist eine gemeinnützige Initiative zur Messung der Luftqualität
-    in öffentlichen Räumen und wendet sich insbesondere an Betreiberinnen und Betreiber
-    von Restaurants, Theatern, Ausstellungsräumen, Bibliotheken oder Schulungsräumen.
-    <br>
-    <br>
-    Mit Hilfe der CO-Sensoren von Clair kann die Luftqualität in geschlossenen Räumen in Echtzeit
-    gemessen und die gestiegenen Hygiene-Standards während der Covid19-Pandemie eingehalten werden.
-    Die Messwerte sollen künftig in einem interaktiven Widget visualisiert werden, sodass Betreiberinnen und Betreiber,
-    ihren Besucherinnen und Besuchern auf direktem Wege zeigen können, dass sie regelmäßig Lüften.
+    in öffentlich zugänglichen Innenräumen und wendet sich an BetreiberInnen
+    von Restaurants, Theatern, Ausstellungsräumen, Bibliotheken oder
+    Schulungsräumen.
+
+    Die Messung erfolgt mit Hilfe von vernetzten CO<sub>2</sub>-Sensoren. Die
+    Messdaten werden visualisiert, so dass das Lüftungskonzept für Innenräume
+    optimiert werden kann. Die BetreiberInnen können auf ihrer Website das
+    Clairchen-Widget einbinden, um ihr Lüftungskonzept zu dokumentieren und
+    ihren Besuchern gegenüber Vertrauen zu schaffen.
 
   how:
     title: Wie kann ich mitmachen?

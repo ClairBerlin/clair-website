@@ -11,17 +11,17 @@ layout: default
   </div>
   <div class="jumbotron bg-white">
     <div class="container d-flex flex-column">
-      <div class="row p-3">
-        <h1>{{ site.data.home.synopsis.title }}</h1>
-      </div>
-        <div class="row align-items-center">
-          <div class="col-8">
-            <p>{{ site.data.home.synopsis.description }}</p>
-          </div>
-          <div class="col-4">
-            <img src="img/clair-logo.svg" width="230"/>
+      <div class="row align-items-center">
+        <div class="col-12 col-lg-6">
+          <h1>{{ site.data.home.synopsis.title }}</h1>
+          {{ site.data.home.synopsis.description | markdownify }}
+        </div>
+        <div class="col-12 col-lg-6 ">
+          <div class="embed-responsive embed-responsive-4by3">
+            <iframe class="embed-responsive-item" src="http://localhost:8080/nodes/58ac186f-b485-fb57-3e26-060f83316108" width="600px" height="400px"></iframe>
           </div>
         </div>
+      </div>
     </div>
   </div>
 <!-- HOW section -->
