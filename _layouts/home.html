@@ -5,7 +5,7 @@ layout: default
   <div class="thumbnail text-center">
     <img src="../img/hero-adrian-trinkaus.jpg" class="img-responsive" alt="Cloudy Berlin television tower" />
       <div class="caption  d-flex flex-column align-items-center text-center" style="color:#007cb0">
-        <h1>Alles Clärchen?</h1>
+        <h1>Alles Clairchen?</h1>
         <h5>Mit Clair Berlin zu einer besseren Luftqualität für Berlin beitragen</h5>
       </div>
   </div> 
@@ -121,7 +121,7 @@ layout: default
           <p>{{ site.data.home.why.description }}</p>
         <div class="row p-3">
           {% for section in site.data.home.sections %}
-          <div class="col-sm pb-4">
+          <div class="col-sm">
             <div class="card" style="width: 32rem;">
               <img src="../img/sensor_placeholder.jpg" class="card-img-top" alt="...">
               <div class="card-body">
@@ -134,9 +134,9 @@ layout: default
           {% endfor %}
         </div>
       </div>
-    </section>
+    </div>
     <!--  / Background section -->
-      <div class="jumbotron bg-primary text-white" style="width: 100%;">
+      <div class="jumbotron bg-primary text-white">
         <div class="container d-flex flex-column">
           <div class="row p-3">
             <h1>{{ site.data.home.faq.title }}</h1>
@@ -145,13 +145,16 @@ layout: default
         </div>
       </div> 
     <!--  / FAQ section -->
-    <section class="py-3">
-      <div class="container d-flex align-items-center flex-column">
-        <h1 class="mt-5">{{ site.data.home.about.title }}</h1>
-        <p>
-        {{ site.data.home.about.paragraph | markdownify }}
-        </p>
-        <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around">
+      <div class="container d-flex align-items-center flex-column pb-4">
+        <div class="row p-3 text-center">
+          <h1>{{ site.data.home.about.title }}</h1>
+        </div>
+          <div class="text-center">
+          <p>
+          {{ site.data.home.about.paragraph | markdownify }}
+          </p>
+        </div>
+        <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around pb-4">
           {% for partner in site.data.partners %}
           <a class="my-2" href="{{ partner.url }}">
             <img src="{{ site.baseurl }}/img/{{ partner.image }}" alt="{{ partner.name }}" width="{{ partner.width }}"/>
@@ -159,5 +162,4 @@ layout: default
           {% endfor %}
         </div>
       </div>
-    </section>
 </main>
