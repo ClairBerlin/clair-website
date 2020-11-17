@@ -35,6 +35,10 @@ h5,
   position: relative;
 }
 
+.thumbnail img {
+  min-height: 400px;
+}
+
 .caption {
   position: absolute;
   top: 40%;
