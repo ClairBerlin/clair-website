@@ -24,7 +24,7 @@ layout: default
       </div>
     </div>
   </div>
-<!-- HOW section -->
+  <!-- HOW section -->
   <div class="jumbotron bg-primary text-white">
     <div class="container d-flex flex-column justify-content-around align-items-center">
       <div class="row p-3">
@@ -33,133 +33,152 @@ layout: default
       <div class="row align-items-center pb-5">
         <p class="text-center">{{ site.data.home.synopsis.how.description }}</p>
       </div>
-          <!-- How To Steps Wrapper -->
-            <div class="container" style="width: 90%;">
-              <!--first section-->
-              <div class="row align-items-center how-it-works d-flex">
-                <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
-                  <div class="circle d-inline-flex align-items-center">
-                    <i class="{{ site.data.home.synopsis.how.steps[0].class }}"></i>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <h5>
-                    {{ site.data.home.synopsis.how.steps[0].subtitle }}
-                  </h5>
-                  <p>{{ site.data.home.synopsis.how.steps[0].description }}</p>
-                </div>
-              </div>
-              <!--path between 1-2-->
-              <div class="row timeline">
-                <div class="col-2">
-                  <div class="corner top-right"></div>
-                </div>
-                <div class="col-8">
-                  <hr/>
-                </div>
-                <div class="col-2">
-                  <div class="corner left-bottom"></div>
-                </div>
-              </div>
-              <!--second section-->
-              <div class="row align-items-center justify-content-end how-it-works d-flex">
-                <div class="col-6 text-right">
-                  <h5>
-                    {{ site.data.home.synopsis.how.steps[1].subtitle }}
-                  </h5>
-                  <p>{{ site.data.home.synopsis.how.steps[1].description }}</p>
-                </div>
-                <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
-                  <div class="circle d-inline-flex align-items-center">
-                    <i class="{{ site.data.home.synopsis.how.steps[1].class }}"></i>
-                  </div>
-                </div>
-              </div>
-              <!--path between 2-3-->
-              <div class="row timeline">
-                <div class="col-2">
-                  <div class="corner right-bottom"></div>
-                </div>
-                <div class="col-8">
-                  <hr/>
-                </div>
-                <div class="col-2">
-                  <div class="corner top-left"></div>
-                </div>
-              </div>
-              <!--third section-->
-              <div class="row align-items-center how-it-works d-flex">
-                <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
-                  <div class="circle d-inline-flex align-items-center">
-                    <i class="{{ site.data.home.synopsis.how.steps[2].class }}"></i>
-                  </div>
-                </div>
-                <div class="col-6">
-                  <h5>
-                    {{ site.data.home.synopsis.how.steps[2].subtitle }}
-                  </h5>
-                  <p>{{ site.data.home.synopsis.how.steps[2].description }}</p>
-                </div>
-              </div>
+      <!-- How To Steps Wrapper -->
+      <div class="container" style="width: 90%;">
+        <!--first section-->
+        <div class="row align-items-center how-it-works d-flex">
+          <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
+            <div class="circle d-inline-flex align-items-center">
+              <i class="{{ site.data.home.synopsis.how.steps[0].class }}"></i>
             </div>
           </div>
-          <!-- MITMACHEN btn  -->
-          <div class="text-center mt-5">
-            <a class="btn btn-lg btn-light" href="{{ site.data.home.synopsis.button.url }}">
-              {{ site.data.home.synopsis.button.title }}
-            </a>
+          <div class="col-6">
+            <h5>
+              {{ site.data.home.synopsis.how.steps[0].subtitle }}
+            </h5>
+            <p>{{ site.data.home.synopsis.how.steps[0].description }}</p>
           </div>
         </div>
-      </div>
-      <!-- / How To Steps Wrapper -->
-      <!-- Background section -->
-      <div class="jumbotron bg-white">
-        <div class="container d-flex flex-column">
-          <div class="row p-3">
-            <h1>{{ site.data.home.why.title }}</h1>
+        <!--path between 1-2-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner top-right"></div>
           </div>
-          <p>{{ site.data.home.why.description }}</p>
-        <div class="row p-3">
-          {% for section in site.data.home.sections %}
-          <div class="col-sm">
-            <div class="card" style="width: 32rem; max-width: 100%">
-              <img src="../img/sensor_placeholder.jpg" class="card-img-top" alt="...">
-              <div class="card-body">
-                <h5 class="card-title"> {{section.title }}</h5>
-                <p class="card-text">{{section.paragraph | markdownify}}</p>
-                <a href="{{ section.button.url }}" class="btn btn-lg btn-primary">{{ section.button.title }}</a>
-              </div>
+          <div class="col-8">
+            <hr/>
+          </div>
+          <div class="col-2">
+            <div class="corner left-bottom"></div>
+          </div>
+        </div>
+        <!--second section-->
+        <div class="row align-items-center justify-content-end how-it-works d-flex">
+          <div class="col-6 text-right">
+            <h5>
+              {{ site.data.home.synopsis.how.steps[1].subtitle }}
+            </h5>
+            <p>{{ site.data.home.synopsis.how.steps[1].description }}</p>
+          </div>
+          <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
+            <div class="circle d-inline-flex align-items-center">
+              <i class="{{ site.data.home.synopsis.how.steps[1].class }}"></i>
             </div>
           </div>
-          {% endfor %}
+        </div>
+        <!--path between 2-3-->
+        <div class="row timeline">
+          <div class="col-2">
+            <div class="corner right-bottom"></div>
+          </div>
+          <div class="col-8">
+            <hr/>
+          </div>
+          <div class="col-2">
+            <div class="corner top-left"></div>
+          </div>
+        </div>
+        <!--third section-->
+        <div class="row align-items-center how-it-works d-flex">
+          <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
+            <div class="circle d-inline-flex align-items-center">
+              <i class="{{ site.data.home.synopsis.how.steps[2].class }}"></i>
+            </div>
+          </div>
+          <div class="col-6">
+            <h5>
+              {{ site.data.home.synopsis.how.steps[2].subtitle }}
+            </h5>
+            <p>{{ site.data.home.synopsis.how.steps[2].description }}</p>
+          </div>
         </div>
       </div>
     </div>
-    <!--  / Background section -->
-      <div class="jumbotron bg-primary text-white">
-        <div class="container d-flex flex-column">
-          <div class="row p-3">
-            <h1>{{ site.data.home.faq.title }}</h1>
+    <!-- MITMACHEN btn  -->
+    <div class="text-center mt-5">
+      <a class="btn btn-lg btn-light" href="{{ site.data.home.synopsis.button.url }}">
+        {{ site.data.home.synopsis.button.title }}
+      </a>
+    </div>
+  </div>
+  <!-- / How To Steps Wrapper -->
+  <!-- Background section -->
+  <div class="jumbotron bg-white">
+    <div class="container d-flex flex-column">
+      <div class="row p-3">
+        <h1>{{ site.data.home.why.title }}</h1>
+      </div>
+      <p>{{ site.data.home.why.description }}</p>
+      <div class="row p-3">
+        {% for section in site.data.home.sections %}
+        <div class="col-sm">
+          <div class="card" style="width: 32rem; max-width: 100%">
+            <img src="../img/sensor_placeholder.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> {{section.title }}</h5>
+              <div class="card-text">{{section.paragraph | markdownify}}</div>
+              <a href="{{ section.button.url }}" class="btn btn-lg btn-primary">
+                {{ section.button.title }}
+              </a>
+            </div>
           </div>
-          <p>{{ site.data.home.faq.description }}</p>
         </div>
-      </div> 
-    <!--  / FAQ section -->
-      <div class="container d-flex align-items-center flex-column pb-4">
-        <div class="row p-3 text-center">
-          <h1>{{ site.data.home.about.title }}</h1>
-        </div>
-          <div class="text-center">
-          <p>
-          {{ site.data.home.about.paragraph | markdownify }}
-          </p>
-        </div>
-        <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around pb-4">
-          {% for partner in site.data.partners %}
-          <a class="my-2" href="{{ partner.url }}">
-            <img src="{{ site.baseurl }}/img/{{ partner.image }}" alt="{{ partner.name }}" width="{{ partner.width }}"/>
-          </a>
-          {% endfor %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <!--  / Background section -->
+  <div class="jumbotron bg-primary text-white">
+    <div class="container">
+      <div class="row p-3">
+        <div class="col">
+          <h1>{{ site.data.home.faq.title }}</h1>
+          <div class="accordion text-dark" id="faqAccordion">
+            {% for faq in site.data.faq %}
+            <div class="card">
+              <div class="card-header" id="heading{{ forloop.index }}">
+                <h2 class="mb-0">
+                  <a class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#collapse{{ forloop.index }}" aria-expanded="true" aria-controls="collapse{{ forloop.index }}">
+                    {{ faq.q }}
+                  </a>
+                </h2>
+              </div>
+
+              <div id="collapse{{ forloop.index }}" class="collapse" aria-labelledby="heading{{ forloop.index }}" data-parent="#faqAccordion">
+                <div class="card-body">
+                  {{ faq.a | markdownify }}
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
         </div>
       </div>
+    </div>
+  </div>
+  <!--  / FAQ section -->
+  <div class="container d-flex align-items-center flex-column pb-4">
+    <div class="row p-3 text-center">
+      <h1>{{ site.data.home.about.title }}</h1>
+    </div>
+    <div class="text-center">
+      {{ site.data.home.about.paragraph | markdownify }}
+    </div>
+    <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around pb-4">
+      {% for partner in site.data.partners %}
+      <a class="my-2" href="{{ partner.url }}">
+        <img src="{{ site.baseurl }}/img/{{ partner.image }}" alt="{{ partner.name }}" width="{{ partner.width }}"/>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
 </main>
