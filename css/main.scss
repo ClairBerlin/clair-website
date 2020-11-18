@@ -13,7 +13,6 @@ body {
   height: 100%;
   width: 100%;
   font-family: "Roboto", sans-serif;
-  font-size: 100%;
 }
 
 h1,
@@ -22,16 +21,20 @@ h3,
 h4,
 h5,
 .navbar {
-  letter-spacing: 0.05em;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oxygen", sans-serif;
 }
 
-.navbar .navbar-brand img {
+.navbar-brand img {
   width: 50px;
 }
 
+.navbar .active a {
+  font-weight: 700 !important;
+  text-decoration: underline;
+}
+
 .logo {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Oxygen", sans-serif;
   font-size: 24pt;
 }
 
