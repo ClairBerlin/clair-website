@@ -3,6 +3,14 @@
 In diesem Repository liegt der Quellcode der Clair Berlin Website. Wir
 verwenden [Jekyll](https://jekyllrb.com/) als _Static Site Generator_.
 
+## How To Development
+
+Install dependencies: `gem install jekyll bundler`
+
+Deploy locally: `jekyll serve --livereload`
+
+Server will listen on `http://127.0.0.1:4000`
+
 ## Inhalte
 
 Die einzelnen Seiten der Website werden aus Markdown-Dateien im obersten

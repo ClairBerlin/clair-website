@@ -1,26 +1,55 @@
+title: Alles Clairchen?
+subtitle: Die Luft ist rein,<br>hier geh ich rein.
+widgetSiteId: 3
 synopsis:
-  title: Alles Clairchen?
-  description: >
+  title: Worum geht es?
+  description: |
     Clair Berlin ist eine gemeinnützige Initiative zur Messung der Luftqualität
-    in öffentlichen Räumen<br>und wendet sich an Betreiber von z.&nbsp;B.
-    Restaurants, Galerien oder Schulungsräumen.<br>Werben Sie mit dem
-    Clairchen-Label<br>und zeigen Sie Ihren Besuchern, dass Ihre Räume gut
-    gelüftet sind.
+    in öffentlich zugänglichen Innenräumen und wendet sich an BetreiberInnen
+    von Restaurants, Theatern, Ausstellungsräumen, Bibliotheken oder
+    Schulungsräumen.
+
+    Die Messung erfolgt mit Hilfe von vernetzten CO<sub>2</sub>-Sensoren. Die
+    Messdaten werden visualisiert, so dass das Lüftungskonzept für Innenräume
+    optimiert werden kann. Die BetreiberInnen können auf ihrer Website das
+    Clairchen-Widget einbinden, um ihr Lüftungskonzept zu dokumentieren und
+    ihren Besuchern gegenüber Vertrauen zu schaffen.
+
   how:
-    title: So funktioniert's
+    title: Wie kann ich mitmachen?
+    description: Prinzipiell kann mitmachen, wer Betreiber:in eines öffentlichen Raumes ist und Platz zur Anbringung eines CO2-Sensors hat.
     steps:
-      - description: CO<sub>2</sub>-Sensor installieren und Lüften lernen
-        class: fas fa-wind
-      - description: Clairchen-Widget einbinden, Vertrauen schaffen
+      - subtitle: Formuler ausfüllen
+        description: description 1
         class: fas fa-cloud
-      - description: Daten bereitstellen, Erkenntnisse sammeln
+      - subtitle: Sensor installieren und Lüften lernen
+        description: description 2
+        class: fas fa-wind
+      - subtitle: Messwerte veröffentlichen
+        description: description 3
         class: fas fa-chart-line
   button:
     url: mitmachen.html
     title: Jetzt mitmachen
 
+why:
+  title: Wie kann mir Clair helfen?
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+faq:
+  title: Frequently Asked Questions
+  description: >
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
 sections:
-  - title: Hintergrund
+  - title: Wissenschaft
     paragraph: >
       Der CO<sub>2</sub>-Gehalt in Räumen ist nach derzeitigem
       wissenschaftlichem Erkenntnisstand korreliert zum Risiko einer
@@ -29,7 +58,7 @@ sections:
       reduziert das Risiko einer Infektion.
     button:
       url: hintergrund.html
-      title: Mehr Hintergrundinformationen
+      title: Mehr Hintergrund&shy;informationen
   - title: Technik
     paragraph: >
       Clair Berlin entwickelt und betreibt eine offene Plattform für vernetzte

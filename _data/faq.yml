@@ -1,0 +1,15 @@
+- q: Welche Sensoren werden von Clair Berlin unterstützt?
+  a: |
+    Clair Berlin ist als offenes System konzipiert und verschiedenste Sensoren
+    können leicht angebunden werden. Voraussetzung ist lediglich eine
+    Internetanbindung. Momentan unterstützten Clair Berlin die folgenden
+    Sensoren:
+    * [Elsys ERS CO2 Lite](https://www.elsys.se/en/ers-co2-lite/)
+- q: Welche Übertragungsprotokolle werden von Clair Berlin unterstützt?
+  a: |
+    Die ersten Sensoren wurden über
+    [LoRaWAN](https://de.wikipedia.org/wiki/Long_Range_Wide_Area_Network) und
+    das Berliner [The Things Network](https://www.thethingsnetwork.org/)
+    angeschlossen. Es werden grundsätzlich aber alle IP-kompatiblen Protokolle
+    unterstüzt, wie z.&nbsp;B.
+    [NB-IoT](https://en.wikipedia.org/wiki/Narrowband_IoT).

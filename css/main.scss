@@ -3,35 +3,54 @@
 
 $primary: #007cb0;
 $secondary: #43a047;
-@import 'bootstrap/bootstrap';
+@import "bootstrap/bootstrap";
+@import "fontawesome/fontawesome";
+@import "fontawesome/solid";
+@import "fontawesome/brands";
 
-@import 'fontawesome/fontawesome';
-@import 'fontawesome/solid';
-@import 'fontawesome/brands';
-
-html, body {
+html,
+body {
   height: 100%;
   width: 100%;
-  font-family: 'Roboto', sans-serif;
-  font-size: 110%;
+  font-family: "Roboto", sans-serif;
 }
 
-h1, h2, h3, h4, h5, .navbar {
-  font-family: 'Open Sans', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+.navbar {
+  font-family: "Oxygen", sans-serif;
 }
 
-h1 {
-  text-align: center;
+.navbar-brand img {
+  width: 50px;
 }
 
+.navbar .active a {
+  font-weight: 700 !important;
+  text-decoration: underline;
+}
 
 .logo {
-  font-family: 'Megrim', cursive;
+  font-family: "Oxygen", sans-serif;
   font-size: 24pt;
 }
 
-main {
-  margin-top: 75px;
+.thumbnail {
+  position: relative;
+}
+
+.thumbnail img {
+  min-height: 400px;
+}
+
+.caption {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+  width: 80%;
 }
 
 main img {
@@ -43,6 +62,83 @@ main img {
 
 blockquote {
   border-left: 1px solid grey;
-  padding-left: 2em;
+  padding-left: 1em;
   font-style: italic;
+}
+
+// +++
+// ++ timeline
+// +++
+
+.circle {
+  padding: 13px 20px;
+  border-radius: 50%;
+  background-color: $primary;
+  border-color: white;
+  border: 3px solid white;
+  color: #fff;
+  z-index: 2;
+  height: 4em;
+  width: 4em;
+}
+
+.how-it-works.row .col-2 {
+  align-self: stretch;
+}
+.how-it-works.row .col-2::after {
+  content: "";
+  position: absolute;
+  border-left: 3px solid white;
+  z-index: 1;
+}
+.how-it-works.row .col-2.bottom::after {
+  height: 50%;
+  left: 50%;
+  top: 50%;
+}
+.how-it-works.row .col-2.full::after {
+  height: 100%;
+  left: calc(50% - 3px);
+}
+.how-it-works.row .col-2.top::after {
+  height: 50%;
+  left: 50%;
+  top: 0;
+}
+
+.timeline div {
+  padding: 0;
+  height: 40px;
+}
+.timeline hr {
+  border-top: 3px solid white;
+  margin: 0;
+  top: 17px;
+  position: relative;
+}
+.timeline .col-2 {
+  display: flex;
+  overflow: hidden;
+}
+.timeline .corner {
+  border: 3px solid white;
+  width: 100%;
+  position: relative;
+  border-radius: 15px;
+}
+.timeline .top-right {
+  left: 50%;
+  top: -50%;
+}
+.timeline .left-bottom {
+  left: -50%;
+  top: calc(50% - 3px);
+}
+.timeline .top-left {
+  left: -50%;
+  top: -50%;
+}
+.timeline .right-bottom {
+  left: 50%;
+  top: calc(50% - 3px);
 }
