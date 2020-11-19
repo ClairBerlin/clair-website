@@ -1,8 +1,14 @@
 links:
   - title: Mitmachen
     url: /mitmachen.html
-  - title: Hintergrund
-    url: /hintergrund.html
+  - title: Über Clair Berlin
+    submenu:
+    - title: Wissenschaft
+      url: /hintergrund.html
+    - title: Technik
+      url: /technik.html
+    - title: Team
+      url: /team.html
   - title: Neuigkeiten
     url: /neuigkeiten.html
   - title: FAQ

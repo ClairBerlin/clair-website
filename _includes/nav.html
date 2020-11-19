@@ -11,9 +11,22 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav ml-auto">
         {% for item in site.data.nav.links %}
+        {% if item.submenu %}
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="{{ item.title | slugify }}" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            {{ item.title }}
+          </a>
+          <div class="dropdown-menu" aria-labelledby="{{ item.title | slugify }}">
+            {% for subitem in item.submenu %}
+            <a class="dropdown-item" href="{{ subitem.url }}">{{ subitem.title }}</a>
+            {% endfor %}
+          </div>
+        </li>
+        {% else %}
         <li class="nav-item{% if item.url == page.url %} active{% endif %}">
           <a class="nav-link" href="{{ item.url | relative_url }}">{{ item.title }}</a>
         </li>
+        {% endif %}
         {% endfor %}
       </ul>
       <a class="btn btn-outline-light mt-3 mt-lg-0 ml-0 ml-lg-3" href="{{ site.data.nav.login.url | relative_url }}">{{ site.data.nav.login.title }}</a>
