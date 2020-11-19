@@ -1,0 +1,16 @@
+- name: Ulrich Schuster
+  url: https://koing.de
+  description: Kümmert sich im Projekt um alles und entwickelt das Backend-System. Im normalen Leben Systemarchitekt und Berater.
+  img: /img/us.png
+- name: Jan Weil
+  url: https://jawebada.de
+  description: Ebenfalls zuständig für alles. Entwickelt die Sensor-Anbindungen, die Website und die Datenvisualisierung. In Corona-freien Zeiten IoT-Spezialist und Software-Entwickler.
+  img: /img/jw.jpg
+- name: Christian Rotzoll
+  url: https://twitter.com/rtzll
+  description: Schreibt das Frontend und begutachtet alles andere. Software-Entwickler.
+  img: /img/cr.jpg
+- name: Florian Ansorge
+  url: https://www.linkedin.com/in/fansorge/
+  description: Findet auf der ganzen Welt Sensor-Hersteller und beschafft Muster. Im Hauptberuf Manager in der Versicherungswirtschaft.
+  img: /img/fa.jpg

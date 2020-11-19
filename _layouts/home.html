@@ -35,7 +35,7 @@ layout: default
       <div class="row">
       {% for section in site.data.home.why.sections %}
         <div class="col-12 col-sm-4 my-2">
-          <div class="card text-dark">
+          <div class="card text-dark h-100">
             <div class="card-body">
               <h1 class="text-center"><i class="{{ section.fa-class }}"></i></h1>
               <div class="card-title">
@@ -169,12 +169,6 @@ layout: default
     <div class="text-center">
       {{ site.data.home.about.paragraph | markdownify }}
     </div>
-    <div class="container d-flex flex-row flex-wrap align-items-center justify-content-around pb-4">
-      {% for partner in site.data.partners %}
-      <a class="my-2" href="{{ partner.url }}">
-        <img src="{{ site.baseurl }}/img/{{ partner.image }}" alt="{{ partner.name }}" width="{{ partner.width }}"/>
-      </a>
-      {% endfor %}
-    </div>
+    {% include partners.html %}
   </div>
 </main>
