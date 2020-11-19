@@ -16,7 +16,7 @@ title: Antworten auf Deine Fragen
 
     <div id="collapse{{ forloop.index }}" class="collapse" aria-labelledby="heading{{ forloop.index }}" data-parent="#faqAccordion">
       <div class="card-body">
-        {{ faq.a | markdownify }}
+        {{ faq.a | liquify | markdownify }}
       </div>
     </div>
   </div>
