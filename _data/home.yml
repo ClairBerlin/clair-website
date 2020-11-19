@@ -4,69 +4,99 @@ widgetSiteId: 3
 synopsis:
   title: Saubere Luft in öffentlich zugänglichen Räumen
   description: |
-    Ob in einem Café oder Rastaurant, in einem Wartezimmer oder einer Gallerie, einem Konferenzsall oder einem Klassenzimmer - in einem Raum mit vielen Menschen steigt mit der Zeit der Anteil verbrauchter Luft. Dadurch steigt auch das Risiko von Infektionen, und die Konzentrationsfähigkeit sinkt.
-    
-    Eine CO<sub>2</sub>-Ampel vor Ort zeigt die aktuelle Luftqualität an; sie sagt Besucherinnen und Besuchern jedoch nicht, ob der Raum regelmäßig gelüftet wird. Nur der Verlauf der Lufqualität über mehrere Tage zeigt, dass der Betreiber oder die Betreiberin sich nachhaltig um gute Luftqualität kümmert. Dazu braucht es _vernetzte_ CO<sub>2</sub>-Sensoren sowie ein System, welches die Messdaten regelmäßig einsammelt und darstellt.
+    Ob in einem Café oder Rastaurant, in einem Wartezimmer oder einer Gallerie,
+    einem Konferenzsall oder einem Klassenzimmer - in einem Raum mit vielen
+    Menschen steigt mit der Zeit der Anteil verbrauchter Luft. Dadurch steigt
+    auch das Risiko von Infektionen, und die Konzentrationsfähigkeit sinkt.
 
-    Clean Air (Clair) Berlin ist eine gemeinnützige Initiative, um Messwerte vernetzter CO<sub>2</sub>-Sensoren zu sammeln, auszuwerten und öffentlich bereitzustellen. Gemeinsam möchten wir zu einer guten Luftqualität in öffentlich zugängliche Innenräumen beitragen und die Datenbasis liefern für rationale Entscheidungen der Betreiberinnen und Betreibern, der öffentlichen Verwaltung und von uns allen persönlich.
-  
-  why: 
-    title: Wie kann mir Clair helfen?
-      Mit der Clair Initiative möchten wir dazu beitragen, dass sich Berlinerinnen und Berliner besonnen für oder gegen den Besuch eines öffentlichen Raumes entscheiden, anstatt diesen aus Angst pauschal zu meiden.  Einzelhandel, Gastronomie und Veranstalter können mit geringem Aufwand die Luftqualität in ihren Räumen messen, über die Clair Plattform veröffentlich und zeigen, dass ihre Schutzmaßnahmen wirksam sind. Politik und Verwaltung können zielgerichtet und auf einer soliden Datengrundlage über Maßnahmen entscheiden.
+    Eine CO<sub>2</sub>-Ampel vor Ort zeigt die aktuelle Luftqualität an; sie
+    sagt Besucherinnen und Besuchern jedoch nicht, ob der Raum regelmäßig
+    gelüftet wird. Nur der Verlauf der Lufqualität über mehrere Tage zeigt,
+    dass der Betreiber oder die Betreiberin sich nachhaltig um gute
+    Luftqualität kümmert. Dazu braucht es _vernetzte_ CO<sub>2</sub>-Sensoren
+    sowie ein System, welches die Messdaten regelmäßig einsammelt und
+    darstellt.
 
-    - subtitle: Ich betreibe einen öffentlich zugänglichen Raum.
-      Statten Sie Ihren Raum mit einem vernetzten CO<sub>2</sub>-Sensor aus und verbinden Sie diesen mit der Clair Plattform. In ihrem privaten Bereich können Sie den Zeitverlauf der Messwerte ansehen, analysieren und daraus Maßnahmen zur besseren Belüftung ableiten. Zeigen Sie der Öffentlichkeit, dass Sie sich nachhaltig um gute Luftqualität kümmern, indem Sie die Messdaten freigaben, das Clair-Wiedget auf Ihrer Website einbinden und Ihren Raum mit dem Clair-Logo koennzeichnen.
-    - subtitle: Ich halte mich in öffentlich zugänglichen Räumen auf.
-      Informieren Sie sich, ob der jeweilige Raum Teil der Clair Initiative ist und somit gute Luftqualität nachweist. Sehen Sie sich den öffentlich verfügbaren Verlauf der Messwerte an - bald hier auf der Clair Website, oder auf der Website des Raums und entscheiden Sie datenbasiert über Ihren Aufenthalt. Regen Sie Betreiber von Räumen an, sich der Clair-Initiative anzuschließen.
-    - subtitle: Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume.
-      Beziehen Sie die öffentlich zugänglichen Messdaten von der Clair Plattform und fragen Sie Betreiberinnen und Betreiber an, nichtöffentliche Messdaten zu Forschungszqecken bereitzustellen.
+    Clean Air (Clair) Berlin ist eine gemeinnützige Initiative, um Messwerte
+    vernetzter CO<sub>2</sub>-Sensoren zu sammeln, auszuwerten und öffentlich
+    bereitzustellen. Gemeinsam möchten wir zu einer guten Luftqualität in
+    öffentlich zugängliche Innenräumen beitragen und die Datenbasis liefern für
+    rationale Entscheidungen der Betreiberinnen und Betreibern, der
+    öffentlichen Verwaltung und von uns allen persönlich.
 
-  how:
-    title: Ich betreibe einen öffentlich zugänglichen Raum. Kann ich mitmachen?
-    description: Ja! Wir suchen derzeit möglichst diverse Räume und Orte für den Testbetrieb.
-    steps:
-      - subtitle: Für den Testbetrieb registrieren
-        description: Von Anfang an dabei!
-        class: fas fa-cloud
-      - subtitle: Sensor installieren
-        description: Sensoren sind batteriebetrieben und können einfach aufgehängt werden.
-        class: fas fa-wind
-      - subtitle: Daten analysieren und Lüftung optimieren
-        description: Analysieren Sie den zeitlichen Verlauf der Luftqualität in Ihrem Raum, um Ihr Lüftungskonzept anzupassen.
-      - subtitle: Messwerte veröffentlichen
-        description: Zeigen Sie der Öffentlichkeit, dass bei Ihnen die Luft rein ist.
-        class: fas fa-chart-line
+why:
+  title: Wie kann mir Clair helfen?
+  description: |
+    Mit der Clair Initiative möchten wir dazu beitragen, dass sich
+    Berlinerinnen und Berliner besonnen für oder gegen den Besuch eines
+    öffentlichen Raumes entscheiden, anstatt diesen aus Angst pauschal zu
+    meiden.  Einzelhandel, Gastronomie und Veranstalter können mit geringem
+    Aufwand die Luftqualität in ihren Räumen messen, über die Clair Plattform
+    veröffentlich und zeigen, dass ihre Schutzmaßnahmen wirksam sind. Politik
+    und Verwaltung können zielgerichtet und auf einer soliden Datengrundlage
+    über Maßnahmen entscheiden.
+
+    * Ich betreibe einen öffentlich zugänglichen Raum.  
+      Statten Sie Ihren Raum mit einem vernetzten CO<sub>2</sub>-Sensor aus
+      und verbinden Sie diesen mit der Clair Plattform. In ihrem privaten
+      Bereich können Sie den Zeitverlauf der Messwerte ansehen, analysieren
+      und daraus Maßnahmen zur besseren Belüftung ableiten. Zeigen Sie der
+      Öffentlichkeit, dass Sie sich nachhaltig um gute Luftqualität kümmern,
+      indem Sie die Messdaten freigaben, das Clair-Wiedget auf Ihrer Website
+      einbinden und Ihren Raum mit dem Clair-Logo koennzeichnen.
+    * Ich halte mich in öffentlich zugänglichen Räumen auf.  
+      Informieren Sie sich, ob der jeweilige Raum Teil der Clair Initiative
+      ist und somit gute Luftqualität nachweist. Sehen Sie sich den
+      öffentlich verfügbaren Verlauf der Messwerte an - bald hier auf der
+      Clair Website, oder auf der Website des Raums und entscheiden Sie
+      datenbasiert über Ihren Aufenthalt. Regen Sie Betreiber von Räumen an,
+      sich der Clair-Initiative anzuschließen.
+    * Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume.  
+      Beziehen Sie die öffentlich zugänglichen Messdaten von der Clair
+      Plattform und fragen Sie Betreiberinnen und Betreiber an,
+      nichtöffentliche Messdaten zu Forschungszqecken bereitzustellen.
+
+  sections:
+    - title: Wissenschaft
+      img: /img/sensor_placeholder.jpg
+      paragraph: >
+        Direkt kann die Konzentration des SARS-CoV-2 Virus in der Luft derzeit nicht nachgewiesen werden. Aber mittels anderer Messgrößen können wir sie abschätzen: Wo viel Frischluft vorhanden ist, kann es nur wenige virustragende Aerosole geben. Eine hohe CO2-Konzentration hingegen zeigt an, dass sich im Raum viel ausgeatmete Luft befindet, welche potenziell mit Viren belastet ist. Unter der Annahme, dass sich mindestens eine infizierte Person im jeweiligen Raum aufhält, ist der CO<sub>2</sub>-Gehalt somit ein guter Indikator für das Infektionsrisiko über Aerosole. Regelmäßiges Lüften reduziert das Risiko einer Infektion.
+      button:
+        url: hintergrund.html
+        title: Mehr Hintergrund&shy;informationen
+    - title: Technik
+      img: /img/sensor_placeholder.jpg
+      paragraph: >
+        Clair Berlin entwickelt und betreibt eine offene Plattform für vernetzte
+        Sensoren zur Messung der Luftqualität mit Schwerpunkt auf
+        CO<sub>2</sub>-Messwerten. Zur Kommunikation wird primär das Berliner
+        [The Things Network](https://www.thethingsnetwork.org/) genutzt, es
+        können aber auch andere IP-kompatible Kommunikationsprotokolle über eine
+        REST-Programmierschnittstelle angebunden werden. Der gesamte Quellcode
+        steht als Freie Software [auf GitHub](https://github.com/ClairBerlin) zur
+        Verfügung.
+      button:
+        url: technik.html
+        title: Mehr Informationen zur Technik
+
+
+join:
+  title: Ich betreibe einen öffentlich zugänglichen Raum. Kann ich mitmachen?
+  description: Ja! Wir suchen derzeit möglichst diverse Räume und Orte für den Testbetrieb.
+  steps:
+    - subtitle: Für den Testbetrieb registrieren, Sensor installieren
+      description: Von Anfang an dabei! Sensoren sind batteriebetrieben und können einfach aufgehängt werden.
+      class: fas fa-cloud
+    - subtitle: Daten analysieren und Lüftung optimieren
+      description: Analysieren Sie den zeitlichen Verlauf der Luftqualität in Ihrem Raum, um Ihr Lüftungskonzept anzupassen.
+      class: fas fa-wind
+    - subtitle: Messwerte veröffentlichen
+      description: Zeigen Sie der Öffentlichkeit, dass bei Ihnen die Luft rein ist.
+      class: fas fa-chart-line
+
   button:
     url: mitmachen.html
     title: Jetzt mitmachen
-
-how: Wie funktioniert Clair Berlin?
-sections:
-  - title: Wissenschaft
-    img: /img/sensor_placeholder.jpg
-    paragraph: >
-      Direkt kann die Konzentration des SARS-CoV-2 Virus in der Luft derzeit nicht nachgewiesen werden. Aber mittels anderer Messgrößen können wir sie abschätzen: Wo viel Frischluft vorhanden ist, kann es nur wenige virustragende Aerosole geben. Eine hohe CO2-Konzentration hingegen zeigt an, dass sich im Raum viel ausgeatmete Luft befindet, welche potenziell mit Viren belastet ist. Unter der Annahme, dass sich mindestens eine infizierte Person im jeweiligen Raum aufhält, ist der CO<sub>2</sub>-Gehalt somit ein guter Indikator für das Infektionsrisiko über Aerosole. Regelmäßiges Lüften reduziert das Risiko einer Infektion.
-    button:
-      url: hintergrund.html
-      title: Mehr Hintergrund&shy;informationen
-  - title: Technik
-    img: /img/sensor_placeholder.jpg
-    paragraph: >
-      Clair Berlin entwickelt und betreibt eine offene Plattform für vernetzte
-      Sensoren zur Messung der Luftqualität mit Schwerpunkt auf
-      CO<sub>2</sub>-Messwerten. Zur Kommunikation wird primär das Berliner
-      [The Things Network](https://www.thethingsnetwork.org/) genutzt, es
-      können aber auch andere IP-kompatible Kommunikationsprotokolle über eine
-      REST-Programmierschnittstelle angebunden werden. Der gesamte Quellcode
-      steht als Freie Software [auf GitHub](https://github.com/ClairBerlin) zur
-      Verfügung.
-    button:
-      url: technik.html
-      title: Mehr Informationen zur Technik
-
-faq:
-  title: Antworten auf Ihre Fragen
-
 
 about:
   title: Wer ist Clair Berlin?

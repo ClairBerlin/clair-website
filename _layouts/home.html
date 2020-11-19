@@ -28,10 +28,10 @@ layout: default
   <div class="jumbotron bg-primary text-white">
     <div class="container d-flex flex-column justify-content-around align-items-center">
       <div class="row p-3">
-        <h1 class="mb-4 text-center">{{ site.data.home.synopsis.how.title }}</h1>
+        <h1 class="mb-4 text-center">{{ site.data.home.join.title }}</h1>
       </div>
       <div class="row align-items-center pb-5">
-        <p class="text-center">{{ site.data.home.synopsis.how.description }}</p>
+        <p class="text-center">{{ site.data.home.join.description }}</p>
       </div>
       <!-- How To Steps Wrapper -->
       <div class="container" style="width: 90%;">
@@ -39,14 +39,14 @@ layout: default
         <div class="row align-items-center how-it-works d-flex">
           <div class="col-2 text-center bottom d-inline-flex justify-content-center align-items-center">
             <div class="circle d-inline-flex align-items-center">
-              <i class="{{ site.data.home.synopsis.how.steps[0].class }}"></i>
+              <i class="{{ site.data.home.join.steps[0].class }}"></i>
             </div>
           </div>
           <div class="col-6">
             <h5>
-              {{ site.data.home.synopsis.how.steps[0].subtitle }}
+              {{ site.data.home.join.steps[0].subtitle }}
             </h5>
-            <p>{{ site.data.home.synopsis.how.steps[0].description }}</p>
+            <p>{{ site.data.home.join.steps[0].description }}</p>
           </div>
         </div>
         <!--path between 1-2-->
@@ -65,13 +65,13 @@ layout: default
         <div class="row align-items-center justify-content-end how-it-works d-flex">
           <div class="col-6 text-right">
             <h5>
-              {{ site.data.home.synopsis.how.steps[1].subtitle }}
+              {{ site.data.home.join.steps[1].subtitle }}
             </h5>
-            <p>{{ site.data.home.synopsis.how.steps[1].description }}</p>
+            <p>{{ site.data.home.join.steps[1].description }}</p>
           </div>
           <div class="col-2 text-center full d-inline-flex justify-content-center align-items-center">
             <div class="circle d-inline-flex align-items-center">
-              <i class="{{ site.data.home.synopsis.how.steps[1].class }}"></i>
+              <i class="{{ site.data.home.join.steps[1].class }}"></i>
             </div>
           </div>
         </div>
@@ -91,22 +91,22 @@ layout: default
         <div class="row align-items-center how-it-works d-flex">
           <div class="col-2 text-center top d-inline-flex justify-content-center align-items-center">
             <div class="circle d-inline-flex align-items-center">
-              <i class="{{ site.data.home.synopsis.how.steps[2].class }}"></i>
+              <i class="{{ site.data.home.join.steps[2].class }}"></i>
             </div>
           </div>
           <div class="col-6">
             <h5>
-              {{ site.data.home.synopsis.how.steps[2].subtitle }}
+              {{ site.data.home.join.steps[2].subtitle }}
             </h5>
-            <p>{{ site.data.home.synopsis.how.steps[2].description }}</p>
+            <p>{{ site.data.home.join.steps[2].description }}</p>
           </div>
         </div>
       </div>
     </div>
     <!-- MITMACHEN btn  -->
     <div class="text-center mt-5">
-      <a class="btn btn-lg btn-light" href="{{ site.data.home.synopsis.button.url }}">
-        {{ site.data.home.synopsis.button.title }}
+      <a class="btn btn-lg btn-light" href="{{ site.data.home.join.button.url }}">
+        {{ site.data.home.join.button.title }}
       </a>
     </div>
   </div>
@@ -117,9 +117,9 @@ layout: default
       <div class="row p-3">
         <h1>{{ site.data.home.why.title }}</h1>
       </div>
-      <p>{{ site.data.home.why.description }}</p>
+      {{ site.data.home.why.description | markdownify }}
       <div class="row p-3">
-        {% for section in site.data.home.sections %}
+        {% for section in site.data.home.why.sections %}
         <div class="col-sm">
           <div class="card" style="width: 32rem; max-width: 100%">
             <img src="{{ section.img | relative_url }}" class="card-img-top" alt="...">
@@ -141,9 +141,9 @@ layout: default
     <div class="container">
       <div class="row p-3">
         <div class="col">
-          <h1 id="faq">{{ site.data.home.faq.title }}</h1>
+          <h1 id="faq">{{ site.data.faq.title }}</h1>
           <div class="accordion text-dark" id="faqAccordion">
-            {% for faq in site.data.faq %}
+            {% for faq in site.data.faq.questions %}
             <div class="card">
               <div class="card-header" id="heading{{ forloop.index }}">
                 <h2 class="mb-0">
