@@ -4,25 +4,14 @@ widgetSiteId: 3
 synopsis:
   title: Saubere Luft in öffentlich zugänglichen Räumen
   description: |
-    Ob in einem Café oder Rastaurant, in einem Wartezimmer oder einer Gallerie,
+    Ob in einem Café oder Restaurant, in einem Wartezimmer oder einer Galerie,
     einem Konferenzsaal oder einem Klassenzimmer - in einem Raum mit vielen
     Menschen steigt mit der Zeit der Anteil verbrauchter Luft. Dadurch steigt
     auch das Risiko von Infektionen, und die Konzentrationsfähigkeit sinkt.
 
-    Eine CO<sub>2</sub>-Ampel vor Ort zeigt die aktuelle Luftqualität an; sie
-    sagt Besucherinnen und Besuchern jedoch nicht, ob der Raum regelmäßig
-    gelüftet wird. Nur der Verlauf der Lufqualität über mehrere Tage zeigt,
-    dass der Betreiber oder die Betreiberin sich nachhaltig um gute
-    Luftqualität kümmert. Dazu braucht es _vernetzte_ CO<sub>2</sub>-Sensoren
-    sowie ein System, welches die Messdaten regelmäßig einsammelt und
-    darstellt.
+    Eine CO<sub>2</sub>-Ampel vor Ort zeigt die aktuelle Luftqualität an; sie sagt Besucherinnen und Besuchern jedoch nicht, ob der Raum regelmäßig gelüftet wird. Nur der Verlauf über mehrere Tage zeigt, dass der Betreiber oder die Betreiberin sich nachhaltig um gute Luftqualität kümmert. Dazu braucht es _vernetzte_ CO<sub>2</sub>-Sensoren sowie ein System, welches die Messdaten regelmäßig einsammelt und darstellt.
 
-    Clair steht für Clean Air und Clair Berlin ist eine gemeinnützige
-    Initiative, um Messwerte vernetzter CO<sub>2</sub>-Sensoren zu sammeln,
-    auszuwerten und öffentlich bereitzustellen. Gemeinsam möchten wir zu einer
-    guten Luftqualität in öffentlich zugänglichen Innenräumen beitragen und die
-    Datenbasis liefern für rationale Entscheidungen der Betreiberinnen und
-    Betreibern, der öffentlichen Verwaltung und von uns allen persönlich.
+    Clean Air (Clair) Berlin ist eine gemeinnützige Initiative, um Messwerte vernetzter CO<sub>2</sub>-Sensoren zu sammeln, auszuwerten und öffentlich bereitzustellen. Gemeinsam möchten wir zu einer guten Luftqualität in öffentlich zugänglichen Innenräumen beitragen und die Datenbasis liefern für rationale Entscheidungen der Betreiberinnen und Betreibern, der öffentlichen Verwaltung und von uns allen persönlich.
 
 join:
   title: '"Ich betreibe einen öffentlich zugänglichen Raum.<br>Kann ich mitmachen?"'
@@ -53,31 +42,31 @@ why:
     und Verwaltung können zielgerichtet und auf einer soliden Datengrundlage
     über Maßnahmen entscheiden.
 
-    * '"Ich betreibe einen öffentlich zugänglichen Raum."'  
+    * **Ich betreibe einen öffentlich zugänglichen Raum**  
       Statten Sie Ihren Raum mit einem vernetzten CO<sub>2</sub>-Sensor aus
       und verbinden Sie diesen mit der Clair Plattform. In ihrem privaten
       Bereich können Sie den Zeitverlauf der Messwerte ansehen, analysieren
       und daraus Maßnahmen zur besseren Belüftung ableiten. Zeigen Sie der
       Öffentlichkeit, dass Sie sich nachhaltig um gute Luftqualität kümmern,
-      indem Sie die Messdaten freigaben, das Clair-Wiedget auf Ihrer Website
-      einbinden und Ihren Raum mit dem Clair-Logo koennzeichnen.
-    * '"Ich halte mich in öffentlich zugänglichen Räumen auf."'  
-      Informieren Sie sich, ob der jeweilige Raum Teil der Clair Initiative
-      ist und somit gute Luftqualität nachweist. Sehen Sie sich den
+      indem Sie die Messdaten freigeben, das Clair-Widget auf Ihrer Website
+      einbinden und Ihren Raum mit dem Clair-Logo kennzeichnen.
+    * **Ich halte mich in öffentlich zugänglichen Räumen auf**
+      Informieren Sie sich, ob der Raum Teil der Clair Initiative
+      ist und gute Luftqualität nachweist. Sehen Sie sich den
       öffentlich verfügbaren Verlauf der Messwerte an - bald hier auf der
-      Clair Website, oder auf der Website des Raums und entscheiden Sie
+      Clair Website, oder auf der Website des Raums. Entscheiden Sie
       datenbasiert über Ihren Aufenthalt. Regen Sie Betreiber von Räumen an,
       sich der Clair-Initiative anzuschließen.
-    * '"Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume."'  
+    * **Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume**
       Beziehen Sie die öffentlich zugänglichen Messdaten von der Clair
       Plattform und fragen Sie Betreiberinnen und Betreiber an,
-      nichtöffentliche Messdaten zu Forschungszqecken bereitzustellen.
+      nichtöffentliche Messdaten zu Forschungszwecken bereitzustellen.
 
   sections:
     - title: Wissenschaft
       img: /img/sensor_placeholder.jpg
       paragraph: >
-        Direkt kann die Konzentration des SARS-CoV-2 Virus in der Luft derzeit nicht nachgewiesen werden. Aber mittels anderer Messgrößen können wir sie abschätzen: Wo viel Frischluft vorhanden ist, kann es nur wenige virustragende Aerosole geben. Eine hohe CO2-Konzentration hingegen zeigt an, dass sich im Raum viel ausgeatmete Luft befindet, welche potenziell mit Viren belastet ist. Unter der Annahme, dass sich mindestens eine infizierte Person im jeweiligen Raum aufhält, ist der CO<sub>2</sub>-Gehalt somit ein guter Indikator für das Infektionsrisiko über Aerosole. Regelmäßiges Lüften reduziert das Risiko einer Infektion.
+        Direkt kann die Konzentration des SARS-CoV-2 Virus in der Luft derzeit nicht nachgewiesen werden, aber mittels anderer Messgrößen können wir sie abschätzen: Wo viel Frischluft vorhanden ist, kann es nur wenige virustragende Aerosole geben. Eine hohe CO<sub>2</sub>-Konzentration hingegen zeigt an, dass sich im Raum viel ausgeatmete Luft befindet, welche potenziell mit Viren belastet ist. Unter der Annahme, dass sich mindestens eine infizierte Person im jeweiligen Raum aufhält, ist der CO<sub>2</sub>-Gehalt somit ein guter Indikator für das Infektionsrisiko über Aerosole. Regelmäßiges Lüften reduziert das Risiko einer Infektion.
       button:
         url: hintergrund.html
         title: Mehr Hintergrund&shy;informationen
@@ -104,4 +93,4 @@ about:
 
     Seit November 2020 ist Clair Berlin ein Projekt des [CityLAB Berlin](https://www.citylab-berlin.org).
 
-    Für organisatorische und ideele Unterstützung bedanken wir uns bei unseren Partnern:
+    Für organisatorische und ideelle Unterstützung bedanken wir uns bei unseren Partnern:
