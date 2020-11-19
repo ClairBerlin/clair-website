@@ -4,6 +4,8 @@ title: Hintergrund
 ---
 # Hintergrund
 
+Eine CO<sub>2</sub>-Ampel vor Ort zeigt die aktuelle Luftqualität an; sie sagt Besucherinnen und Besuchern jedoch nicht, ob der Raum regelmäßig gelüftet wird. Nur der Verlauf über mehrere Tage zeigt, dass der Betreiber oder die Betreiberin sich nachhaltig um gute Luftqualität kümmert. Dazu braucht es _vernetzte_ CO<sub>2</sub>-Sensoren sowie ein System, welches die Messdaten regelmäßig einsammelt und darstellt.
+
 ## Übertragung von SARS-CoV-2 durch Aerosole
 
 Einer der relevantesten Übertragungswege von SARS-CoV-2 ist
