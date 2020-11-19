@@ -2,81 +2,103 @@ title: Alles Clairchen?
 subtitle: Die Luft ist rein,<br>hier geh ich rein.
 widgetSiteId: 3
 synopsis:
-  title: Worum geht es?
+  title: Saubere Luft in öffentlich zugänglichen Räumen
   description: |
-    Clair Berlin ist eine gemeinnützige Initiative zur Messung der Luftqualität
-    in öffentlich zugänglichen Innenräumen und wendet sich an BetreiberInnen
-    von Restaurants, Theatern, Ausstellungsräumen, Bibliotheken oder
-    Schulungsräumen.
+    Ob in einem Café oder Restaurant, in einem Wartezimmer oder einer Galerie,
+    einem Konferenzsaal oder einem Klassenzimmer - in einem Raum mit vielen
+    Menschen steigt mit der Zeit der Anteil verbrauchter Luft. Dadurch steigt
+    auch das Risiko von Infektionen, und die Konzentrationsfähigkeit sinkt.
 
-    Die Messung erfolgt mit Hilfe von vernetzten CO<sub>2</sub>-Sensoren. Die
-    Messdaten werden visualisiert, so dass das Lüftungskonzept für Innenräume
-    optimiert werden kann. Die BetreiberInnen können auf ihrer Website das
-    Clairchen-Widget einbinden, um ihr Lüftungskonzept zu dokumentieren und
-    ihren Besuchern gegenüber Vertrauen zu schaffen.
+    Eine CO<sub>2</sub>-Ampel vor Ort zeigt die aktuelle Luftqualität an; sie sagt Besucherinnen und Besuchern jedoch nicht, ob der Raum regelmäßig gelüftet wird. Nur der Verlauf über mehrere Tage zeigt, dass der Betreiber oder die Betreiberin sich nachhaltig um gute Luftqualität kümmert. Dazu braucht es _vernetzte_ CO<sub>2</sub>-Sensoren sowie ein System, welches die Messdaten regelmäßig einsammelt und darstellt.
 
-  how:
-    title: Wie kann ich mitmachen?
-    description: Prinzipiell kann mitmachen, wer Betreiber:in eines öffentlichen Raumes ist und Platz zur Anbringung eines CO2-Sensors hat.
-    steps:
-      - subtitle: Formuler ausfüllen
-        description: description 1
-        class: fas fa-cloud
-      - subtitle: Sensor installieren und Lüften lernen
-        description: description 2
-        class: fas fa-wind
-      - subtitle: Messwerte veröffentlichen
-        description: description 3
-        class: fas fa-chart-line
+    Clean Air (Clair) Berlin ist eine gemeinnützige Initiative, um Messwerte vernetzter CO<sub>2</sub>-Sensoren zu sammeln, auszuwerten und öffentlich bereitzustellen. Gemeinsam möchten wir zu einer guten Luftqualität in öffentlich zugänglichen Innenräumen beitragen und die Datenbasis liefern für rationale Entscheidungen der Betreiberinnen und Betreibern, der öffentlichen Verwaltung und von uns allen persönlich.
+
+join:
+  title: Ich betreibe einen öffentlich zugänglichen Raum.<br>Kann ich mitmachen?
+  description: Ja! Wir suchen derzeit möglichst diverse Räume und Orte für den Testbetrieb.
+  steps:
+    - subtitle: Für den Testbetrieb registrieren, Sensor installieren
+      description: Von Anfang an dabei! Sensoren sind batteriebetrieben und können einfach aufgehängt werden.
+      class: fab fa-wpforms
+    - subtitle: Daten analysieren und Lüftung optimieren
+      description: Analysieren Sie den zeitlichen Verlauf der Luftqualität in Ihrem Raum, um Ihr Lüftungskonzept anzupassen.
+      class: fas fa-wind
+    - subtitle: Messwerte veröffentlichen
+      description: Binden Sie das Clairchen-Widget auf Ihrer Website ein und zeigen Sie der Öffentlichkeit, dass bei Ihnen die Luft rein ist.
+      class: fas fa-chart-line
   button:
     url: mitmachen.html
     title: Jetzt mitmachen
 
 why:
-  title: Wie kann mir Clair helfen?
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  title: Wie kann mir Clair Berlin helfen?
+  description: |
+    Mit der Clair Initiative möchten wir dazu beitragen, dass sich
+    Berlinerinnen und Berliner besonnen für oder gegen den Besuch eines
+    öffentlichen Raumes entscheiden, anstatt diesen aus Angst pauschal zu
+    meiden.  Einzelhandel, Gastronomie und Veranstalter können mit geringem
+    Aufwand die Luftqualität in ihren Räumen messen, über die Clair Plattform
+    veröffentlich und zeigen, dass ihre Schutzmaßnahmen wirksam sind. Politik
+    und Verwaltung können zielgerichtet und auf einer soliden Datengrundlage
+    über Maßnahmen entscheiden.
 
-faq:
-  title: Frequently Asked Questions
-  description: >
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  sections:
+    - title: Ich betreibe einen öffentlich zugänglichen Raum
+      fa-class: fas fa-building
+      paragraph: |
+        Statten Sie Ihren Raum mit einem vernetzten CO<sub>2</sub>-Sensor aus
+        und verbinden Sie diesen mit der Clair Plattform. In ihrem privaten
+        Bereich können Sie den Zeitverlauf der Messwerte ansehen, analysieren
+        und daraus Maßnahmen zur besseren Belüftung ableiten. Zeigen Sie der
+        Öffentlichkeit, dass Sie sich nachhaltig um gute Luftqualität kümmern,
+        indem Sie die Messdaten freigeben, das Clair-Widget auf Ihrer Website
+        einbinden und Ihren Raum mit dem Clair-Logo kennzeichnen.
+    - title: Ich halte mich in öffentlich zugänglichen Räumen auf
+      fa-class: fas fa-cocktail
+      paragraph: |
+        Informieren Sie sich, ob der Raum Teil der Clair Initiative ist und
+        gute Luftqualität nachweist. Sehen Sie sich den öffentlich verfügbaren
+        Verlauf der Messwerte an - bald hier auf der Clair Website, oder auf
+        der Website des Raums. Entscheiden Sie datenbasiert über Ihren
+        Aufenthalt. Regen Sie Betreiber von Räumen an, sich der
+        Clair-Initiative anzuschließen.
+    - title: Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume
+      fa-class: fas fa-chart-bar
+      paragraph: |
+        Beziehen Sie die öffentlich zugänglichen Messdaten von der Clair
+        Plattform und fragen Sie Betreiberinnen und Betreiber an,
+        nichtöffentliche Messdaten zu Forschungszwecken bereitzustellen.
+how:
+  title: Informationen zu Clair Berlin
+  sections:
+    - title: Wissenschaft
+      img: /img/sensor_placeholder.jpg
+      paragraph: >
+        Direkt kann die Konzentration des SARS-CoV-2 Virus in der Luft derzeit nicht nachgewiesen werden, aber mittels anderer Messgrößen können wir sie abschätzen: Wo viel Frischluft vorhanden ist, kann es nur wenige virustragende Aerosole geben. Eine hohe CO<sub>2</sub>-Konzentration hingegen zeigt an, dass sich im Raum viel ausgeatmete Luft befindet, welche potenziell mit Viren belastet ist. Unter der Annahme, dass sich mindestens eine infizierte Person im jeweiligen Raum aufhält, ist der CO<sub>2</sub>-Gehalt somit ein guter Indikator für das Infektionsrisiko über Aerosole. Regelmäßiges Lüften reduziert das Risiko einer Infektion.
+      button:
+        url: hintergrund.html
+        title: Mehr Hintergrund&shy;informationen
+    - title: Technik
+      img: /img/sensor_placeholder.jpg
+      paragraph: >
+        Clair Berlin entwickelt und betreibt eine offene Plattform für vernetzte
+        Sensoren zur Messung der Luftqualität mit Schwerpunkt auf
+        CO<sub>2</sub>-Messwerten. Zur Kommunikation wird primär das Berliner
+        [The Things Network](https://www.thethingsnetwork.org/) genutzt, es
+        können aber auch andere IP-kompatible Kommunikationsprotokolle über eine
+        REST-Programmierschnittstelle angebunden werden. Der gesamte Quellcode
+        steht als Freie Software [auf GitHub](https://github.com/ClairBerlin) zur
+        Verfügung.
+      button:
+        url: technik.html
+        title: Mehr Informationen zur Technik
 
-sections:
-  - title: Wissenschaft
-    img: /img/sensor_placeholder.jpg
-    paragraph: >
-      Der CO<sub>2</sub>-Gehalt in Räumen ist nach derzeitigem
-      wissenschaftlichem Erkenntnisstand korreliert zum Risiko einer
-      SARS-CoV-2-Infektion unter der Annahme, dass sich mindestens eine
-      infizierte Person im jeweiligen Raum aufhält. Regelmäßiges Lüften
-      reduziert das Risiko einer Infektion.
-    button:
-      url: hintergrund.html
-      title: Mehr Hintergrund&shy;informationen
-  - title: Technik
-    img: /img/sensor_placeholder.jpg
-    paragraph: >
-      Clair Berlin entwickelt und betreibt eine offene Plattform für vernetzte
-      Sensoren zur Messung der Luftqualität mit Schwerpunkt auf
-      CO<sub>2</sub>-Messwerten. Zur Kommunikation wird primär das Berliner
-      [The Things Network](https://www.thethingsnetwork.org/) genutzt, es
-      können aber auch andere IP-kompatible Kommunikationsprotokolle über eine
-      REST-Programmierschnittstelle angebunden werden. Der gesamte Quellcode
-      steht als Freie Software [auf GitHub](https://github.com/ClairBerlin) zur
-      Verfügung.
-    button:
-      url: technik.html
-      title: Mehr Informationen zur Technik
 about:
   title: Wer ist Clair Berlin?
-  paragraph: >
-    Clair Berlin wurde im September 2020 von [Ulrich
-    Schuster](https://koing.de) und [Jan Weil](https://jawebada.de) initiiert
-    und wird von den folgenden Partnern unterstützt:
+  paragraph: |
+    Clair Berlin entstand im September 2020 als private, nichtkommerzielle Initiative von [Ulrich Schuster](https://koing.de) und [Jan Weil](https://jawebada.de).  
+    Als weitere ehrenamtliche Mitarbeiter stießen schnell Florian Ansorge und Christian Rotzoll zum Team.
+
+    Seit November 2020 ist Clair Berlin ein Projekt des [CityLAB Berlin](https://www.citylab-berlin.org).
+
+    Für organisatorische und ideelle Unterstützung bedanken wir uns bei unseren Partnern:

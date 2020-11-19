@@ -6,7 +6,7 @@ links:
   - title: Neuigkeiten
     url: /neuigkeiten.html
   - title: FAQ
-    url: /#faq
+    url: /faq.html
 
 login:
   title: Mein Konto
