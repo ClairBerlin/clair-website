@@ -34,7 +34,7 @@ why:
     - title: Ich betreibe einen öffentlich zugänglichen Raum
       fa-class: fas fa-building
       paragraph: |
-        Installiere einen vernetzten CO<sub>2</sub>-Sensor und verbinde ihn mit der Clair Plattform. Auf Deinem privaten Dashboard kannst Du den Zeitverlauf der Luftqualität analysieren, um Maßnahmen auszuprobieren. Wenn alles passt, kannst Du die Werte veröffentlichen, das Clair-Widget auf Deiner Website einbinden Deinen Raum mit dem Clair-Logo kennzeichnen.
+        Installiere einen vernetzten CO<sub>2</sub>-Sensor und verbinde ihn mit der Clair Plattform. Auf Deinem privaten Dashboard kannst Du den Zeitverlauf der Luftqualität analysieren, um Maßnahmen auszuprobieren. Wenn alles passt, kannst Du die Werte veröffentlichen, das Clair-Widget auf Deiner Website einbinden und Deinen Raum mit dem Clair-Logo kennzeichnen.
     - title: Ich halte mich in öffentlich zugänglichen Räumen auf
       fa-class: fas fa-cocktail
       paragraph: |
@@ -42,7 +42,7 @@ why:
     - title: Ich entwickle Empfehlungen für öffentlich zugängliche Räume
       fa-class: fas fa-chart-bar
       paragraph: |
-        Die öffentlich zugänglichen Messdaten stehen Dir über eine Schnittstelle elektronisch für Analysen zur Verfügung. Darüber hinaus haben Betreiberinnen und Betreiber die Möglichkeit, Dir weitere Messdaten für Forschungszwecke freizugeben. Wissenschaftlich fundierte Kenngrößen können automatisiert berechnen und öffentlich machen.
+        Die öffentlich zugänglichen Messdaten stehen Dir über eine Schnittstelle elektronisch für Analysen zur Verfügung. Darüber hinaus können Betreiberinnen und Betreiber Dir weitere Messdaten für Forschungszwecke freigeben. Für die Öffentlichkeit hilfreiche wissenschaftlich fundierte Kenngrößen bringen wir der Clair-Plattform gerne bei.
 how:
   title: Informationen zu Clair Berlin
   sections:
@@ -56,7 +56,7 @@ how:
     - title: Technik
       img: /img/sensor_placeholder.jpg
       paragraph: >
-        Die Clair-Plattform ist ein quelloffenes Software-System um Messwerter vernetzter Luftqualitätssensoren zu sammeln und bereitzustellen. Sensoren sind kommerziell verfügbar; wir binden sie derzeit über das offene [The Things Network](https://www.thethingsnetwork.org/) an; über eine REST-Schnittstelle ist die Clair-Plattform aber offen für andere HTTP-basierte Kommunikationsprotokolle Der gesamte Quellcode is als Freie Software [auf GitHub](https://github.com/ClairBerlin) öffentlich.
+        Die Clair-Plattform ist ein quelloffenes Software-System um Messwerte vernetzter Luftqualitätssensoren zu sammeln und bereitzustellen. Sensoren sind kommerziell verfügbar; wir binden sie derzeit über das offene [The Things Network](https://www.thethingsnetwork.org/) an; über eine REST-Schnittstelle ist die Clair-Plattform aber offen für andere HTTP-basierte Kommunikationsprotokolle Der gesamte Quellcode is als Freie Software [auf GitHub](https://github.com/ClairBerlin) öffentlich.
       button:
         url: technik.html
         title: Mehr Informationen zur Technik
