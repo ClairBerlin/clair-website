@@ -5,7 +5,7 @@ synopsis:
   title: Saubere Luft in öffentlich zugänglichen Räumen
   description: |
     Ob in einem Café oder Rastaurant, in einem Wartezimmer oder einer Gallerie,
-    einem Konferenzsall oder einem Klassenzimmer - in einem Raum mit vielen
+    einem Konferenzsaal oder einem Klassenzimmer - in einem Raum mit vielen
     Menschen steigt mit der Zeit der Anteil verbrauchter Luft. Dadurch steigt
     auch das Risiko von Infektionen, und die Konzentrationsfähigkeit sinkt.
 
@@ -17,15 +17,32 @@ synopsis:
     sowie ein System, welches die Messdaten regelmäßig einsammelt und
     darstellt.
 
-    Clean Air (Clair) Berlin ist eine gemeinnützige Initiative, um Messwerte
-    vernetzter CO<sub>2</sub>-Sensoren zu sammeln, auszuwerten und öffentlich
-    bereitzustellen. Gemeinsam möchten wir zu einer guten Luftqualität in
-    öffentlich zugängliche Innenräumen beitragen und die Datenbasis liefern für
-    rationale Entscheidungen der Betreiberinnen und Betreibern, der
-    öffentlichen Verwaltung und von uns allen persönlich.
+    Clair steht für Clean Air und Clair Berlin ist eine gemeinnützige
+    Initiative, um Messwerte vernetzter CO<sub>2</sub>-Sensoren zu sammeln,
+    auszuwerten und öffentlich bereitzustellen. Gemeinsam möchten wir zu einer
+    guten Luftqualität in öffentlich zugänglichen Innenräumen beitragen und die
+    Datenbasis liefern für rationale Entscheidungen der Betreiberinnen und
+    Betreibern, der öffentlichen Verwaltung und von uns allen persönlich.
+
+join:
+  title: '"Ich betreibe einen öffentlich zugänglichen Raum.<br>Kann ich mitmachen?"'
+  description: Ja! Wir suchen derzeit möglichst diverse Räume und Orte für den Testbetrieb.
+  steps:
+    - subtitle: Für den Testbetrieb registrieren, Sensor installieren
+      description: Von Anfang an dabei! Sensoren sind batteriebetrieben und können einfach aufgehängt werden.
+      class: fab fa-wpforms
+    - subtitle: Daten analysieren und Lüftung optimieren
+      description: Analysieren Sie den zeitlichen Verlauf der Luftqualität in Ihrem Raum, um Ihr Lüftungskonzept anzupassen.
+      class: fas fa-wind
+    - subtitle: Messwerte veröffentlichen
+      description: Binden Sie das Clairchen-Widget auf Ihrer Website ein und zeigen Sie der Öffentlichkeit, dass bei Ihnen die Luft rein ist.
+      class: fas fa-chart-line
+  button:
+    url: mitmachen.html
+    title: Jetzt mitmachen
 
 why:
-  title: Wie kann mir Clair helfen?
+  title: '"Wie kann mir Clair helfen?"'
   description: |
     Mit der Clair Initiative möchten wir dazu beitragen, dass sich
     Berlinerinnen und Berliner besonnen für oder gegen den Besuch eines
@@ -36,7 +53,7 @@ why:
     und Verwaltung können zielgerichtet und auf einer soliden Datengrundlage
     über Maßnahmen entscheiden.
 
-    * Ich betreibe einen öffentlich zugänglichen Raum.  
+    * '"Ich betreibe einen öffentlich zugänglichen Raum."'  
       Statten Sie Ihren Raum mit einem vernetzten CO<sub>2</sub>-Sensor aus
       und verbinden Sie diesen mit der Clair Plattform. In ihrem privaten
       Bereich können Sie den Zeitverlauf der Messwerte ansehen, analysieren
@@ -44,14 +61,14 @@ why:
       Öffentlichkeit, dass Sie sich nachhaltig um gute Luftqualität kümmern,
       indem Sie die Messdaten freigaben, das Clair-Wiedget auf Ihrer Website
       einbinden und Ihren Raum mit dem Clair-Logo koennzeichnen.
-    * Ich halte mich in öffentlich zugänglichen Räumen auf.  
+    * '"Ich halte mich in öffentlich zugänglichen Räumen auf."'  
       Informieren Sie sich, ob der jeweilige Raum Teil der Clair Initiative
       ist und somit gute Luftqualität nachweist. Sehen Sie sich den
       öffentlich verfügbaren Verlauf der Messwerte an - bald hier auf der
       Clair Website, oder auf der Website des Raums und entscheiden Sie
       datenbasiert über Ihren Aufenthalt. Regen Sie Betreiber von Räumen an,
       sich der Clair-Initiative anzuschließen.
-    * Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume.  
+    * '"Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume."'  
       Beziehen Sie die öffentlich zugänglichen Messdaten von der Clair
       Plattform und fragen Sie Betreiberinnen und Betreiber an,
       nichtöffentliche Messdaten zu Forschungszqecken bereitzustellen.
@@ -79,29 +96,12 @@ why:
         url: technik.html
         title: Mehr Informationen zur Technik
 
-
-join:
-  title: Ich betreibe einen öffentlich zugänglichen Raum. Kann ich mitmachen?
-  description: Ja! Wir suchen derzeit möglichst diverse Räume und Orte für den Testbetrieb.
-  steps:
-    - subtitle: Für den Testbetrieb registrieren, Sensor installieren
-      description: Von Anfang an dabei! Sensoren sind batteriebetrieben und können einfach aufgehängt werden.
-      class: fas fa-cloud
-    - subtitle: Daten analysieren und Lüftung optimieren
-      description: Analysieren Sie den zeitlichen Verlauf der Luftqualität in Ihrem Raum, um Ihr Lüftungskonzept anzupassen.
-      class: fas fa-wind
-    - subtitle: Messwerte veröffentlichen
-      description: Zeigen Sie der Öffentlichkeit, dass bei Ihnen die Luft rein ist.
-      class: fas fa-chart-line
-
-  button:
-    url: mitmachen.html
-    title: Jetzt mitmachen
-
 about:
   title: Wer ist Clair Berlin?
-  paragraph: >
-    Clair Berlin entstand im September 2020 als private, nichtkommerzielle Initiative 
-    von [Ulrich Schuster](https://koing.de) und [Jan Weil](https://jawebada.de). Als weitere ehrenamtliche Mitarbeiter stießen schnell Florian Ansorge und Christian Rotzoll zum Team.
+  paragraph: |
+    Clair Berlin entstand im September 2020 als private, nichtkommerzielle Initiative von [Ulrich Schuster](https://koing.de) und [Jan Weil](https://jawebada.de).  
+    Als weitere ehrenamtliche Mitarbeiter stießen schnell Florian Ansorge und Christian Rotzoll zum Team.
 
-    Seit November 2020 ist Clair Berlin ein Projekt des [CityLAB Berlin](https://www.citylab-berlin.org). Für organisatorische und ideele Unterstützung bedanken wir uns bei unseren Partnern:
+    Seit November 2020 ist Clair Berlin ein Projekt des [CityLAB Berlin](https://www.citylab-berlin.org).
+
+    Für organisatorische und ideele Unterstützung bedanken wir uns bei unseren Partnern:
