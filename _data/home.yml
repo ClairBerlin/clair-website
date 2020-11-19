@@ -14,7 +14,7 @@ synopsis:
     Clean Air (Clair) Berlin ist eine gemeinnützige Initiative, um Messwerte vernetzter CO<sub>2</sub>-Sensoren zu sammeln, auszuwerten und öffentlich bereitzustellen. Gemeinsam möchten wir zu einer guten Luftqualität in öffentlich zugänglichen Innenräumen beitragen und die Datenbasis liefern für rationale Entscheidungen der Betreiberinnen und Betreibern, der öffentlichen Verwaltung und von uns allen persönlich.
 
 join:
-  title: '"Ich betreibe einen öffentlich zugänglichen Raum.<br>Kann ich mitmachen?"'
+  title: Ich betreibe einen öffentlich zugänglichen Raum.<br>Kann ich mitmachen?
   description: Ja! Wir suchen derzeit möglichst diverse Räume und Orte für den Testbetrieb.
   steps:
     - subtitle: Für den Testbetrieb registrieren, Sensor installieren
@@ -31,7 +31,7 @@ join:
     title: Jetzt mitmachen
 
 why:
-  title: '"Wie kann mir Clair helfen?"'
+  title: Wie kann mir Clair helfen?
   description: |
     Mit der Clair Initiative möchten wir dazu beitragen, dass sich
     Berlinerinnen und Berliner besonnen für oder gegen den Besuch eines
