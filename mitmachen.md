@@ -8,9 +8,9 @@ title: Mitmachen
 ## Testbetrieb
 
 Clair Berlin ist momentan im Testbetrieb mit einer kleinen Anzahl Sensoren.
-Falls Sie Interesse haben, als Betreiber von öffentlich zugänglichen Räumen an
-der Clair-Berlin-Initiative teilzunehmen, registrieren Sie sich bitte über das
-folgende Formular.
+Falls Du Interesse hast, als Betreiberin oder Betreiber von öffentlich
+zugänglichen Räumen an der Clair-Berlin-Initiative teilzunehmen, registriere
+Dich bitte über das folgende Formular.
 
 Wir bitten um Verständnis, dass wir uns in der derzeitigen Phase aus operativen
 Gründen auf den Raum Berlin beschränken.
@@ -19,7 +19,7 @@ Gründen auf den Raum Berlin beschränken.
 
 <form id="registration-form" action="https://usebasin.com/f/e2ea6ee517a9" method="POST">
   <div class="form-group">
-    <label for="email">Ihre Email-Adresse:</label>
+    <label for="email">Deine Email-Adresse:</label>
     <input type="email" class="form-control" id="email" name="email" required aria-describedby="operatorEmailHelp">
     <small id="operatorEmailHelp" class="form-text text-muted">
       Wir verwenden Ihre Email-Adresse ausschließlich dazu, um Sie einmalig zu
@@ -27,11 +27,11 @@ Gründen auf den Raum Berlin beschränken.
     </small>
   </div>
   <div class="form-group">
-    <label for="operatorName">Ihr Name (optional):</label>
+    <label for="operatorName">Dein Name (optional, aber gerne gesehen):</label>
     <input type="text" class="form-control" id="operatorName" name="operatorName" aria-describedby="operatorNameHelp">
   </div>
   <div class="form-group">
-    <label for="numberSites">Wie viele Orte möchten Sie mit Sensoren ausstatten?</label>
+    <label for="numberSites">Wie viele Orte möchtest Du mit Sensoren ausstatten?</label>
     <input type="number" value="1" min="1" max="99" class="form-control" id="number" name="numberSites">
   </div>
   <div class="form-group">
@@ -40,11 +40,11 @@ Gründen auf den Raum Berlin beschränken.
     <small id="kindHelp" class="form-text text-muted">Restaurant, Schulungszentrum, Gallerie etc.</small>
   </div>
   <div class="form-group">
-    <label for="numberRooms">Wie viele Räume möchten Sie ingesamt mit Sensoren ausstatten?</label>
+    <label for="numberRooms">Wie viele Räume möchtest Du ingesamt mit Sensoren ausstatten?</label>
     <input type="number" value="1" min="1" max="99" class="form-control" id="numberRooms" name="numberRooms">
   </div>
   <div class="form-group">
-    <label for="locations">Wo liegen die Orte, die Sie mit Sensoren ausstatten möchten?</label>
+    <label for="locations">Wo liegen die Orte, die Du mit Sensoren ausstatten möchtest?</label>
     <input type="text" class="form-control" id="locations" name="locations" required aria-describedby="locationsHelp">
     <small id="locationsHelp" class="form-text text-muted">Berliner Bezirk, außerhalb von Berlin etc.</small>
   </div>
