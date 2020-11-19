@@ -1,10 +1,20 @@
-- q: Welche Sensoren werden von Clair Berlin unterstützt?
+
+- q: Was bedeutet Testbetrieb?
+  a: |
+    Im Testbetrieb möchten wir zum einen herausfinden, ob die Technik funktioniert. Haben Sensoren überall Empfang? Funktionieren alle Features der Plattform? Vor allem aber möchten wir mehr über die Anforderungen aus der Praxis lernen. Welche Unterstützung ist bei der Installation eines Sensors nötig? Wie genau sollten die Daten visualisiert werden? Wie werden die Daten tatsächlich genutzt? zusätzlich möchten wir gemeinsam mit der HTW Berlin die Messdaten betrachten und daraus abgeleitete Metriken entwickeln die einfacher verständlich sind, wie z.B. einen Risiko-Score oder eine empfohlene Aufenthaltsdauer.
+- q: Was genau ist ein vernetzter CO<sub>2</sub>-Sensor?
+  a: |
+    CO<sub>2</sub> ist ein Gas. Ein CO<sub>2</sub>-Sensor nimmt daher die Umgebungsluft auf und bestimmt den Anteil an CO<sub>2</sub>-Molekülen, typischerweise in der Einheit _PPM_, Parts per Million (Anzahl pro Million). Viele kommerziell erhältliche Geräte messen noch weitere Größen, wie z.B. Temperatur und Luftfeuchtigkeit. Vernetzte CO<sub>2</sub>-Sensoren verfügen über einen Netzwerkanschluss, so dass sie die Messdaten über das Internet an einen Server schicken können, wie z.B. die Clair Plattform. Derzeit nutzen wir das freie Community Funknetzwerk _The Things Network_, welches auf der LoRaWAN Technologie beruht. Aber auch für andere Kommunikationskanäle wie z.B. SigFox, NB-IoT oder WLAN ist die Clair Plattform offen. Vernetzte CO<sub>2</sub>-Sensoren sind kommerziell erhältlich. Die meisten Modelle sind etwa so groß wie ein Smartphone nur dicker (3-4cm). Sie sind zumeist batteriebetrieben; eine Batterieladung hält ein bis vier Jahre.
+- q: Wie komme ich an einen CO<sub>2</sub>-Sensor für meinen Raum?
+  a: |
+    Für den Testbetrieb haben wir ein kleines Kontingent an CO<sub>2</sub>-Sensoren, die wir Testnutzern unentgeltlich zur Verfügung stellen. Weiterhin verfolgen wir gerade verschiedene Fördermöglichkeiten, über welche wir hoffentlich weitere Sensoren bereitstellen können. Darüber hinaus steht es allen Interessenten frei, sich selbst CO<sub>2</sub>-Sensoren zu beschaffen. Je nach Stückzahl und Modell belaufen sich die Kosten auf 100€-200€. Die Geräte können auch ohne die Clair-Plattform betrieben werden.
+- q: Welche Sensoren kann ich verwenden?
   a: |
     Clair Berlin ist als offenes System konzipiert und verschiedenste Sensoren
     können leicht angebunden werden. Voraussetzung ist lediglich eine
     Internetanbindung. Momentan unterstützten Clair Berlin die folgenden
     Sensoren:
-    * [Elsys ERS CO2 Lite](https://www.elsys.se/en/ers-co2-lite/)
+    * [Elsys ERS CO<sub>2</sub> Lite](https://www.elsys.se/en/ers-co2-lite/)
 - q: Welche Übertragungsprotokolle werden von Clair Berlin unterstützt?
   a: |
     Die ersten Sensoren wurden über
@@ -13,3 +23,41 @@
     angeschlossen. Es werden grundsätzlich aber alle IP-kompatiblen Protokolle
     unterstüzt, wie z.&nbsp;B.
     [NB-IoT](https://en.wikipedia.org/wiki/Narrowband_IoT).
+- q: Wie genau sind die Messwerte?
+  a: |
+    Die Genauigkeit hängt vom verwendeten Sensor ab. Der von uns derzeit verwendete Elsys ERS CO<sub>2</sub> Lite nutzt das Sensor-Modul [Senseair LP8](https://senseair.com/products/power-counts/lp8/), mit einer Genauigkeit von 3% oder +/- 50PPM. In einem typischen Innenraum schwankt die CO<sub>2</sub>-Konzentration zwischen 400PPM und 1500PPM, so dass die Genauigkeit sehr gut ausreicht. Darüber hinaus kommt es bei Clair Berlin - im Interschied zu einer CO<sub>2</sub>-Ampel - nicht so sehr auf den Absolutwert an, sondern auf die Veränderung der CO<sub>2</sub>-Konzentration über der Zeit.
+- q: Muss ich den Sensor regelmäßig kalibrieren?
+  a: |
+    Die meisten CO<sub>2</sub>-Sensoren haben eine automatische Kalibration, damit die Messwerte nicht "weglaufen". Damit diese automatische Kalibration funktioniert, sollte der Sensor je nach Modell zwischen einer halben Stunde oder einer Stunde die Woche mit Frischluft versorgt werden. In den meisten öffentlich zugänglichen Räumen ist dies gewährleistet während der Zeit ohne Publikumsverkehr.
+- q: Woher weiß ich, dass die Messwerte tatsächlich aus dem angegebenen Raum stammen?
+  a: |
+    Anhand des Zeitverlaufs der Messwerte ist einfach ersichtlich, ob der Sensor tatsächlich in einem belebten Raum steht oder einfach an der frischen Luft. Über zusätzliche Messgrößen wie Temperatur und Luftfeuchtigkeit können wir darüber hinaus die Messwerte plausibilisieren. Eine Aufgabe in der Weiterentwicklung der Clair Plattform wird sein, Schummeleien anhand der Messwerte automatisch zu erkennen.
+- q: Welche Software kommt bei euch zum Einsatz?
+  a: |
+    Die Clair Berlin Plattform ist zu 100% ein Open-Source Projekt. Alle Software haben wir entweder selbst geschrieben, oder wir nutzen Bibliotheken und Anwendungen, die ebenfalls als Freie Software verfügbar sind. Der Quellcode sowie die Dokumentation des Systems ist auf [GitHub](https://github.com/ClairBerlin) verfügbar. Die Software auf dem jeweiligen Sensor ist Sache des Herstellers.
+- q: Wo werden die Daten gespeichert?
+  a: | 
+    Die Daten liegen in einer [PostgreSQL Datenbank](https://www.postgresql.org). Während der Testphase liegt diese auf einem Server, den wir privat bei einem Rechenzentrum in Deutschland angemietet haben. Für den Produktivbetrieb suchen wir noch finanzielle Unterstützung, um die Clair Plattform inklusive Datenbank gemäß Datenschutz-Grundverordnung in einem Rechenzentrum in der EU zu betreiben.
+- q: Wer finanziert euch?
+  a: |
+    Derzeit finanziert uns niemand. Alle Entwicklungs- und Organisationsarbeit leisten wir in unserer Freizeit. Kosten für den Testbetrieb tragen wir aus eigener Tasche. Sensoren für den Testbetrieb haben das [CityLAB Berlin](https://www.citylab-berlin.org), die [IHK Berlin](https://www.ihk-berlin.de) sowie das [HPI](https://hpi.de) angeschafft und uns zum Testen überlassen. Die genannten Partner helfen uns mit ihren Kontakten, organisieren Hintergrundgespräche und helfen uns, eine Finanzierung für den Produktivbetrieb und die Weiterentwicklung zu finden. Darüber hinaus suchen wir selbst nach Unterstützung und Finanzierung. Seit November sind wir offiziell ein Projekt des CityLAB und erhalten von dort Unterstützung bei der Öffentlichkeitsarbeit wie auch konkrete technische Zuarbeit für diese Website.
+- q: Warum habt ihr Clair Berlin gestartet?
+  a: |
+    Weil es frustrierend ist zuzusehen, wie mangelnde Digitalisierung die Pandemiebekämpfung behindert; und weil wir mit unserem Wissen und unserer Erfahrung lieber zur Lösung beitragen anstatt nur zu jammern. Unser Beitrag ist vielleicht klein, aber allemal besser als kein Beitrag. Darüber hinaus bietet Clair Berlin uns die Chance, sehr viel dabei zu lernen, wie man ein komplexes technisches Projekt innerhalb kurzer Zeit (seit September 2020) auf die Beine stellen kann. Last but not least hilft vielleicht die Öffentlichkeit um die Initative auch unseren sonstigen Projekten und Unternehmungen.
+- q: Wie lange arbeitet ihr schon an Clair Berlin?
+  a: |
+    Die Idee entstand Anfang September 2020. Zu Beginn haben wir als Proof-of-Concept einen eigenen CO<sub>2</sub>-Sensor gebaut und an das [Things Network](https://www.thethingsnetwork.org/community/berlin/) angeschlossen. Eigene Sensoren in großer Stückzahl zu produzieren übersteigt jedoch unser Budget und dauert zu lange. Daher haben wir als nächstes Hersteller gesucht, Muster besorgt und mit diesen angefangen, die Clair-Plattform aufzubauen. Seitdem haben wir über 1000 Stunden Arbeit in die Entwicklung und Organisation gesteckt. Aus ersten Kontakten zum [HPI](https://hpi.de)) und zur [IHK](https://www.ihk-berlin.de) ergaben sich weitere, so dass wir inzwischen als ein Projekt des [CityLAB]((https://www.citylab-berlin.org) organisatorisch verankert sind. Seit November gibt es eine Zusammenarbeit mit Prof. Müller von der [HTW Berlin](https://www.htw-berlin.de/forschung/online-forschungskatalog/projekte/person/?eid=4648) zur wissenschaftlichen Begleitung der Initiative. Wir arbeiten daran, dass aus dieser Zusammenarbeit rasch ein gefördertes Forschungsprojekt wird.
+- q: Was passiert mit Clair Berlin, wenn die Corona-Pandemie vorrüber ist?
+  a: |
+    CO<sub>2</sub>-Sensoren helfen nicht nur bei der Pandemiebekämpfung. Eine gute Luftqualität hilft auch gegen andere Infektionen, und gute Luft steigert das Konzentrationsvermögen. Beide Punkte sprechen dafür, dass es auch langfristig einen Bedarf an Informationen über die Luftqualität in öffentlich zugänglichen Räumen geben wird. Dazu sehen wir einen Aspekt als sehr wichtig an, der bislang noch kaum in der Diskussion ist: Die Energieeffizienz von Lüftungsmaßnahmen. Gebäudewärme macht ca. 30% unseres gesamten CO<sub>2</sub>-Ausstoßes aus. Optimierte Lüftung sowie gut geplante Lüftungsanlagen können dafür sorgen, dass beim Luftaustausch nicht auch die ganze Wärme nach draußen befürdert wird. Die Datenbasis vernetzter CO<sub>2</sub>- und Temperatursensoren wollen wir nutzen für die Planung von Energiesparmaßnahmen.
+- q: Gibt es Clair auch in anderen Regionen?
+  a: |
+    Unseres Wissens nach gibt es zumindest in Deutschland bislang kein vergleichbares Projekt. Wir haben Clair aber nicht nur auf Berlin beschränkt entwickelt. Idealerweise wird es in verschiedenen Regionen jeweils eigene öffentliche oder gemeinnützige Betreiber geben, die jeweils eine eigene Instanz der Clair-Plattform aufsetzen. Technisch ist dies ohne weiteres möglich, da die komplette Clair-Plattform als Open-Source verfügbar ist. Bei Interesse unterstützen wir gerne!
+- q: Wie kann ich die Initiative unterstützen?
+  a: |
+    - Werde Testnutzer, besorge Dir einen Sensor und binde Deinen Raum in die Clair Plattform ein, wie oben beschrieben.
+    - Mache Werbung für die Initiative. Teile den Link zu unserer Website, unsere Präsenz in den sozialen Medien, und sprich darüber mit Betreiberinnen und Betreibern Deiner Lieblingsräume.
+    - Hilf uns bei der Akquise von Fördermitteln, indem Du uns Tipps gibst zu Förderprogrammen, Stiftungen und Organisationen.
+    - Unterstütze uns direkt finanziell durch Spenden. Da wegen der aktuellen Lage alles ganz schnell gehen muss, sind wir noch nicht als Verein organisiert und können leider noch keine Spendenquittungen ausstellen.
+    - Mach mit! Du entwickelst qualitativ hochstehende Software? erstellst tolle Grafiken? Kannst ein Erklärvideo drehen? Texte schreiben? Stakeholder in Verbänden, Politik und Verwaltung abtelefonieren? Dann melde Dich bei uns, es gibt viel zu tun.
+
