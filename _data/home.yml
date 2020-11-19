@@ -50,6 +50,7 @@ faq:
 
 sections:
   - title: Wissenschaft
+    img: /img/sensor_placeholder.jpg
     paragraph: >
       Der CO<sub>2</sub>-Gehalt in Räumen ist nach derzeitigem
       wissenschaftlichem Erkenntnisstand korreliert zum Risiko einer
@@ -60,6 +61,7 @@ sections:
       url: hintergrund.html
       title: Mehr Hintergrund&shy;informationen
   - title: Technik
+    img: /img/sensor_placeholder.jpg
     paragraph: >
       Clair Berlin entwickelt und betreibt eine offene Plattform für vernetzte
       Sensoren zur Messung der Luftqualität mit Schwerpunkt auf
