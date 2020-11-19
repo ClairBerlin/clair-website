@@ -167,7 +167,7 @@ layout: default
       <h1>{{ site.data.home.about.title }}</h1>
     </div>
     <div class="text-center">
-      {{ site.data.home.about.paragraph | markdownify }}
+      {{ site.data.home.about.paragraph | liquify | markdownify }}
     </div>
     {% include partners.html %}
   </div>

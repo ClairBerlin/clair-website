@@ -8,5 +8,7 @@ show_excerpts: true
 plugins:
   - jekyll-feed
   - jekyll-sitemap
+gems:
+  - jekyll-liquify
 exclude:
   - README.md
