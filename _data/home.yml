@@ -31,7 +31,7 @@ join:
     title: Jetzt mitmachen
 
 why:
-  title: Wie kann mir Clair helfen?
+  title: Wie kann mir Clair Berlin helfen?
   description: |
     Mit der Clair Initiative möchten wir dazu beitragen, dass sich
     Berlinerinnen und Berliner besonnen für oder gegen den Besuch eines
@@ -42,26 +42,34 @@ why:
     und Verwaltung können zielgerichtet und auf einer soliden Datengrundlage
     über Maßnahmen entscheiden.
 
-    * **Ich betreibe einen öffentlich zugänglichen Raum**  
-      Statten Sie Ihren Raum mit einem vernetzten CO<sub>2</sub>-Sensor aus
-      und verbinden Sie diesen mit der Clair Plattform. In ihrem privaten
-      Bereich können Sie den Zeitverlauf der Messwerte ansehen, analysieren
-      und daraus Maßnahmen zur besseren Belüftung ableiten. Zeigen Sie der
-      Öffentlichkeit, dass Sie sich nachhaltig um gute Luftqualität kümmern,
-      indem Sie die Messdaten freigeben, das Clair-Widget auf Ihrer Website
-      einbinden und Ihren Raum mit dem Clair-Logo kennzeichnen.
-    * **Ich halte mich in öffentlich zugänglichen Räumen auf**
-      Informieren Sie sich, ob der Raum Teil der Clair Initiative
-      ist und gute Luftqualität nachweist. Sehen Sie sich den
-      öffentlich verfügbaren Verlauf der Messwerte an - bald hier auf der
-      Clair Website, oder auf der Website des Raums. Entscheiden Sie
-      datenbasiert über Ihren Aufenthalt. Regen Sie Betreiber von Räumen an,
-      sich der Clair-Initiative anzuschließen.
-    * **Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume**
-      Beziehen Sie die öffentlich zugänglichen Messdaten von der Clair
-      Plattform und fragen Sie Betreiberinnen und Betreiber an,
-      nichtöffentliche Messdaten zu Forschungszwecken bereitzustellen.
-
+  sections:
+    - title: Ich betreibe einen öffentlich zugänglichen Raum
+      fa-class: fas fa-building
+      paragraph: |
+        Statten Sie Ihren Raum mit einem vernetzten CO<sub>2</sub>-Sensor aus
+        und verbinden Sie diesen mit der Clair Plattform. In ihrem privaten
+        Bereich können Sie den Zeitverlauf der Messwerte ansehen, analysieren
+        und daraus Maßnahmen zur besseren Belüftung ableiten. Zeigen Sie der
+        Öffentlichkeit, dass Sie sich nachhaltig um gute Luftqualität kümmern,
+        indem Sie die Messdaten freigeben, das Clair-Widget auf Ihrer Website
+        einbinden und Ihren Raum mit dem Clair-Logo kennzeichnen.
+    - title: Ich halte mich in öffentlich zugänglichen Räumen auf
+      fa-class: fas fa-cocktail
+      paragraph: |
+        Informieren Sie sich, ob der Raum Teil der Clair Initiative ist und
+        gute Luftqualität nachweist. Sehen Sie sich den öffentlich verfügbaren
+        Verlauf der Messwerte an - bald hier auf der Clair Website, oder auf
+        der Website des Raums. Entscheiden Sie datenbasiert über Ihren
+        Aufenthalt. Regen Sie Betreiber von Räumen an, sich der
+        Clair-Initiative anzuschließen.
+    - title: Ich entwickle Empfehlungen oder Regeln für öffentlich zugängliche Räume
+      fa-class: fas fa-chart-bar
+      paragraph: |
+        Beziehen Sie die öffentlich zugänglichen Messdaten von der Clair
+        Plattform und fragen Sie Betreiberinnen und Betreiber an,
+        nichtöffentliche Messdaten zu Forschungszwecken bereitzustellen.
+how:
+  title: Informationen zu Clair Berlin
   sections:
     - title: Wissenschaft
       img: /img/sensor_placeholder.jpg

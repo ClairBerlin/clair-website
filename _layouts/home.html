@@ -24,7 +24,58 @@ layout: default
       </div>
     </div>
   </div>
-  <!-- HOW section -->
+  <div class="jumbotron bg-primary text-white">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col">
+          <h1>{{ site.data.home.why.title }}</h1>
+          {{ site.data.home.why.description | markdownify }}
+        </div>
+      </div>
+      <div class="row">
+      {% for section in site.data.home.why.sections %}
+        <div class="col-12 col-sm-4 my-2">
+          <div class="card text-dark">
+            <div class="card-body">
+              <h1 class="text-center"><i class="{{ section.fa-class }}"></i></h1>
+              <div class="card-title">
+                <h5> {{section.title }}</h5>
+              </div>
+              <div class="card-text">
+                {{section.paragraph | markdownify}}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+  <!--  how section -->
+  <div class="jumbotron bg-white text-dark">
+    <div class="container">
+      <div class="row p-3">
+        <h1>{{ site.data.home.how.title }}</h1>
+      </div>
+      <div class="row p-3">
+        {% for section in site.data.home.how.sections %}
+        <div class="col-sm">
+          <div class="card text-dark" style="width: 32rem; max-width: 100%">
+            <img src="{{ section.img | relative_url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> {{section.title }}</h5>
+              <div class="card-text">{{section.paragraph | markdownify}}</div>
+              <a href="{{ section.button.url }}" class="btn btn-lg btn-primary">
+                {{ section.button.title }}
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+  <!-- join section -->
   <div class="jumbotron bg-primary text-white">
     <div class="container d-flex flex-column justify-content-around align-items-center">
       <div class="row p-3">
@@ -33,7 +84,7 @@ layout: default
       <div class="row align-items-center pb-5">
         <p class="text-center">{{ site.data.home.join.description }}</p>
       </div>
-      <!-- How To Steps Wrapper -->
+      <!-- join steps wrapper -->
       <div class="container" style="width: 90%;">
         <!--first section-->
         <div class="row align-items-center how-it-works d-flex">
@@ -110,62 +161,7 @@ layout: default
       </a>
     </div>
   </div>
-  <!-- / How To Steps Wrapper -->
-  <!-- Background section -->
-  <div class="jumbotron bg-white">
-    <div class="container d-flex flex-column">
-      <div class="row p-3">
-        <h1>{{ site.data.home.why.title }}</h1>
-      </div>
-      {{ site.data.home.why.description | markdownify }}
-      <div class="row p-3">
-        {% for section in site.data.home.why.sections %}
-        <div class="col-sm">
-          <div class="card" style="width: 32rem; max-width: 100%">
-            <img src="{{ section.img | relative_url }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"> {{section.title }}</h5>
-              <div class="card-text">{{section.paragraph | markdownify}}</div>
-              <a href="{{ section.button.url }}" class="btn btn-lg btn-primary">
-                {{ section.button.title }}
-              </a>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
-  <!--  / Background section -->
-  <div class="jumbotron bg-primary text-white">
-    <div class="container">
-      <div class="row p-3">
-        <div class="col">
-          <h1 id="faq">{{ site.data.faq.title }}</h1>
-          <div class="accordion text-dark" id="faqAccordion">
-            {% for faq in site.data.faq.questions %}
-            <div class="card">
-              <div class="card-header" id="heading{{ forloop.index }}">
-                <h2 class="mb-0">
-                  <a class="btn btn-link btn-block text-left" data-toggle="collapse" data-target="#collapse{{ forloop.index }}" aria-expanded="true" aria-controls="collapse{{ forloop.index }}">
-                    {{ faq.q }}
-                  </a>
-                </h2>
-              </div>
-
-              <div id="collapse{{ forloop.index }}" class="collapse" aria-labelledby="heading{{ forloop.index }}" data-parent="#faqAccordion">
-                <div class="card-body">
-                  {{ faq.a | markdownify }}
-                </div>
-              </div>
-            </div>
-            {% endfor %}
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--  / FAQ section -->
+  <!-- about section -->
   <div class="container d-flex align-items-center flex-column pb-4">
     <div class="row p-3 text-center">
       <h1>{{ site.data.home.about.title }}</h1>
