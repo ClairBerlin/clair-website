@@ -16,4 +16,4 @@ links:
 
 login:
   title: Mein Konto
-  url: /admin/
+  url: /dashboard/
