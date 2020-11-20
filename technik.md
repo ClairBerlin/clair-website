@@ -90,6 +90,6 @@ Den Kern des Systems bilden die folgenden Repositorys:
 
 Clair Berlin ist eine gemeinnützige Initiative, sämtliche _Assets_ liegen offen und können durch Dritte genutzt werden. Wenn ihr mitarbeiten möchtet, so ist dies in allen Bereich möglich: Entwicklung, Design, Kommunikation etc.
 
-Die Clair REST-Schnittstelle ist komplett dokumentiert und folt der [JSON:API](https://jsonapi.org)-Spezifikation, so dass ihr auch einfach eigene Client-Anwendungen entwickeln könnt.
+Die Clair REST-Schnittstelle ist komplett dokumentiert und folgt der [JSON:API](https://jsonapi.org)-Spezifikation, so dass ihr auch einfach eigene Client-Anwendungen entwickeln könnt.
 
 Wir denken die Clair Plattform _regional_, und betreiben derzeit die erste Instanz in Berlin. Wenn ihr in einer anderen Region ebenfalls ein Clair Netzwerk aufbauen möchtet, so setzt ihr dazu am besten jeweils eine neue Instanz der Clair Plattform auf. Dabei unterstützen wir euch gerne!
