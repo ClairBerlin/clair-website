@@ -26,10 +26,14 @@
     <script>
       function openAnchorAccordion() {
         if (window.location.hash) {
+          const hash = window.location.hash
           var target = jQuery('body').find(window.location.hash);
           if (target.hasClass('faq')) {
             var collapsable = target.find('.collapse');
             collapsable.collapse('show');
+            collapsable.on('shown.bs.collapse', function (e) {
+              location.hash = hash
+            })
           }
         }
       }
