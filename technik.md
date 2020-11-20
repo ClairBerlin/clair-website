@@ -25,7 +25,7 @@ In der ersten Ausbaustufe des Clair-Netzwerks setzen wir auf LoRaWAN, da diese F
 
 ### Clair Plattform
 
-Für Sensoren, die ins Clair-Netzwerk eingebunden werden sollen, konfigurieren wir eine Verbindung zu einem bestimmten Endpunkt im Things Network, einer sog. _TTN Anwendung_. Diese TTN-Anwendung wiederum leitet die Messdaten an die Clair-Plattform weiter.
+Für Sensoren, die ins Clair-Netzwerk eingebunden werden sollen, konfigurieren wir eine Verbindung zu einem bestimmten Endpunkt im Things Network. Dieser leitet die Messdaten zu einer passenden _TTN Anwendung_ weiter, die erste Anwendung in der Verarbeitungskette der Clair Plattform.
 
 Eine Übersicht der Clair-Plattform zeigt die folgende Abbildung.
 ![Die Clair Plattform]({{ "/img/clair-stack.png" | relative_url }})
@@ -50,7 +50,8 @@ Die Clair Plattform bildet real existierende Entitäten ab:
 - _Organisationen_ sind die Betreiber von Räumen im juristischen Sinn, also z.B. Firmen oder Vereine. Jede Organisation hat einen oder mehrere _User_ als _Mitglieder_. Ein User kann gleichzeitig Mitglied mehrerer Organisationen sein - z.B. eine Teilzeitkraft, die in zwei Cafés angestellt ist.
 - Eine Organisation ist Clair-Teilnehmer, weil sie vernetzte CO<sub>2</sub>-Sensoren betreibt. Diese Sensoren sind als _Nodes_ in der Clair Plattform abgebildet und fest der jeweiligen Organisation zugeordnet.
 - Jede Organisation hat mindestens einen durch eine _Adresse_ identifizierten _Ort_ (Site). Dort befindet sich beispielsweise ein Geschäft, Restaurant oder eine Praxis. Eine Organisation kann auch mehrere Orte betreiben, wie z.B. bei einer Café-Kette.
-- Jeder Ort kann über ein oder mehrere _Räume_ verfügen, in denen wiederum ein oder mehrere Sensoren installert sein können. Eine _Installation_ kann von begrenzter Dauer sein. Somit ist es möglich, einen Sensor nach einer bestimmten Zeit aus einem Raum in einen anderen umzuhängen.
+- Jeder Ort kann über einen oder mehrere _Räume_ verfügen, in denen wiederum ein oder mehrere Sensoren installert sein können.
+- Eine _Installation_ kann von begrenzter Dauer sein. Somit ist es möglich, einen Sensor nach einer bestimmten Zeit aus einem Raum in einen anderen umzuhängen.
 
 Dieses Datenmodell ist in der folgenden Abbildung in vereinfachter
 Weise als Entity-Relationship-Diagramm dargestellt.
@@ -61,8 +62,8 @@ Weise als Entity-Relationship-Diagramm dargestellt.
 
 Der Zugriff auf die Clair Plattform erfolgt grundsätzlich über die REST-Schnittstelle des Clair Servers. Je nach Nutzer sehen wir verschiedene Client-Anwendungen vor:
 
-- Das _Clair Widget_ richtet sich an die Öffentlichkeit; es visualisert den Verlauf der  CO<sub>2</sub>-Konzentration an einem bestimmten Ort - sofern doe zugehörige Organisation die Installationen am jeweiligen Ort als _öffentlich_ freigegeben hat. Das Widget ist eine kleine JavaScript-Anwendung, die in Websites oder Smartphone-Apps eingebunden werden kann.
-- Das _Betreiber-Dashboard_ dient den Mitgliedern einer Organisation zur Verwaltung ihrer Sensoren, Orte, Räume und Installationen. Über das Dashboard können Betreiber alle Messwerte aller Sensoren einsehen und entscheiden, welche davon sie veröffentlichen möchten. Nur die Messwerte der als _öffentlich_ gekennzeichneten Installationen stehen nicht angemeldeten Benutzern zur Verfügung.
+- Das _Clair Widget_ richtet sich an die Öffentlichkeit; es visualisert den Verlauf der  CO<sub>2</sub>-Konzentration an einem bestimmten Ort - sofern die Organisation ihre Installationen am jeweiligen Ort als _öffentlich_ freigegeben hat. Das Widget ist eine kleine JavaScript-Anwendung, die in Websites oder Smartphone-Apps eingebunden werden kann.
+- Das _Betreiber-Dashboard_ dient den Mitgliedern einer Organisation zur Verwaltung ihrer Sensoren, Orte, Räume und Installationen. Über das Dashboard können Betreiber alle Messwerte aller Sensoren einsehen und entscheiden, welche davon sie veröffentlichen möchten. Nur die Messwerte der als _öffentlich_ gekennzeichneten Installationen stehen nicht-angemeldeten Benutzern zur Verfügung.
 - Das _Admin-UI_ dient der Wartung des Systems sowie der Pflege aller Daten im Testbetrieb. Nur Systemadministratoren haben Zugang.
 
 ## Quellcode
@@ -78,9 +79,9 @@ Requests sind willkommen. Den Kern des Systems bilden die folgenden Repositories
   [Django](https://www.djangoproject.com/)-Anwendung, die das Datenmodell und
   die REST-Schnittstelle implementiert.
 * [clair-ttn](https://github.com/ClairBerlin/clair-ttn): Eine in Python
-  geschriebene TTN-Application, die zur Anbindung weiterer LoRaWAN-Sensoren
+  geschriebene TTN-Application, die zur Anbindung anderer LoRaWAN-Sensoren
   erweitert werden kann.
-* [clair-admin-ui](https://github.com/ClairBerlin/clair-admin-ui): das mit
+* [clair-admin-ui](https://github.com/ClairBerlin/clair-admin-ui): Das mit
   Hilfe des [Quasar-Frameworks](https://quasar.dev/) entwickelte Betreiber-Dashboard.
 
 ## Mitarbeit und Nutzung der Clair-Plattform
