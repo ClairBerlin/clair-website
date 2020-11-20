@@ -56,7 +56,7 @@ how:
     - title: Technik
       img: /img/tech.jpg
       paragraph: >
-        Die Clair-Plattform ist ein quelloffenes Software-System um Messwerte vernetzter Luftqualitätssensoren zu sammeln und bereitzustellen. Sensoren sind kommerziell verfügbar; wir binden sie derzeit über das offene [The Things Network](https://www.thethingsnetwork.org/) an; über eine REST-Schnittstelle ist die Clair-Plattform aber offen für andere HTTP-basierte Kommunikationsprotokolle. Der gesamte Quellcode is als Freie Software [auf GitHub](https://github.com/ClairBerlin) öffentlich.
+        Die Clair-Plattform ist ein quelloffenes Software-System um Messwerte vernetzter Luftqualitätssensoren zu sammeln und bereitzustellen. Sensoren sind kommerziell verfügbar; wir binden sie derzeit über das offene [The Things Network](https://www.thethingsnetwork.org/) an; über eine REST-Schnittstelle ist die Clair-Plattform aber offen für andere HTTP-basierte Kommunikationsprotokolle. Der gesamte Quellcode is als freie Software [auf GitHub](https://github.com/ClairBerlin) öffentlich.
       button:
         url: technik.html
         title: Mehr Informationen zur Technik
