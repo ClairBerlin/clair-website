@@ -48,18 +48,16 @@ how:
   sections:
     - title: Wissenschaft
       img: /img/virus.jpg
-      paragraph: >
+      paragraph: |
         Direkt kann die Konzentration des SARS-CoV-2 Virus in der Luft derzeit nicht nachgewiesen werden, aber wir können sie abschätzen: Eine hohe CO<sub>2</sub>-Konzentration zeigt an, dass sich im Raum viel ausgeatmete Luft befindet, welche potenziell mit virustragendem Aerosol belastet ist. Unter der Annahme, dass sich mindestens eine infizierte Person im jeweiligen Raum aufhält, ist der CO<sub>2</sub>-Gehalt ein guter Indikator für das Infektionsrisiko über Aerosole.
-      button:
-        url: hintergrund.html
-        title: Mehr Hintergrund&shy;informationen
+
+        [Mehr Hintergrund&shy;informationen]({{ '/hintergrund.html' | relative_url }})
     - title: Technik
       img: /img/tech.jpg
-      paragraph: >
+      paragraph: |
         Die Clair-Plattform ist ein quelloffenes Software-System um Messwerte vernetzter Luftqualitätssensoren zu sammeln und bereitzustellen. Sensoren sind kommerziell verfügbar; wir binden sie derzeit über das offene [The Things Network](https://www.thethingsnetwork.org/) an; über eine REST-Schnittstelle ist die Clair-Plattform aber offen für andere HTTP-basierte Kommunikationsprotokolle. Der gesamte Quellcode is als freie Software [auf GitHub](https://github.com/ClairBerlin) öffentlich.
-      button:
-        url: technik.html
-        title: Mehr Informationen zur Technik
+
+        [Mehr Informationen zur Technik]({{ '/technik.html' | relative_url }})
 
 about:
   title: Wer ist Clair Berlin?

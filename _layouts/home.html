@@ -150,10 +150,9 @@ layout: default
             <img src="{{ section.img | relative_url }}" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title"> {{section.title }}</h5>
-              <div class="card-text">{{section.paragraph | markdownify}}</div>
-              <a href="{{ section.button.url }}" class="btn btn-lg btn-primary">
-                {{ section.button.title }}
-              </a>
+              <div class="card-text">
+                {{section.paragraph | liquify | markdownify}}
+              </div>
             </div>
           </div>
         </div>
