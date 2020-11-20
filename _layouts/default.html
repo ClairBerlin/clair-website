@@ -23,5 +23,20 @@
     {% include footer.html %}
     <script src="{{ "/js/jquery-3.5.1.min.js" | relative_url }}"></script>
     <script src="{{ "/js/bootstrap.bundle.min.js" | relative_url }}"></script>
+    <script>
+      function openAnchorAccordion() {
+        if (window.location.hash) {
+          var target = jQuery('body').find(window.location.hash);
+          if (target.hasClass('faq')) {
+            var collapsable = target.find('.collapse');
+            collapsable.collapse('show');
+          }
+        }
+      }
+
+      openAnchorAccordion();
+
+      jQuery("body").on("click", "a", openAnchorAccordion);
+    </script>`
   </body>
 </html>
