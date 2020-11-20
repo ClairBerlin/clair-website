@@ -18,7 +18,7 @@
           </a>
           <div class="dropdown-menu" aria-labelledby="{{ item.title | slugify }}">
             {% for subitem in item.submenu %}
-            <a class="dropdown-item" href="{{ subitem.url }}">{{ subitem.title }}</a>
+            <a class="dropdown-item" href="{{ subitem.url | relative_url }}">{{ subitem.title }}</a>
             {% endfor %}
           </div>
         </li>
