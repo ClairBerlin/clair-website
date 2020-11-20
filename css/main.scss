@@ -1,6 +1,7 @@
 ---
 ---
 
+$enable-responsive-font-sizes: true;
 $primary: #007cb0;
 $secondary: #43a047;
 @import "bootstrap/bootstrap";
@@ -52,7 +53,7 @@ h5,
 
 .caption {
   position: absolute;
-  top: 35%;
+  top: 30%;
   left: 10%;
   width: 80%;
 }
