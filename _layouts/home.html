@@ -24,57 +24,6 @@ layout: default
       </div>
     </div>
   </div>
-  <div class="jumbotron bg-primary text-white">
-    <div class="container">
-      <div class="row pt-5">
-        <div class="col">
-          <h1>{{ site.data.home.why.title }}</h1>
-          {{ site.data.home.why.description | markdownify }}
-        </div>
-      </div>
-      <div class="row">
-      {% for section in site.data.home.why.sections %}
-        <div class="col-12 col-sm-4 my-2">
-          <div class="card text-dark h-100">
-            <div class="card-body">
-              <h1 class="text-center"><i class="{{ section.fa-class }}"></i></h1>
-              <div class="card-title">
-                <h5> {{section.title }}</h5>
-              </div>
-              <div class="card-text">
-                {{section.paragraph | markdownify}}
-              </div>
-            </div>
-          </div>
-        </div>
-      {% endfor %}
-      </div>
-    </div>
-  </div>
-  <!--  how section -->
-  <div class="jumbotron bg-white text-dark">
-    <div class="container">
-      <div class="row p-3">
-        <h1>{{ site.data.home.how.title }}</h1>
-      </div>
-      <div class="row p-3">
-        {% for section in site.data.home.how.sections %}
-        <div class="col-sm">
-          <div class="card text-dark" style="width: 32rem; max-width: 100%">
-            <img src="{{ section.img | relative_url }}" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title"> {{section.title }}</h5>
-              <div class="card-text">{{section.paragraph | markdownify}}</div>
-              <a href="{{ section.button.url }}" class="btn btn-lg btn-primary">
-                {{ section.button.title }}
-              </a>
-            </div>
-          </div>
-        </div>
-        {% endfor %}
-      </div>
-    </div>
-  </div>
   <!-- join section -->
   <div class="jumbotron bg-primary text-white">
     <div class="container d-flex flex-column justify-content-around align-items-center">
@@ -159,6 +108,57 @@ layout: default
       <a class="btn btn-lg btn-light" href="{{ site.data.home.join.button.url }}">
         {{ site.data.home.join.button.title }}
       </a>
+    </div>
+  </div>
+  <div class="jumbotron bg-white text-dark">
+    <div class="container">
+      <div class="row pt-5">
+        <div class="col">
+          <h1>{{ site.data.home.why.title }}</h1>
+          {{ site.data.home.why.description | markdownify }}
+        </div>
+      </div>
+      <div class="row">
+      {% for section in site.data.home.why.sections %}
+        <div class="col-12 col-sm-4 my-2">
+          <div class="card text-dark h-100">
+            <div class="card-body">
+              <h1 class="text-center"><i class="{{ section.fa-class }}"></i></h1>
+              <div class="card-title">
+                <h5> {{section.title }}</h5>
+              </div>
+              <div class="card-text">
+                {{section.paragraph | markdownify}}
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+  <!--  how section -->
+  <div class="jumbotron bg-primary text-white">
+    <div class="container">
+      <div class="row p-3">
+        <h1>{{ site.data.home.how.title }}</h1>
+      </div>
+      <div class="row p-3">
+        {% for section in site.data.home.how.sections %}
+        <div class="col-sm my-2">
+          <div class="card h-100 text-dark" style="width: 32rem; max-width: 100%">
+            <img src="{{ section.img | relative_url }}" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title"> {{section.title }}</h5>
+              <div class="card-text">{{section.paragraph | markdownify}}</div>
+              <a href="{{ section.button.url }}" class="btn btn-lg btn-primary">
+                {{ section.button.title }}
+              </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
     </div>
   </div>
   <!-- about section -->
