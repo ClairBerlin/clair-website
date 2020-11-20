@@ -4,6 +4,8 @@ title: Hintergrund
 ---
 # Hintergrund
 
+Wissenschaftliche Studien zeigen, dass das SARS-CoV2 Virus überwiegend durch Tröpfchen und Aerosole übertragen wird. Werden die Abstandsregeln eingehalten und tragen infizierte Personen einen Mund-Nase-Schutz („Maske“), so verbleibt überwiegend der Aerosol-Anteil als Übertragungsweg. Dieser Übertragungsweg ist vor allem in geschlossenen Räumen problematisch, da dort ein rascher Austausch der Aerosol-beladenen Luft schwierig ist. Deswegen ist bei Menschenansammlungen in geschlossenen Räumen das Übertragungsrisiko wesentlich höher ist als im Freien. So lange noch nicht weite Teile der Bevölkerung gegen das Virus geimpft sind, bleiben nur zwei Optionen: Öffentliche Innenräume komplett meiden, oder die Aerosolkonzentration senken.
+
 Eine CO<sub>2</sub>-Ampel vor Ort zeigt die aktuelle Luftqualität an; sie sagt Besucherinnen und Besuchern jedoch nicht, ob der Raum regelmäßig gelüftet wird. Nur der Verlauf über mehrere Tage zeigt, dass der Betreiber oder die Betreiberin sich nachhaltig um gute Luftqualität kümmert. Dazu braucht es _vernetzte_ CO<sub>2</sub>-Sensoren sowie ein System, welches die Messdaten regelmäßig einsammelt und darstellt.
 
 ## Übertragung von SARS-CoV-2 durch Aerosole
@@ -21,6 +23,8 @@ und beim Singen ausgeschiedenen Aerosolen.
 > häufig einatmen.
 
 ## CO<sub>2</sub>-Konzentration als Indikator des Infektionsrisikos
+
+Bei den aktuellen Infektionszahlen können wir leider vereinfachend davon ausgehen, dass in jedem größeren Raum zumindest eine infektiöse Person anwesend ist oder vor kurzem anwesend war, und daher mit sehr hoher Wahrscheinlichkeit ein mit Viren belastetes Aerosol erzeugt hat. Somit geht es nicht um die Frage, ob Viren in der Luft sind, sondern es reicht eine Antwort auf die einfachere Frage, wie viel menschliches Aerosol in der Luft ist.
 
 Die CO<sub>2</sub>-Konzentration gilt seit langem als guter Indikator für den
 Luftwechsel und die Luftqualität und somit im Kontext der SARS-CoV-2-Pandemie
