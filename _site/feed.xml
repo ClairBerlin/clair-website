@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.1.1">Jekyll</generator><link href="https://clair-berlin.de/feed.xml" rel="self" type="application/atom+xml" /><link href="https://clair-berlin.de/" rel="alternate" type="text/html" /><updated>2020-11-20T12:40:22+01:00</updated><id>https://clair-berlin.de/feed.xml</id><title type="html">Clair Berlin</title><subtitle>Clair Berlin - Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen</subtitle><entry><title type="html">Wie alles begann</title><link href="https://clair-berlin.de/technik/2020/11/09/wie-alles-begann.html" rel="alternate" type="text/html" title="Wie alles begann" /><published>2020-11-09T08:02:29+01:00</published><updated>2020-11-09T08:02:29+01:00</updated><id>https://clair-berlin.de/technik/2020/11/09/wie-alles-begann</id><content type="html" xml:base="https://clair-berlin.de/technik/2020/11/09/wie-alles-begann.html">&lt;p&gt;Als Uli mich Anfang September überzeugt hatte, das Projekt mit den vernetzten
+CO&lt;sub&gt;2&lt;/sub&gt;-Sensoren anzugehen, war das Berliner &lt;a href=&quot;https://thethingsnetwork.org&quot;&gt;The Things
+Network&lt;/a&gt; eine naheliegende Lösung zur Anbindung
+der Sensoren. Ich hatte mich schon länger mal mit
+&lt;a href=&quot;https://de.wikipedia.org/wiki/Long_Range_Wide_Area_Network&quot;&gt;LoRaWAN&lt;/a&gt;
+auseinandersetzen wollen, da uns diese Funktechnologie und ähnliche wie z. B.
+&lt;a href=&quot;https://en.wikipedia.org/wiki/Narrowband_IoT&quot;&gt;NB-IoT&lt;/a&gt; in früheren Projekten
+mehrfach vorgeschlagen wurden.&lt;/p&gt;
+
+&lt;p&gt;Um alle Eigenarten des Systems zu verstehen, fingen wir ganz unten an und
+bauten einen eigenen Prototyp auf. Nach etwas Recherche entschieden wir uns für
+eine Kombination aus dem Radiofrüchtchen &lt;a href=&quot;https://www.adafruit.com/product/3178&quot;&gt;Feather M0 RFM95 LoRa Radio
+(900MHz)&lt;/a&gt; von
+&lt;a href=&quot;https://www.adafruit.com&quot;&gt;Adafruit&lt;/a&gt; und dem CO&lt;sub&gt;2&lt;/sub&gt;-Sensor
+&lt;a href=&quot;https://www.sensirion.com/scd30/&quot;&gt;SCD30&lt;/a&gt; von
+&lt;a href=&quot;https://www.sensirion.com&quot;&gt;Sensirion&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;breadboard-aufbau&quot;&gt;Breadboard-Aufbau&lt;/h2&gt;
+
+&lt;p&gt;Wir folgten dem &lt;a href=&quot;https://learn.adafruit.com/the-things-network-for-feather&quot;&gt;Adafruite
+TTN-Tutorial&lt;/a&gt;,
+legten unsere erste TTN-Applikation an und waren dank des Gateways auf dem
+Schöneberger EUREF-Campus tatsächlich innerhalb kürzester Zeit online.&lt;/p&gt;
+
+&lt;p&gt;Danach schlossen wir auf unserem simplen Breadboard-Layout den SCD30 per
+&lt;a href=&quot;https://de.wikipedia.org/wiki/I%C2%B2C&quot;&gt;I&lt;sup&gt;2&lt;/sup&gt;C&lt;/a&gt; an. Das Ergebnis sah
+und sieht bis heute so aus:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/clairchen.jpg&quot; alt=&quot;Clairchen&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Zu besseren Übersicht in Draufsicht:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/img/clairchen-draufsicht.jpg&quot; alt=&quot;Clairchen Draufsicht&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Wir nutzten die
+&lt;a href=&quot;https://github.com/sparkfun/SparkFun_SCD30_Arduino_Library&quot;&gt;SCD30-Arduino-Library&lt;/a&gt;
+von &lt;a href=&quot;https://www.sparkfun.com/&quot;&gt;Sparkfun&lt;/a&gt;, um den SCD30 anzusprechen und
+konnten mit Freude nachvollziehen, wie die CO&lt;sub&gt;2&lt;/sub&gt;-Messwerte in die Höhe
+schossen, wenn man den SCD30 anhauchte.&lt;/p&gt;
+
+&lt;h2 id=&quot;software&quot;&gt;Software&lt;/h2&gt;
+
+&lt;p&gt;Bis hierher hatten wir im Wesentlichen
+&lt;a href=&quot;https://www.arduino.cc/&quot;&gt;Arduino&lt;/a&gt;-Beispiel-Sketches der verschiedenen Librarys
+zusammenkopiert. Nun ging es darum, unserem Aufbau etwas mehr Intelligenz zu
+gönnen.&lt;/p&gt;
+
+&lt;p&gt;Die größte Herausforderung war es dabei, die Anforderungen unserer Anwendung
+mit der &lt;a href=&quot;https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html&quot;&gt;Fair Access
+Policy&lt;/a&gt; des TTN
+in Einklang zu bringen. Unser Ziel war und ist es, Messdaten (zumindest zu
+relevanten Tageszeiten) mit ausreichend hoher Auflösung und möglichest geringer
+Latenz zur Verfügung zu stellen. Um z. B. die Entwicklung der
+CO&lt;sub&gt;2&lt;/sub&gt;-Konzentration in einem Klassenraum während einer Schulstunde
+nachvollziehen zu können, reicht es nicht, drei Messwerte pro Stunde zu
+übertragen, und wenn im richtigen Moment darauf aufmerksam gemacht werden soll,
+dass das Fenster geöffnet werden sollte, sollten die Daten nicht mit einer
+halben Stunde Verzögerung eintrudeln.&lt;/p&gt;
+
+&lt;p&gt;Die Fair Access Policy des TTN schreibt vor, dass jedes Gerät &lt;em&gt;max. 30 s
+Airtime pro 24 Stunden&lt;/em&gt; im Uplink belegen sollte. Die Herausforderung besteht
+nun darin, dass ein Gerät, das relativ weit von einem Gateway entfernt ist,
+einen hohen
+&lt;a href=&quot;https://www.thethingsnetwork.org/docs/lorawan/modulation-data-rate.html&quot;&gt;Spreading Factor&lt;/a&gt;
+verwenden muss, damit seine Nachrichten vom Gateway empfangen werden.
+Solcherart kodierte Nachrichten können aber leider bis zu etwa einer Sekunde
+lang werden, so dass das tägliche Airtime-Kontingent schnell verbraucht ist.
+Deshalb haben wir für unseren Prototyp die Mess- und die Übertragungsfrequenz
+vom jeweils aktuellen &lt;em&gt;Modulation and Coding Scheme&lt;/em&gt; abhängig gemacht. Die
+Details unseres so entworfenen Übertragungsschemas sind in
+&lt;a href=&quot;https://github.com/ClairBerlin/clair-doc/blob/master/node-protocol/sampling-and-transmission-scheme.pdf&quot;&gt;einem Design-Dokument&lt;/a&gt;
+beschrieben.&lt;/p&gt;
+
+&lt;p&gt;Leider lassen sich für viele kommerziell verfügbaren Sensoren die
+Übertragungschemata nicht in ähnlicher Weise anpassen, was sie, sofern nicht
+ausreichend Gateways zur Verfügung stehen, für das TTN in unseren Augen schnell
+unattraktiv macht.&lt;/p&gt;
+
+&lt;p&gt;Der Quellcode für unseren ersten Prototyp ist &lt;a href=&quot;https://github.com/ClairBerlin/clairchen&quot;&gt;auf
+GitHub&lt;/a&gt; verfügbar.&lt;/p&gt;</content><author><name>Jan Weil</name></author><category term="Technik" /><summary type="html">Als Uli mich Anfang September überzeugt hatte, das Projekt mit den vernetzten CO2-Sensoren anzugehen, war das Berliner The Things Network eine naheliegende Lösung zur Anbindung der Sensoren. Ich hatte mich schon länger mal mit LoRaWAN auseinandersetzen wollen, da uns diese Funktechnologie und ähnliche wie z. B. NB-IoT in früheren Projekten mehrfach vorgeschlagen wurden.</summary></entry></feed>
