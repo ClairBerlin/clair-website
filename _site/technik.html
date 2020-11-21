@@ -226,7 +226,10 @@ Hilfe des <a href="https://quasar.dev/">Quasar-Frameworks</a> entwickelte Betrei
 
       openAnchorAccordion();
 
-      jQuery("body").on("click", "a", openAnchorAccordion);
+      $("a[href*='#']").click(function(e) {
+        window.location = e.currentTarget.href
+        openAnchorAccordion();
+      });
     </script>`
   </body>
 </html>

@@ -201,7 +201,10 @@ wir derartige Inhalte umgehend entfernen.</p>
 
       openAnchorAccordion();
 
-      jQuery("body").on("click", "a", openAnchorAccordion);
+      $("a[href*='#']").click(function(e) {
+        window.location = e.currentTarget.href
+        openAnchorAccordion();
+      });
     </script>`
   </body>
 </html>

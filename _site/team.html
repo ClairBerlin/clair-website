@@ -222,7 +222,10 @@ Von folgenden Partnern wird Clair Berlin organisatorisch und ideell unterstützt
 
       openAnchorAccordion();
 
-      jQuery("body").on("click", "a", openAnchorAccordion);
+      $("a[href*='#']").click(function(e) {
+        window.location = e.currentTarget.href
+        openAnchorAccordion();
+      });
     </script>`
   </body>
 </html>
