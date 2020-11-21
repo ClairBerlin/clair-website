@@ -12,3 +12,4 @@ gems:
   - jekyll-liquify
 exclude:
   - README.md
+  - LICENSE.txt
