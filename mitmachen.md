@@ -7,13 +7,9 @@ title: Mitmachen
 
 ## Testbetrieb
 
-Clair Berlin ist momentan im Testbetrieb mit einer kleinen Anzahl Sensoren.
-Falls Du Interesse hast, als Betreiberin oder Betreiber von öffentlich
-zugänglichen Räumen an der Clair-Berlin-Initiative teilzunehmen, registriere
-Dich bitte über das folgende Formular.
+Clair Berlin ist momentan im Testbetrieb mit einer kleinen Anzahl Sensoren.  Falls Du Interesse hast, als Betreiberin oder Betreiber von öffentlich zugänglichen Räumen an der Clair-Berlin-Initiative teilzunehmen, registriere Dich bitte über das folgende Formular.
 
-Wir bitten um Verständnis, dass wir uns in der derzeitigen Phase aus operativen
-Gründen auf den Raum Berlin beschränken.
+Wir bitten um Verständnis, dass wir uns in der derzeitigen Phase aus operativen Gründen auf den Raum Berlin beschränken.
 
 ## Registrierung
 
@@ -22,8 +18,7 @@ Gründen auf den Raum Berlin beschränken.
     <label for="email">Deine Email-Adresse:</label>
     <input type="email" class="form-control" id="email" name="email" required aria-describedby="operatorEmailHelp">
     <small id="operatorEmailHelp" class="form-text text-muted">
-      Wir verwenden Ihre Email-Adresse ausschließlich dazu, um Sie einmalig zu
-      kontaktieren, sobald Ihr Konto freigeschaltet werden kann.
+      Wir verwenden Deine Email-Adresse ausschließlich dazu, um Dich einmalig zu kontaktieren, sobald Dein Konto freigeschaltet werden kann.
     </small>
   </div>
   <div class="form-group">
