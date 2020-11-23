@@ -71,7 +71,7 @@ nun darin, dass ein Gerät, das relativ weit von einem Gateway entfernt ist,
 einen hohen
 [Spreading Factor](https://www.thethingsnetwork.org/docs/lorawan/modulation-data-rate.html)
 verwenden muss, damit seine Nachrichten vom Gateway empfangen werden.
-Solcherart kodierte Nachrichten können aber leider bis zu etwa einer Sekunde
+Solcherart kodierte Nachrichten können aber leider über eine Sekunde
 lang werden, so dass das tägliche Airtime-Kontingent schnell verbraucht ist.
 Deshalb haben wir für unseren Prototyp die Mess- und die Übertragungsfrequenz
 vom jeweils aktuellen _Modulation and Coding Scheme_ abhängig gemacht. Die
