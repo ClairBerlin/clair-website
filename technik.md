@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Technik
-image: /img/tech.jpg
+image: /img/clair-network.png
 ---
 
 # Technik
