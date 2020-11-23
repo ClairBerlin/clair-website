@@ -3,7 +3,18 @@ copyright: 2020 Clair Berlin
 url: https://clair-berlin.de
 # baseurl: /clair
 email: kontakt@clair-berlin.de
-description: Clair Berlin - Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen
+description: Clair Berlin - nichtkommerzielle Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen
+twitter:
+  username: clair_berlin
+  card: summary
+logo: /img/clair-logo-blue.svg
+locale: de_DE
+social:
+  name: Clair Berlin
+  links:
+    - https://twiter.com/clair_berlin
+    - https://www.facebook.com/ClairBerlinInitiative
+    - https://github.com/ClairBerlin
 show_excerpts: true
 plugins:
   - jekyll-feed

@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Hintergrund
+image: /img/journals.jpg
 ---
 # Hintergrund
 
