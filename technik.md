@@ -5,9 +5,7 @@ title: Technik
 
 # Technik
 
-Clair Berlin entwickelt eine offene Plattform für vernetzte Sensoren mit
-Schwerpunkt auf CO<sub>2</sub>-Messwerten. Die Clair-Plattform ist [Freie
-Software](https://www.gnu.org/philosophy/free-sw.de.html). Derzeit nutzen wir zur Anbindung der Sensoren die für Messdaten optimierte LoRaWAN Funktechnologie. Aber die Clair-Plattform legen wir so aus, dass über offene Schnittstellen beliebige Sensortypen und Sensor-Netzwerke angebunden werden können.
+Clair Berlin entwickelt eine offene Plattform für vernetzte Sensoren mit Schwerpunkt auf CO<sub>2</sub>-Messwerten. Die Clair-Plattform ist [Freie Software](https://www.gnu.org/philosophy/free-sw.de.html). Derzeit nutzen wir zur Anbindung der Sensoren die für Messdaten optimierte LoRaWAN Funktechnologie. Aber die Clair-Plattform legen wir so aus, dass über offene Schnittstellen beliebige Sensortypen und Sensor-Netzwerke angebunden werden können.
 
 ## Sytemüberblick
 
@@ -30,7 +28,7 @@ Für Sensoren, die ins Clair-Netzwerk eingebunden werden sollen, konfigurieren w
 Eine Übersicht der Clair-Plattform zeigt die folgende Abbildung.
 ![Die Clair Plattform]({{ "/img/clair-stack.png" | relative_url }})
 
-Technisch gesehen besteht die Plattform aus mehreren Anwendungen, welche wir als [Docker](https://docs.docker.com/get-started/) Container verpacken und über [Docker Swarm](https://docs.docker.com/engine/swarm/) orchestrieren. 
+Technisch gesehen besteht die Plattform aus mehreren Anwendungen, welche wir als [Docker](https://docs.docker.com/get-started/) Container verpacken und über [Docker Swarm](https://docs.docker.com/engine/swarm/) orchestrieren.
 
 Die _Forwarder_ empfangen Messdaten eines bestimmten Sensortyps aus dem Things Network, entschlüsseln und decodieren diese und leiten sie weiter an die `ingestair` genannte Anwendung, welche die Daten aufnimmt und in der zentralen Datenbank speichert.
 
@@ -86,7 +84,7 @@ Requests sind willkommen. Den Kern des Systems bilden die folgenden Repositories
 
 ## Mitarbeit und Nutzung der Clair-Plattform
 
-Clair Berlin ist eine gemeinnützige Initiative; sämtliche oben beschriebenen _Assets_ liegen im Quellcode vor und können durch Dritte genutzt werden. Wenn ihr mitarbeiten möchtet, so ist dies in allen Fachgebieten möglich: Entwicklung, Design, Kommunikation etc.
+Clair Berlin ist eine nichtkommerzielle Initiative; sämtliche oben beschriebenen _Assets_ liegen im Quellcode vor und können durch Dritte genutzt werden. Wenn ihr mitarbeiten möchtet, so ist dies in allen Fachgebieten möglich: Entwicklung, Design, Kommunikation etc.
 
 Die Clair REST-Schnittstelle ist komplett dokumentiert und folgt der [JSON:API](https://jsonapi.org)-Spezifikation, so dass ihr auch einfach eigene Client-Anwendungen entwickeln könnt.
 
