@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Technik
+image: /img/tech.jpg
 ---
 
 # Technik
