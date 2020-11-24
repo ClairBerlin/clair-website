@@ -1,6 +1,11 @@
 links:
   - title: Mitmachen
-    url: /mitmachen.html
+    submenu:
+      - title: Registrieren
+        url: /mitmachen.html
+      - title: Sensor selbst bauen
+        url: /selbstbau-sensor.html
+
   - title: Über Clair Berlin
     submenu:
     - title: Wissenschaft
