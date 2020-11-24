@@ -49,8 +49,8 @@ Der Sensirion SCD30 ist ein optischer CO<sub>2</sub>-Sensor. Er liefert recht ge
 
 Da wir den SCD30 seriell per [I<sup>2</sup>C](https://de.wikipedia.org/wiki/I%C2%B2C) ansprechen, sind nur zwei weitere Verbindungen nötig:
 
-- zwischen SCD30 RX/SDA und Feather SDA/#20. This is the I<sup>2</sup>C data pin.
-- zwischen SCD30 TX/SCL und Feather SCL/#21. This is the I<sup>2</sup>C clock pin.
+- zwischen SCD30 RX/SDA und Feather SDA/#20. Dies ist der I<sup>2</sup>C Datenpin.
+- zwischen SCD30 TX/SCL und Feather SCL/#21. Dies ist der I<sup>2</sup>C Clock Pin.
 
 In Draufsicht:
 
