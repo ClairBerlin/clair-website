@@ -81,26 +81,15 @@ Die größte Herausforderung ist es, die Anforderungen unser Anwendung zu erfül
 - einem kurzen Intervall zwischen aufeinanderfolgenden Messungen,
 - sowie einer geringen Latenz zwischen Messung und Übertragung der Messdaten an die Clair Plattform.
 
-Kritisch sind hier zwei Faktoren: Zum einen, dass bei schlechtem Empfang der LoRaWAN MAC automatisch die Datenrate reduziert. Bei einem sehr schlechten Funkkanal kann eine Nachricht somit gut 1,5s lange dauern. Das wiederum ist ein Problem in Bezug auf die [Fair Access Policy](https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html) des TTN. Unser Ziel war und ist es, Messdaten (zumindest zu
-relevanten Tageszeiten) mit ausreichend hoher Auflösung und möglichest geringer
-Latenz zur Verfügung zu stellen. Um z. B. die Entwicklung der
-CO<sub>2</sub>-Konzentration in einem Klassenraum während einer Schulstunde
-nachvollziehen zu können, reicht es nicht, drei Messwerte pro Stunde zu
-übertragen. Und um im richtigen Moment darauf hinzuweisen das Fenster zu öffnen, dürfen die Messdaten nicht mit einer halben Stunde Verzögerung an der Clair Plattform ankommen.
+Kritisch sind hier zwei Faktoren: Zum einen, dass bei schlechtem Empfang der LoRaWAN MAC automatisch die Datenrate reduziert. Bei einem sehr schlechten Funkkanal kann eine Nachricht somit gut 1,5s lange dauern. Das wiederum ist ein Problem in Bezug auf die [Fair Access Policy](https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html) des TTN. Unser Ziel war und ist es, Messdaten (zumindest zu relevanten Tageszeiten) mit ausreichend hoher Auflösung und möglichest geringer
+Latenz zur Verfügung zu stellen. Um z. B. die Entwicklung der CO<sub>2</sub>-Konzentration in einem Klassenraum während einer Schulstunde
+nachvollziehen zu können, reicht es nicht, drei Messwerte pro Stunde zu übertragen. Und um im richtigen Moment darauf hinzuweisen das Fenster zu öffnen, dürfen die Messdaten nicht mit einer halben Stunde Verzögerung an der Clair Plattform ankommen.
 
-Die Fair Access Policy des TTN schreibt vor, dass jedes Gerät *max. 30 s
-Airtime pro 24 Stunden* im Uplink belegen sollte. Die Herausforderung besteht
-nun darin, dass ein Gerät, das relativ weit von einem Gateway entfernt ist,
-einen hohen
-[Spreading Factor](https://www.thethingsnetwork.org/docs/lorawan/modulation-data-rate.html)
-verwenden muss, damit seine Nachrichten vom Gateway empfangen werden.
-Solcherart kodierte Nachrichten können aber leider über eine Sekunde
-lang werden, so dass das tägliche Airtime-Kontingent schnell verbraucht ist.
-Deshalb haben wir für unsere Clairchen-Software die Mess- und die Übertragungsfrequenz
-vom jeweils aktuellen _Modulation and Coding Scheme_ abhängig gemacht. Die
-Details unseres so entworfenen Übertragungsschemas sind in einem
-[Design-Dokument](https://github.com/ClairBerlin/clair-doc/blob/master/node-protocol/sampling-and-transmission-scheme.pdf)
-beschrieben.
+Die Fair Access Policy des TTN schreibt vor, dass jedes Gerät *max. 30 s Airtime pro 24 Stunden* im Uplink belegen sollte. Die Herausforderung besteht
+nun darin, dass ein Gerät, das relativ weit von einem Gateway entfernt ist, einen hohen [Spreading Factor](https://www.thethingsnetwork.org/docs/lorawan/modulation-data-rate.html) verwenden muss, damit seine Nachrichten vom Gateway empfangen werden.
+Solcherart kodierte Nachrichten können aber leider über eine Sekunde lang werden, so dass das tägliche Airtime-Kontingent schnell verbraucht ist.
+Deshalb haben wir für unsere Clairchen-Software die Mess- und die Übertragungsfrequenz vom jeweils aktuellen _Modulation and Coding Scheme_ abhängig gemacht. Die
+Details unseres so entworfenen Übertragungsschemas sind in einem [Design-Dokument](https://github.com/ClairBerlin/clair-doc/blob/master/node-protocol/sampling-and-transmission-scheme.pdf) beschrieben.
 
 Die komplette Clairchen-Software mit der oben beschriebenen Optimierung liegt in einem [Github Repository](https://github.com/ClairBerlin/clairchen) bereit. Ihr könnt sie direkt eufspielen und benutzen, oder sie verbessern und euren Bedürfnissen anpassen.
 
