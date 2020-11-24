@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="alternate" type="application/rss+xml"  href="/feed.xml" title="Clair Berlin">
+    <link rel="shortcut icon" type="image/svg+xml" href="/img/clair-logo-blue.svg">
+
+    <!-- Begin Jekyll SEO tag v2.7.1 -->
+<title>Ein CO2-Sensor zum Selberbauen | Clair Berlin</title>
+<meta name="generator" content="Jekyll v4.1.1" />
+<meta property="og:title" content="Ein CO2-Sensor zum Selberbauen" />
+<meta property="og:locale" content="de_DE" />
+<meta name="description" content="Clair Berlin - nichtkommerzielle Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen" />
+<meta property="og:description" content="Clair Berlin - nichtkommerzielle Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen" />
+<link rel="canonical" href="https://clair-berlin.de/selbstbau-sensor.html" />
+<meta property="og:url" content="https://clair-berlin.de/selbstbau-sensor.html" />
+<meta property="og:site_name" content="Clair Berlin" />
+<meta property="og:image" content="https://clair-berlin.de/img/clairchen.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://clair-berlin.de/img/clairchen.jpg" />
+<meta property="twitter:title" content="Ein CO2-Sensor zum Selberbauen" />
+<meta name="twitter:site" content="@clair_berlin" />
+<script type="application/ld+json">
+{"@type":"WebPage","url":"https://clair-berlin.de/selbstbau-sensor.html","image":"https://clair-berlin.de/img/clairchen.jpg","headline":"Ein CO2-Sensor zum Selberbauen","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://clair-berlin.de/img/clair-logo-blue.svg"}},"description":"Clair Berlin - nichtkommerzielle Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen","@context":"https://schema.org"}</script>
+<!-- End Jekyll SEO tag -->
+
+  </head>
+  <body class="d-flex flex-column h-100">
+    <div class="flex-shrink-0" style="margin-top: 74px;">
+      <nav class="navbar fixed-top d-flex align-items-center navbar-expand-lg navbar-dark bg-primary justify-content-between">
+  <div class="container">
+    <a class="d-flex align-items-center navbar-brand logo" href="/">
+      <img class="mr-3" src="/img/clair-logo.svg"/>
+      Clair Berlin
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <i class="fas fa-bars"></i>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto">
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="mitmachen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mitmachen
+          </a>
+          <div class="dropdown-menu" aria-labelledby="mitmachen">
+            
+            <a class="dropdown-item" href="/mitmachen.html">Registrieren</a>
+            
+            <a class="dropdown-item" href="/selbstbau-sensor.html">Sensor selbst bauen</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="über-clair-berlin" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Über Clair Berlin
+          </a>
+          <div class="dropdown-menu" aria-labelledby="über-clair-berlin">
+            
+            <a class="dropdown-item" href="/hintergrund.html">Wissenschaft</a>
+            
+            <a class="dropdown-item" href="/technik.html">Technik</a>
+            
+            <a class="dropdown-item" href="/team.html">Team</a>
+            
+          </div>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/neuigkeiten.html">Neuigkeiten</a>
+        </li>
+        
+        
+        
+        <li class="nav-item">
+          <a class="nav-link" href="/faq.html">FAQ</a>
+        </li>
+        
+        
+      </ul>
+      <a class="btn btn-outline-light mt-3 mt-lg-0 ml-0 ml-lg-3" href="/dashboard/">Mein Konto</a>
+    </div>
+  </div>
+</nav>
+
+      <a href="/faq.html#was-bedeutet-testbetrieb">
+  <div style="z-index: 100;" class="alert alert-warning alert-dismissible fade show mb-0 text-center" role="alert">
+    <strong>Clair Berlin befindet sich zur Zeit im Testbetrieb.</strong>
+  </div>
+</a>
+
+      <main role="main" class="container py-5">
+  <h1 id="ein-co2-sensor-zum-selberbauen">Ein CO<sub>2</sub>-Sensor zum Selberbauen</h1>
+
+<p>Vernetzte CO<sub>2</sub>-Sensoren sind in größeren Stückzahlen ab 100€ erhältlich. Wem das zu viel ist, wer sowieso gerne selbst Hand anlegt oder mehr über Technik und Konzepte des Internet-of-Things (IoT) lernen möchte, kann für etwas weniger Geld einen Sensor selbst bauen, der sehr gut mit der Clair-Plattform zusammenarbeitet.</p>
+
+<p>Auch wir selbst haben so angefangen: Noch vor der Clair-Plattform bauten und testeten wir einen eigenen CO<sub>2</sub>-Sensor um zu verstehen, wie die Messdaten aussehen und wie gut die Funkanbindung mittels LoRaWAN funktioniert. Das Ergebnis ist <em>Clairchen</em>, welches in zweifacher Ausführung seit inzwischen gut zwei Monaten seinen Dienst verrichtet und uns mit Testdaten versorgt.</p>
+
+<p><img src="/img/clairchen.jpg" alt="Clairchen" /></p>
+
+<p>Im Folgenden zeigen wir euch, wie ihr selbst ein Clairchen bauen und es mit der Clair Plattform verbinden könnt.</p>
+
+<h2 id="hardware">Hardware</h2>
+
+<p>Eigentlich ist Clairchen ein gefedertes Früchtchen, denn der Kern ist ein <a href="https://www.adafruit.com/feather">Adafruit Feather</a> Board mit eingebautem LoRa-Modul. Dazu kommt ein CO<sub>2</sub> Sensormodul, welches zusätzlich noch Temperatur und Luftfeuchtigkeit messen kann:</p>
+
+<ul>
+  <li><a href="https://www.adafruit.com/product/3178">Adafruit Feather M0 mit RFM95 LoRa Radio</a>. Technische Details zu diesem Board findet ihr <a href="https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module/downloads">hier</a>, inkl. <a href="https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module/pinouts">Pinout</a>.</li>
+  <li><a href="https://www.sensirion.com/en/environmental-sensors/carbon-dioxide-sensors/carbon-dioxide-sensors-co2/">Sensirion SCD30</a>, mit <a href="https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9.5_CO2/Sensirion_CO2_Sensors_SCD30_Datasheet.pdf">Pinout</a>.</li>
+</ul>
+
+<p>Hinzu kommen einige Kleinteile:</p>
+
+<ul>
+  <li>Breadboard.</li>
+  <li>Einen Satz Jumper-Kabel.</li>
+  <li>Ein paar “Header” von AdaFruit. Das sind Pfostenstecker für das Adafruit Board, um dieses sicher in das Breadboard zu stecken.</li>
+</ul>
+
+<p>Für die Stromversorgung:</p>
+
+<ul>
+  <li>Micro-USB-Kabel.</li>
+  <li>USB-Ladegerät.</li>
+</ul>
+
+<p>Alternativ zum USB-Ladegerät könnt ihr Clairchen auch per Akku versorgen. Passend für das AdaFruit Board benötigt ihr eine 3,7V Lithium-Ion Polymer Batterie mit JST-PH Connector. Allerdings ist unsere Software (s.u.) nicht auf geringen Energieverbrauch optimiert, so dass eine Akkuladung von 2000mAh nur für ca. 3 Tage Betrieb ausreicht.</p>
+
+<h3 id="board-aufbau">Board-Aufbau</h3>
+
+<p>Wie ihr das Board anschließt, ist sehr gut im folgenden <a href="https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module">AdaFruit Tutorial</a> beschrieben. Dazu müsst ihr die Headers an das Board löten und dann mit einigen Jumper-Kabeln die im Tutorial genannten Pins verbinden.</p>
+
+<p>Für die Antenne könnt ihr wie <a href="https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module/antenna-options">hier</a> beschrieben ein Stück isolierten Draht verwenden (8,2 cm lang!), oder eine echte Antenne anlöten. Wenn eure Lötfertigkeiten und eure Lötstation es zulassen, könnt ihr natürlich auch eine echte Antenne anbringen. Dann braucht ihr:</p>
+
+<ul>
+  <li>Eine U.FL SMT LP-Buchse, mindestens DC-2GHz.</li>
+  <li>Ein UFL - SMA(F) HF-Kabel.</li>
+  <li>Eine Stub-Antenna für 868MHz (für LoRa oder Sigfox).</li>
+</ul>
+
+<h3 id="sensor">Sensor</h3>
+
+<p>Der Sensirion SCD30 ist ein optischer CO<sub>2</sub>-Sensor. Er liefert recht genaue Messwerte, braucht aber auch relativ viel Energie. Nachdem ihr einen Header an seine offenen Pins gelötet habt, könnt ihr ihn ebenfalls in das Breadboard einstecken, wie im Bild oben zu sehen. Das Feather-Board stellt praktischerweise eine reguliert Spannungsversorgung bereit, so dass ihr einfach Vdd und Gnd des SCD30 mit den entsrpechenden Ausgangs-Pins des Feather-Boards verbinden könnt. Das <a href="https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/9.5_CO2/Sensirion_CO2_Sensors_SCD30_Datasheet.pdf">Pinout</a> SCD 30 ist sehr einfach, mit Vdd, Gnd, Tx, RX in einer Reihe.</p>
+
+<p>Da wir den SCD30 seriell per <a href="https://de.wikipedia.org/wiki/I%C2%B2C">I<sup>2</sup>C</a> ansprechen, sind nur zwei weitere Verbindungen nötig:</p>
+
+<ul>
+  <li>zwischen SCD30 RX/SDA und Feather SDA/#20. Dies ist der I<sup>2</sup>C Datenpin.</li>
+  <li>zwischen SCD30 TX/SCL und Feather SCL/#21. Dies ist der I<sup>2</sup>C Clock Pin.</li>
+</ul>
+
+<p>In Draufsicht:</p>
+
+<p><img src="/img/clairchen-draufsicht.jpg" alt="Clairchen Draufsicht" /></p>
+
+<h2 id="software">Software</h2>
+
+<p>Kern des AdaFruit Boards ist ein ATMEL SAMD21G18 ARM Cortex M0 Prozessor. Dies ist der gleiche Chip wie auf dem <a href="https://www.arduino.cc/en/Guide/ArduinoZero">Arduiono Zero</a>. Daher können wir Clairchen-Software mit der Arduiono Entwicklungsumgebung schreiben und auf eine große Anzahl von Arduino-Bibliotheken zurückgreifen.</p>
+
+<h3 id="arduino-ide-setup">Arduino IDE Setup</h3>
+
+<p>Installiere die <a href="https://www.arduino.cc/en/software">Arduino IDE</a> auf Deinem Entwicklungsrecher und lade das <em>Board Support Package</em> (BSP) für das Feather Board, wie <a href="https://learn.adafruit.com/adafruit-feather-m0-radio-with-lora-radio-module/setup">hier</a> beschrieben. Relevant für uns ist das BSP für <em>Adafruit SAMD Boards</em>. Du kannst eines der mitgelieferten Beispielprogramme ausführen und über eine USB-Verbindung auf das Feather-Board laden und dort ausführen.</p>
+
+<h3 id="lorawan-mit-der-lmic-bibliothek">LoRaWAN mit der LMIC Bibliothek</h3>
+
+<p>Das LoRa-Modul auf dem Feather-Board liefert den <em>Physical Layer</em> (PHY) der LoRa-Spezifikation, sorgt also für die Übertragung von Byte-Paketen. Die Koordination des Kanalzugriffs (Medium Access Control - MAC) muss in Software abgebildet werden. Erst der MAC-Layer macht das Radio zu einem LoRaWAN Gerät. Die <a href="https://lora-alliance.org/resource-hub/lorawanr-specification-v11">Spezifikation</a> der LoRaWAN Alliance ist recht umfangreich. Praktischerweise gibt es die sehr gute <a href="https://github.com/mcci-catena/arduino-lmic">MCCI LoRaWAN LMIC</a> Bibliothek, welche einen kompletten spezifikationskonformen MAC-Layer implementiert. Diese musst Du über den Arduino Library Manager installieren.</p>
+
+<p>Um ein Gefühl für LoRaWAN und das LoRaWAN Community-Netz <a href="https://thethingsnetwork.org">The Things Network</a> zu erhalten, kannst Du mit den mitgelieferten Beispielen etwas spielen, wie <a href="https://learn.adafruit.com/the-things-network-for-feather">hier</a> oder <a href="https://blog.werktag.io/posts/adafruit-feather-m0-lora-on-ttn/">hier</a> beschrieben. Grundlegende Konzepte der LoRaWAN Technologie sind <a href="https://docs.exploratory.engineering/lora/lora_key_concepts/">hier</a> und <a href="https://www.thethingsnetwork.org/docs/lorawan/architecture.html">hier</a> erklärt. Beachte, dass Du die Konfigurationsdatei für das LoRa Frequenzband anpassen musst. Die Konfigurationsdatei liegt im Verzeichnis der LMIC Library unter <code class="language-plaintext highlighter-rouge">&lt;arduino_dir&gt;/libraries/MCCI_LoRaWAN_LMIC_library/project_config</code>.</p>
+
+<h3 id="kommunikation-mit-dem-sensirion-scd30">Kommunikation mit dem Sensirion SCD30</h3>
+
+<p>Die Kommunikation mit dem SCD 30 erfolgt über das serielle I<sup>2</sup>C-Protokoll. Das Sensormodul kennt verschiedene Modie und erlaubt eine detaillierte Konfiguration. Anstatt aber einzelne Bits zu setzen oder zu lesen, nutzen wir auch hier eine Bibliothek: Mit der <a href="https://github.com/sparkfun/SparkFun_SCD30_Arduino_Library">SCD30-Arduino-Library</a> von <a href="https://www.sparkfun.com/">SparkFun</a> sehen wir CO<sub>2</sub>-Werte statt Bits, und das Auslesen des Sensors erfolgt in nur zwei Zeilen Code.</p>
+
+<h3 id="der-clairchen-software-stack">Der Clairchen Software Stack</h3>
+
+<p>Die größte Herausforderung ist es, die Anforderungen unser Anwendung zu erfüllen nach</p>
+
+<ul>
+  <li>einem kurzen Intervall zwischen aufeinanderfolgenden Messungen,</li>
+  <li>sowie einer geringen Latenz zwischen Messung und Übertragung der Messdaten an die Clair Plattform.</li>
+</ul>
+
+<p>Kritisch sind hier zwei Faktoren: Zum einen, dass bei schlechtem Empfang der LoRaWAN MAC automatisch die Datenrate reduziert. Bei einem sehr schlechten Funkkanal kann eine Nachricht somit gut 1,5s lange dauern. Das wiederum ist ein Problem in Bezug auf die <a href="https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html">Fair Access Policy</a> des TTN. Unser Ziel war und ist es, Messdaten (zumindest zu relevanten Tageszeiten) mit ausreichend hoher Auflösung und möglichest geringer
+Latenz zur Verfügung zu stellen. Um z. B. die Entwicklung der CO<sub>2</sub>-Konzentration in einem Klassenraum während einer Schulstunde
+nachvollziehen zu können, reicht es nicht, drei Messwerte pro Stunde zu übertragen. Und um im richtigen Moment darauf hinzuweisen das Fenster zu öffnen, dürfen die Messdaten nicht mit einer halben Stunde Verzögerung an der Clair Plattform ankommen.</p>
+
+<p>Die Fair Access Policy des TTN schreibt vor, dass jedes Gerät <em>max. 30 s Airtime pro 24 Stunden</em> im Uplink belegen sollte. Die Herausforderung besteht
+nun darin, dass ein Gerät, das relativ weit von einem Gateway entfernt ist, eine hohen <a href="https://www.thethingsnetwork.org/docs/lorawan/modulation-data-rate.html">Spreading Factor</a> verwenden muss, damit seine Nachrichten vom Gateway empfangen werden.
+Solcherart kodierte Nachrichten können aber leider über eine Sekunde lang werden, so dass das tägliche Airtime-Kontingent schnell verbraucht ist.
+Deshalb haben wir für unsere Clairchen-Software die Mess- und die Übertragungsfrequenz vom jeweils aktuellen <em>Modulation and Coding Scheme</em> abhängig gemacht. Die
+Details unseres so entworfenen Übertragungsschemas sind in einem <a href="https://github.com/ClairBerlin/clair-doc/blob/master/node-protocol/sampling-and-transmission-scheme.pdf">Design-Dokument</a> beschrieben.</p>
+
+<p>Die komplette Clairchen-Software mit der oben beschriebenen Optimierung liegt in einem <a href="https://github.com/ClairBerlin/clairchen">Github Repository</a> bereit. Ihr könnt sie direkt aufspielen und benutzen, oder sie verbessern und euren Bedürfnissen anpassen.</p>
+
+<h3 id="konfiguration-und-anbindung-an-die-clair-plattform">Konfiguration und Anbindung an die Clair Plattform</h3>
+
+<p>Unsere Clairchen-Software nutz das Things Network als LoRaWAN Backend. Der eigentliche LoRa Funkkanal endet am nächsten TTN Gateway. Diese werden von Mitgliedern der <a href="https://www.thethingsnetwork.org/community/berlin/">TTN Community</a> auf freiwilliger Basis betrieben. Ein TTN Gateway leitet die empfangene Nachricht an den TTN <em>Network Server</em> weiter, der sie einer <em>TTN Application</em> zuordnet und für diese in einer <a href="https://mqtt.org">MQTT</a> Queue bereithält. Details zur Architektur findet ihr <a href="https://www.thethingsnetwork.org/article/the-things-network-architecture-1">hier</a>.</p>
+
+<p>Die eigentliche TTN Anwendung ist Teil der Clair Plattform. Hier nehmen wir die Sensordaten entgegen. Je nach Sensormodell können die Messdaten unterschiedlich kodiert sein. Für Clairchen haben wir uns ein sehr effizientes Codierungsschema ausgedacht, das <a href="https://github.com/ClairBerlin/clairchen/blob/master/docs/co2-sample-spec.md">hier</a> und <a href="https://github.com/ClairBerlin/clairchen/blob/master/docs/message-format.md">hier</a> beschrieben ist. Andere Sensormodelle nutzen jeweils eigene Formate, so dass wir für jedes Sensor-Modell die Messdaten in der Clair-Plattform leicht unterschiedlich handhaben müssen.</p>
+
+<p>Um ein Clairchen das erste mal mit der Plattform zu verbinden, nutzen wir <a href="https://www.thethingsnetwork.org/docs/lorawan/addressing.html">Over-The-Air-Activation (OTAA)</a>. Um die JOIN-Nachrichten zu verschlüsseln und an die richtige TTN-Anwendung zu schicken, muss das Clairchen den <em>JOIN Key</em> (auch Application Key genannt) unserer TTN Application kennen. Diesen müsst ihr im Code hinterlegen, ebenso wie die <em>DeviceEUI</em>, welche fix im LoRa Funkmodul eingebrannt ist. Im Beispielcode für unser “Clairchen Rot” sind <a href="https://github.com/ClairBerlin/clairchen/blob/master/euis_black.h">hier</a> Test-Keys eingetragen. Ihr könnt zuerst eine eigene <a href="https://www.thethingsnetwork.org/docs/applications/">TTN-Anwendung</a> anlegen zum testen. Entsprechend müsst ihr dann die Schlüssel dieser Anwendung in einer eigenen Datei <code class="language-plaintext highlighter-rouge">euis_&lt;my_node&gt; </code> eintragen. Wollt ihr euer selbstgebautes Clären mit der Clair Plattform verbinden, übermitteln wir euch auf Anfrage gerne die geheimen Schlüssel.</p>
+
+<h2 id="erweiterungs--und-verbesserungsmöglichkeiten">Erweiterungs- und Verbesserungsmöglichkeiten</h2>
+
+<p>Unser Clairchen hat kein Gehäuse und kein Ampel-Display. Die Software kann bislang nicht mit Fehlerfällen umgehen. Vor allem aber läuft das Sensor-Modul, das LoRa Radio und der Prozessor die ganze Zeit durch. Deswegen ist die Batterie nach spätestens drei Tagen leer. Im Vergleich dazu: Kommerziell erhältliche Sensoren halten ein bis vier Jahre ohne Batteriewechsel. Es gibt also noch genügend Verbesserungspotenzial für interessierte IoT-Zauberer. Natürlich freuen wir uns, wenn ihr eure Verbesserungen als Pull-Request bereitstellt, damit auch andere davon profitieren.</p>
+
+<h2 id="andere-bausätze-und-bauanleitungen">Andere Bausätze und Bauanleitungen</h2>
+
+<p>Neue Bauanleitungen für CO<sub>2</sub>-Ampeln werden derzeit gefühlt jeden Tag veröffentlicht. Das Grundprinzip ist einfach und kann teilweise ganz ohne Software umgesetzt werden. Sensoren mit Netzwerkverbindung, egal ob per Kabel oder drahtlos, sind nicht viel aufwändiger in Sachen Hardware, aber ohne Software geht hier nichts.</p>
+
+<ul>
+  <li><a href="https://www.umwelt-campus.de/forschung/projekte/iot-werkstatt/ideen-zur-corona-krise-1">CO<sub>2</sub>-Ampel des Umwelt/Campus Birkenfeld</a> der Hochschule Trier mit WLAN-Anbindung. Mit dem Sensiron SCD30-Sensor und einem AdaFruit Huzza Board mit WLAN.</li>
+  <li><a href="https://www.tindie.com/products/FabLab/diy-octopus-with-scd30-and-nodemcu-v2/">Tindie<sub>2</sub>-Ampel </a> mit LoRaWAN und SCD30.</li>
+</ul>
+
+</main>
+
+    </div>
+
+    <footer class="py-4 mt-auto text-light text-center bg-dark">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 col-sm-4 my-2">
+        <nav class="nav flex-column">
+          
+            <a class="nav-link" href="/impressum.html">Impressum</a>
+          
+            <a class="nav-link" href="/datenschutz.html">Datenschutz</a>
+          
+        </nav>
+      </div>
+      <div class="col-12 col-sm-4 my-2">
+        &copy; 2020 Clair Berlin
+      </div>
+      <div class="col-12 col-sm-4 my-2">
+        
+          <a class="mx-2" href="mailto:kontakt@clair-berlin.de"><i class="h2 fas fa-envelope"></i></a>
+        
+          <a class="mx-2" href="https://twitter.com/clair_berlin"><i class="h2 fab fa-twitter"></i></a>
+        
+          <a class="mx-2" href="https://www.facebook.com/ClairBerlinInitiative"><i class="h2 fab fa-facebook-square"></i></a>
+        
+          <a class="mx-2" href="/feed.xml"><i class="h2 fas fa-rss-square"></i></a>
+        
+          <a class="mx-2" href="https://github.com/ClairBerlin"><i class="h2 fab fa-github"></i></a>
+        
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function openAnchorAccordion() {
+        if (window.location.hash) {
+          const hash = window.location.hash
+          var target = jQuery('body').find(window.location.hash);
+          if (target.hasClass('faq')) {
+            var collapsable = target.find('.collapse');
+            collapsable.collapse('show');
+            collapsable.on('shown.bs.collapse', function (e) {
+              location.hash = hash
+            })
+          }
+        }
+      }
+
+      openAnchorAccordion();
+
+      $("a[href*='#']").click(function(e) {
+        window.location = e.currentTarget.href
+        openAnchorAccordion();
+      });
+    </script>`
+  </body>
+</html>

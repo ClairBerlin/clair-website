@@ -22,14 +22,16 @@
 <link rel="canonical" href="https://clair-berlin.de/technik/2020/11/09/wie-alles-begann.html" />
 <meta property="og:url" content="https://clair-berlin.de/technik/2020/11/09/wie-alles-begann.html" />
 <meta property="og:site_name" content="Clair Berlin" />
+<meta property="og:image" content="https://clair-berlin.de/img/clairchen.jpg" />
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-11-09T08:02:29+01:00" />
 <meta name="twitter:card" content="summary" />
+<meta property="twitter:image" content="https://clair-berlin.de/img/clairchen.jpg" />
 <meta property="twitter:title" content="Wie alles begann" />
 <meta name="twitter:site" content="@clair_berlin" />
 <meta name="twitter:creator" content="@Jan Weil" />
 <script type="application/ld+json">
-{"@type":"BlogPosting","headline":"Wie alles begann","dateModified":"2020-11-09T08:02:29+01:00","url":"https://clair-berlin.de/technik/2020/11/09/wie-alles-begann.html","datePublished":"2020-11-09T08:02:29+01:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://clair-berlin.de/technik/2020/11/09/wie-alles-begann.html"},"author":{"@type":"Person","name":"Jan Weil"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://clair-berlin.de/img/clair-logo-blue.svg"},"name":"Jan Weil"},"description":"Als Uli mich Anfang September überzeugt hatte, das Projekt mit den vernetzten CO2-Sensoren anzugehen, war das Berliner The Things Network eine naheliegende Lösung zur Anbindung der Sensoren. Ich hatte mich schon länger mal mit LoRaWAN auseinandersetzen wollen, da uns diese Funktechnologie und ähnliche wie z. B. NB-IoT in früheren Projekten mehrfach vorgeschlagen wurden.","@context":"https://schema.org"}</script>
+{"@type":"BlogPosting","url":"https://clair-berlin.de/technik/2020/11/09/wie-alles-begann.html","image":"https://clair-berlin.de/img/clairchen.jpg","headline":"Wie alles begann","dateModified":"2020-11-09T08:02:29+01:00","datePublished":"2020-11-09T08:02:29+01:00","author":{"@type":"Person","name":"Jan Weil"},"mainEntityOfPage":{"@type":"WebPage","@id":"https://clair-berlin.de/technik/2020/11/09/wie-alles-begann.html"},"publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://clair-berlin.de/img/clair-logo-blue.svg"},"name":"Jan Weil"},"description":"Als Uli mich Anfang September überzeugt hatte, das Projekt mit den vernetzten CO2-Sensoren anzugehen, war das Berliner The Things Network eine naheliegende Lösung zur Anbindung der Sensoren. Ich hatte mich schon länger mal mit LoRaWAN auseinandersetzen wollen, da uns diese Funktechnologie und ähnliche wie z. B. NB-IoT in früheren Projekten mehrfach vorgeschlagen wurden.","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -49,8 +51,17 @@
       <ul class="navbar-nav ml-auto">
         
         
-        <li class="nav-item">
-          <a class="nav-link" href="/mitmachen.html">Mitmachen</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="mitmachen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mitmachen
+          </a>
+          <div class="dropdown-menu" aria-labelledby="mitmachen">
+            
+            <a class="dropdown-item" href="/mitmachen.html">Registrieren</a>
+            
+            <a class="dropdown-item" href="/selbstbau-sensor.html">Sensor selbst bauen</a>
+            
+          </div>
         </li>
         
         
@@ -108,33 +119,15 @@
     </header>
 
     <div class="post-content e-content" itemprop="articleBody">
-      <p>Als Uli mich Anfang September überzeugt hatte, das Projekt mit den vernetzten
-CO<sub>2</sub>-Sensoren anzugehen, war das Berliner <a href="https://thethingsnetwork.org">The Things
-Network</a> eine naheliegende Lösung zur Anbindung
-der Sensoren. Ich hatte mich schon länger mal mit
-<a href="https://de.wikipedia.org/wiki/Long_Range_Wide_Area_Network">LoRaWAN</a>
-auseinandersetzen wollen, da uns diese Funktechnologie und ähnliche wie z. B.
-<a href="https://en.wikipedia.org/wiki/Narrowband_IoT">NB-IoT</a> in früheren Projekten
-mehrfach vorgeschlagen wurden.</p>
+      <p>Als Uli mich Anfang September überzeugt hatte, das Projekt mit den vernetzten CO<sub>2</sub>-Sensoren anzugehen, war das Berliner <a href="https://thethingsnetwork.org">The Things Network</a> eine naheliegende Lösung zur Anbindung der Sensoren. Ich hatte mich schon länger mal mit <a href="https://de.wikipedia.org/wiki/Long_Range_Wide_Area_Network">LoRaWAN</a> auseinandersetzen wollen, da uns diese Funktechnologie und ähnliche wie z. B.  <a href="https://en.wikipedia.org/wiki/Narrowband_IoT">NB-IoT</a> in früheren Projekten mehrfach vorgeschlagen wurden.</p>
 
-<p>Um alle Eigenarten des Systems zu verstehen, fingen wir ganz unten an und
-bauten einen eigenen Prototyp auf. Nach etwas Recherche entschieden wir uns für
-eine Kombination aus dem Radiofrüchtchen <a href="https://www.adafruit.com/product/3178">Feather M0 RFM95 LoRa Radio
-(900MHz)</a> von
-<a href="https://www.adafruit.com">Adafruit</a> und dem CO<sub>2</sub>-Sensor
-<a href="https://www.sensirion.com/scd30/">SCD30</a> von
-<a href="https://www.sensirion.com">Sensirion</a>.</p>
+<p>Um alle Eigenarten des Systems zu verstehen, fingen wir ganz unten an und bauten einen eigenen Prototyp auf. Nach etwas Recherche entschieden wir uns für eine Kombination aus dem Radiofrüchtchen <a href="https://www.adafruit.com/product/3178">Feather M0 RFM95 LoRa Radio (900MHz)</a> von <a href="https://www.adafruit.com">Adafruit</a> und dem CO<sub>2</sub>-Sensor <a href="https://www.sensirion.com/scd30/">SCD30</a> von <a href="https://www.sensirion.com">Sensirion</a>.</p>
 
 <h2 id="breadboard-aufbau">Breadboard-Aufbau</h2>
 
-<p>Wir folgten dem <a href="https://learn.adafruit.com/the-things-network-for-feather">Adafruite
-TTN-Tutorial</a>,
-legten unsere erste TTN-Applikation an und waren dank des Gateways auf dem
-Schöneberger EUREF-Campus tatsächlich innerhalb kürzester Zeit online.</p>
+<p>Wir folgten dem <a href="https://learn.adafruit.com/the-things-network-for-feather">Adafruit TTN-Tutorial</a>, legten unsere erste TTN-Applikation an und waren dank des Gateways auf dem Schöneberger EUREF-Campus tatsächlich innerhalb kürzester Zeit online.</p>
 
-<p>Danach schlossen wir auf unserem simplen Breadboard-Layout den SCD30 per
-<a href="https://de.wikipedia.org/wiki/I%C2%B2C">I<sup>2</sup>C</a> an. Das Ergebnis sah
-und sieht bis heute so aus:</p>
+<p>Danach schlossen wir auf unserem simplen Breadboard-Layout den SCD30 per <a href="https://de.wikipedia.org/wiki/I%C2%B2C">I<sup>2</sup>C</a> an. Das Ergebnis sah und sieht bis heute so aus:</p>
 
 <p><img src="/img/clairchen.jpg" alt="Clairchen" /></p>
 
@@ -142,52 +135,19 @@ und sieht bis heute so aus:</p>
 
 <p><img src="/img/clairchen-draufsicht.jpg" alt="Clairchen Draufsicht" /></p>
 
-<p>Wir nutzten die
-<a href="https://github.com/sparkfun/SparkFun_SCD30_Arduino_Library">SCD30-Arduino-Library</a>
-von <a href="https://www.sparkfun.com/">Sparkfun</a>, um den SCD30 anzusprechen und
-konnten mit Freude nachvollziehen, wie die CO<sub>2</sub>-Messwerte in die Höhe
-schossen, wenn man den SCD30 anhauchte.</p>
+<p>Wir nutzten die <a href="https://github.com/sparkfun/SparkFun_SCD30_Arduino_Library">SCD30-Arduino-Library</a> von <a href="https://www.sparkfun.com/">Sparkfun</a>, um den SCD30 anzusprechen und konnten mit Freude nachvollziehen, wie die CO<sub>2</sub>-Messwerte in die Höhe schossen, wenn man den SCD30 anhauchte.</p>
 
 <h2 id="software">Software</h2>
 
-<p>Bis hierher hatten wir im Wesentlichen
-<a href="https://www.arduino.cc/">Arduino</a>-Beispiel-Sketches der verschiedenen Librarys
-zusammenkopiert. Nun ging es darum, unserem Aufbau etwas mehr Intelligenz zu
-gönnen.</p>
+<p>Bis hierher hatten wir im Wesentlichen <a href="https://www.arduino.cc/">Arduino</a>-Beispiel-Sketches der verschiedenen Librarys zusammenkopiert. Nun ging es darum, unserem Aufbau etwas mehr Intelligenz zu gönnen.</p>
 
-<p>Die größte Herausforderung war es dabei, die Anforderungen unserer Anwendung
-mit der <a href="https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html">Fair Access
-Policy</a> des TTN
-in Einklang zu bringen. Unser Ziel war und ist es, Messdaten (zumindest zu
-relevanten Tageszeiten) mit ausreichend hoher Auflösung und möglichest geringer
-Latenz zur Verfügung zu stellen. Um z. B. die Entwicklung der
-CO<sub>2</sub>-Konzentration in einem Klassenraum während einer Schulstunde
-nachvollziehen zu können, reicht es nicht, drei Messwerte pro Stunde zu
-übertragen, und wenn im richtigen Moment darauf aufmerksam gemacht werden soll,
-dass das Fenster geöffnet werden sollte, sollten die Daten nicht mit einer
-halben Stunde Verzögerung eintrudeln.</p>
+<p>Die größte Herausforderung war es dabei, die Anforderungen unserer Anwendung mit der <a href="https://www.thethingsnetwork.org/docs/lorawan/duty-cycle.html">Fair Access Policy</a> des TTN in Einklang zu bringen. Unser Ziel war und ist es, Messdaten (zumindest zu relevanten Tageszeiten) mit ausreichend hoher Auflösung und möglichest geringer Latenz zur Verfügung zu stellen. Um z. B. die Entwicklung der CO<sub>2</sub>-Konzentration in einem Klassenraum während einer Schulstunde nachvollziehen zu können, reicht es nicht, drei Messwerte pro Stunde zu übertragen, und wenn im richtigen Moment darauf aufmerksam gemacht werden soll, dass das Fenster geöffnet werden sollte, sollten die Daten nicht mit einer halben Stunde Verzögerung eintrudeln.</p>
 
-<p>Die Fair Access Policy des TTN schreibt vor, dass jedes Gerät <em>max. 30 s
-Airtime pro 24 Stunden</em> im Uplink belegen sollte. Die Herausforderung besteht
-nun darin, dass ein Gerät, das relativ weit von einem Gateway entfernt ist,
-einen hohen
-<a href="https://www.thethingsnetwork.org/docs/lorawan/modulation-data-rate.html">Spreading Factor</a>
-verwenden muss, damit seine Nachrichten vom Gateway empfangen werden.
-Solcherart kodierte Nachrichten können aber leider bis zu etwa einer Sekunde
-lang werden, so dass das tägliche Airtime-Kontingent schnell verbraucht ist.
-Deshalb haben wir für unseren Prototyp die Mess- und die Übertragungsfrequenz
-vom jeweils aktuellen <em>Modulation and Coding Scheme</em> abhängig gemacht. Die
-Details unseres so entworfenen Übertragungsschemas sind in
-<a href="https://github.com/ClairBerlin/clair-doc/blob/master/node-protocol/sampling-and-transmission-scheme.pdf">einem Design-Dokument</a>
-beschrieben.</p>
+<p>Die Fair Access Policy des TTN schreibt vor, dass jedes Gerät <em>max. 30 s Airtime pro 24 Stunden</em> im Uplink belegen sollte. Die Herausforderung besteht nun darin, dass ein Gerät, das relativ weit von einem Gateway entfernt ist, einen hohen <a href="https://www.thethingsnetwork.org/docs/lorawan/modulation-data-rate.html">Spreading Factor</a> verwenden muss, damit seine Nachrichten vom Gateway empfangen werden.  Solcherart kodierte Nachrichten können aber leider über eine Sekunde lang werden, so dass das tägliche Airtime-Kontingent schnell verbraucht ist.  Deshalb haben wir für unseren Prototyp die Mess- und die Übertragungsfrequenz vom jeweils aktuellen <em>Modulation and Coding Scheme</em> abhängig gemacht. Die Details unseres so entworfenen Übertragungsschemas sind in <a href="https://github.com/ClairBerlin/clair-doc/blob/master/node-protocol/sampling-and-transmission-scheme.pdf">einem Design-Dokument</a> beschrieben.</p>
 
-<p>Leider lassen sich für viele kommerziell verfügbaren Sensoren die
-Übertragungschemata nicht in ähnlicher Weise anpassen, was sie, sofern nicht
-ausreichend Gateways zur Verfügung stehen, für das TTN in unseren Augen schnell
-unattraktiv macht.</p>
+<p>Leider lassen sich für viele kommerziell verfügbaren Sensoren die Übertragungschemata nicht in ähnlicher Weise anpassen, was sie, sofern nicht ausreichend Gateways zur Verfügung stehen, für das TTN in unseren Augen schnell unattraktiv macht.</p>
 
-<p>Der Quellcode für unseren ersten Prototyp ist <a href="https://github.com/ClairBerlin/clairchen">auf
-GitHub</a> verfügbar.</p>
+<p>Der Quellcode für unseren ersten Prototyp ist <a href="https://github.com/ClairBerlin/clairchen">auf GitHub</a> verfügbar und die Aufbauanleitung für Bastler haben wir <a href="/selbstbau-sensor.html">hier</a> nochmal etwas strukturierter zusammengefasst.</p>
 
     </div><a class="u-url" href="/technik/2020/11/09/wie-alles-begann.html" hidden></a>
   </article>

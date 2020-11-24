@@ -27,7 +27,7 @@
 <meta property="twitter:title" content="Technik" />
 <meta name="twitter:site" content="@clair_berlin" />
 <script type="application/ld+json">
-{"@type":"WebPage","headline":"Technik","url":"https://clair-berlin.de/technik.html","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://clair-berlin.de/img/clair-logo-blue.svg"}},"description":"Clair Berlin - nichtkommerzielle Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen","image":"https://clair-berlin.de/img/clair-network.png","@context":"https://schema.org"}</script>
+{"@type":"WebPage","url":"https://clair-berlin.de/technik.html","image":"https://clair-berlin.de/img/clair-network.png","headline":"Technik","publisher":{"@type":"Organization","logo":{"@type":"ImageObject","url":"https://clair-berlin.de/img/clair-logo-blue.svg"}},"description":"Clair Berlin - nichtkommerzielle Initiative zur Messung der Luftqualität in öffentlich zugänglichen Räumen","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
   </head>
@@ -47,8 +47,17 @@
       <ul class="navbar-nav ml-auto">
         
         
-        <li class="nav-item">
-          <a class="nav-link" href="/mitmachen.html">Mitmachen</a>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="mitmachen" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Mitmachen
+          </a>
+          <div class="dropdown-menu" aria-labelledby="mitmachen">
+            
+            <a class="dropdown-item" href="/mitmachen.html">Registrieren</a>
+            
+            <a class="dropdown-item" href="/selbstbau-sensor.html">Sensor selbst bauen</a>
+            
+          </div>
         </li>
         
         
@@ -111,6 +120,8 @@
 <p>Kommerziell erhältliche Sensoren nutzen verschiedene Funknetzwerke: Die auf Messwerte spezialisierten Technologien <a href="https://lora-alliance.org/about-lorawan">LoRaWAN</a> und <a href="https://www.sigfox.com/en">SigFox</a>, das vom Mobilfunk abgeleitete <a href="https://en.wikipedia.org/wiki/Narrowband_IoT">NB-IoT</a>, aber auch bekannte Consumer-Funknetzwerke wie <a href="https://www.wi-fi.org">WiFi</a> oder <a href="https://www.bluetooth.com">Bluetooth</a>. Die auf Messwert- und Internet-of-Things- (IoT) Kommunikation spezialisierten Technologien bieten größere Reichweiten und geringeren Energieverbrauch. Nutzer müssen hier zumeist keine eigenen Gateways aufstellen, und die Sensoren können über Jahre hinweg mit einem Satz Batterien betrieben werden. Allerdings ist die zulässige Datenrate sehr niedrig, so dass nur wenige Samples pro Stunde aufgenommen und übertragen werden dürfen.</p>
 
 <p>In der ersten Ausbaustufe des Clair-Netzwerks setzen wir auf LoRaWAN, da diese Funktechnologie die Grundlage ist des freien, durch eine offene Community betriebenen <a href="https://www.thethingsnetwork.org/community/berlin/">The Things Network</a>. Bei Bedarf und Interesse binden wir aber gerne weitere Sensornetzwerke und Sensortypen ein.</p>
+
+<p>Wer selbst basteln möchte, findet <a href="/selbstbau-sensor.html">hier</a> eine Selbstbauanleitung für unseren Clairchen-Prototyp.</p>
 
 <h3 id="clair-plattform">Clair Plattform</h3>
 
