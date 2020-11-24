@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Ein CO<sub>2</sub>-Sensor zum Selberbauen
+image: /img/clairchen.jpg
 ---
 
 # Ein CO<sub>2</sub>-Sensor zum Selberbauen

@@ -4,6 +4,7 @@ title:  "Wie alles begann"
 date:   2020-11-09 08:02:29 +0100
 author: Jan Weil
 category: Technik
+image: /img/clairchen.jpg
 ---
 
 Als Uli mich Anfang September überzeugt hatte, das Projekt mit den vernetzten CO<sub>2</sub>-Sensoren anzugehen, war das Berliner [The Things Network](https://thethingsnetwork.org) eine naheliegende Lösung zur Anbindung der Sensoren. Ich hatte mich schon länger mal mit [LoRaWAN](https://de.wikipedia.org/wiki/Long_Range_Wide_Area_Network) auseinandersetzen wollen, da uns diese Funktechnologie und ähnliche wie z. B.  [NB-IoT](https://en.wikipedia.org/wiki/Narrowband_IoT) in früheren Projekten mehrfach vorgeschlagen wurden.
