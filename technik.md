@@ -22,6 +22,8 @@ Kommerziell erhältliche Sensoren nutzen verschiedene Funknetzwerke: Die auf Mes
 
 In der ersten Ausbaustufe des Clair-Netzwerks setzen wir auf LoRaWAN, da diese Funktechnologie die Grundlage ist des freien, durch eine offene Community betriebenen [The Things Network](https://www.thethingsnetwork.org/community/berlin/). Bei Bedarf und Interesse binden wir aber gerne weitere Sensornetzwerke und Sensortypen ein.
 
+Wer selbst basteln möchte, findet [hier]({{ "/selbstbau-sensor.html" | relative_url }}) eine Selbstbauanleitung für unseren Clairchen-Prototyp.
+
 ### Clair Plattform
 
 Für Sensoren, die ins Clair-Netzwerk eingebunden werden sollen, konfigurieren wir eine Verbindung zu einem bestimmten Endpunkt im Things Network. Dieser leitet die Messdaten zu einer passenden _TTN Anwendung_ weiter, die erste Anwendung in der Verarbeitungskette der Clair Plattform.
