@@ -10,7 +10,7 @@ Je mehr vernetzte CO<sub>2</sub>-Sensoren es in der Stadt gibt, desto nützliche
 
 ## Bezugswege
 
-Derzeit gibt es drei Möglichkeiten, Räume mit Sensoren auszustatten und diese an die Clair-Plattform anzubinden.
+Derzeit gibt es vier Möglichkeiten, Räume mit Sensoren auszustatten und diese an die Clair-Plattform anzubinden.
 
 ### Variante 1: Early-Bird Testteilnehmer
 
@@ -50,9 +50,21 @@ Zum Selberkonfigurieren benötigst Du ein Smartphone mit [NFC](https://de.wikipe
 
 #### Was machen bei schlechtem Empfang?
 
-Ähnlich zum Mobilfunk braucht auch ein LoRaWAN-Netzwerk Basisstationen, hier _Gateways_ genannt. Anders aber als im Mobilfunk, wo kommerzielle Funklochanbieter Abdeckung gegen Geld anbieten, lebt das TTN von Gateways, die Freiwillige unentgeltlich bereitstellen. Es kann also sein, dass genau in Deinem Raum der Empfang schlecht ist oder es keinen Empfang gibt. Anders als beim Mobilfunk kannst Du Dir selbst helfen, indem Du ein eigenes Gateway installierst. Das ist vergleichbar schwierig oder einfach wie einen WLAN-Router aufzusetzen. Es gibt günstige Indoor-Gateways mit geringer Reichweite für unter 100€ (z.B. das [TTN Indoor Gateway](https://www.thethingsnetwork.org/docs/gateways/thethingsindoor/)), oder professionelle Outdoor-Gateways für das zehnfache, wie diese [Übersicht](https://www.thethingsnetwork.org/docs/gateways/) zeigt.
+Ähnlich zum Mobilfunk braucht auch ein LoRaWAN-Netzwerk Basisstationen, hier _Gateways_ genannt. Anders aber als im Mobilfunk, wo kommerzielle Funklochanbieter Abdeckung gegen Geld anbieten, lebt das TTN von Gateways, die Freiwillige unentgeltlich bereitstellen. Es kann also sein, dass genau in Deinem Raum der Empfang schlecht ist oder es keinen Empfang gibt. Anders als beim Mobilfunk kannst Du Dir selbst helfen, indem Du ein eigenes Gateway installierst. Das ist vergleichbar schwierig oder einfach, wie einen WLAN-Router aufzusetzen. Es gibt günstige Indoor-Gateways mit geringer Reichweite für unter 100€ (z.B. das [TTN Indoor Gateway](https://www.thethingsnetwork.org/docs/gateways/thethingsindoor/)), oder professionelle Outdoor-Gateways für das zehnfache, wie diese [Übersicht](https://www.thethingsnetwork.org/docs/gateways/) zeigt.
 
 Jedes LoRaWAN Gateway steht automatisch allen Nutzern in der Umgebung zur Verfügung. Wenn Du ein eigenes Gateway installierst, verbesserst Du somit gleichzeitig den Empfang für viele Andere und unterstützt die TTN-Community. Das einfache TTN-Indoor-Gateway verbindest Du mit einem lokalen WLAN. Da LoRaWAN Sensoren so wenig Daten schicken, fällt die zusätzliche Datenmenge eines TTN-Gateways nicht ins Gewicht.
+
+#### Vom Early-Adopter zum Regelbetrieb
+
+Wie in der vorangegangenen Beschreibung ersichtlich, musst Du aktuell noch etwas Aufwand investieren, um selbst einen Sensor zu kaufen und an die Clair-Plattform anzubinden. Wir arbeiten daran, den Einstieg zu erleichtern, durch Automatisierung, bessere Prozesse und eine Benutzerschnittstelle, die Dich durch die wichtigsten Schritte führt. Wenn Du uns hierbei unterstützen möchtest, trete mit uns in Kontakt! Gerade als Testnutzer und Early Adopter kannst Du uns helfen, indem Du Deine Vorstellung des Onboardings beschreibst und ggf. mit uns verschiedene Varianten testest.
+
+### Variante 3: Bereits vorhandene Sensoren an die Clair Plattform anbinden
+
+Du besitzt bereits Sensoren für CO<sub>2</sub> und Luftqualität? Diese verfügen über eine Kommunikationsschnittstelle? Dann sollte es möglich sein, sie an die Clair Plattform anzubinden. Vereinfacht gesagt: Wenn es möglich ist, die Messwerten in einen HTTP-Request umzuwandeln, können wir den Sensor an die Clair-Plattform anbinden. Es ist gut möglich, dass der Aufwand zu hoch ist, oder der Sensor so speziell, dass es kaum Aussicht auf eine weitere Verwendung der Anbindung gib. Dann würden wir selbst keinen Aufwand investieren. Wenn aber jemand Drittes funktionierende Software dafür beisteuert, nehmen wir diese gerne in die Plattform auf.
+
+### Variante 4: Sensoren im Eigenbau
+
+Wenn Du Elektronik-Erfahrung hast oder Interesse mitbringst Dich einzuarbeiten, kannst Du Sensoren selbst bauen. Je nachdem wie viel Aufwand Du investieren möchtest bieten solche Selbstbau-Lösungen nicht alle Features der kommerziellen Modelle; dafür kannst Du sie aber besser auf Deine speziellen Anforderungen abstimmen. Das Clair-Berlin-Team hat einen [LoRaWAN-Sensor zum Selberbauen](selbstbau-sensor.md) entwickelt, genannt _Clairchen_. Wenn Du jedoch in einer Umgebung arbeitest, in der nur zertifizierte Lösungen zum Einsatz kommen dürfen, sind Do-it-yourself-Sensoren keine Option.
 
 ## Andere Sensormodelle und andere Kommunikationstechnik
 
