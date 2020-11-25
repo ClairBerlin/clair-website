@@ -14,18 +14,18 @@ Derzeit gibt es vier Möglichkeiten, Räume mit Sensoren auszustatten und diese 
 
 ### Variante 1: Early-Bird Testteilnehmer
 
-Für Testzwecke haben unsere Partner [CityLAB Berlin](https://www.citylab-berlin.org), [HPI](https://hpi.de/entrepreneurship/) und [IHK](https://www.ihk-berlin.de/) 20 Testgeräte angeschafft, die wir euch teilweise zur Verfügung stellen können. Melde Dich bei Interesse einfach mittels unseres [Mitmach-Formulars](mitmachen.md) an. Wir suchen für den Testbetrieb nach möglichst unterschiedlichen Orten - in Bezug auf die Raumgröße, Nutzung und die geographische Lage. Wenn Du zum Zug kommst, erhältst Du einen fix- und fertig konfigurierten
+Für Testzwecke haben unsere Partner [CityLAB Berlin](https://www.citylab-berlin.org), [HPI](https://hpi.de/entrepreneurship/) und [IHK](https://www.ihk-berlin.de/) 20 Testgeräte angeschafft. Diese können wir teilweise zur Verfügung stellen, wenn Du an unserem Einführungstest in Berlin teilnehmen möchtest. Melde Dich bei Interesse einfach mittels unseres [Mitmach-Formulars](mitmachen.md) an. Wir suchen für den Testbetrieb nach möglichst unterschiedlichen Orten, in Bezug auf die Raumgröße, Nutzung und die geographische Lage. Wenn Du zum Zug kommst, erhältst Du einen fix- und fertig konfigurierten
 [Elsys ERS CO<sub>2</sub> Lite](https://www.elsys.se/en/ers-co2-lite/) Sensor von uns.
 
-![ERS CO<sub>2</sub> Lite]({{ "/img/elsys-ers-co2-lite.jpg" | relative_url }})
+![ERS CO<sub>2</sub> Lite]({{ "/img/elsys-ers-co2-lite.jpg" | relative_url }}){: width="50%"}
 
-Wir kommen vorbei, um uns den Raum anzusehen, helfen Dir den Sensor anzubringen und erklären Dir Deinen Account auf der Clair Plattform. In den darauffolgenden Wochen möchten wir gerne mit Dir regelmäßig die Daten ansehen, um die Besonderheiten verschiedener Räume zu verstehen; ggf. würden wir den Sensor nochmals an einer anderen Stelle aufhängen. Idealerweise bist Du damit einverstanden, dass die Messdaten aus dem Testbetrieb durch die Forschungsgruppe von [Prof. Müller an der HTW Berlin](https://www.htw-berlin.de/forschung/online-forschungskatalog/projekte/person/?eid=4648) analysiert werden.
+Wir kommen vorbei, um uns den Raum anzusehen, helfen Dir den Sensor anzubringen und erklären Dir, wie Du auf der Clair Plattform in Deinem Account die Messdaten einsehen und analysieren kannst. In den darauffolgenden Wochen möchten wir gerne mit Dir regelmäßig die Daten besprechen, um die Besonderheiten verschiedener Räume zu verstehen; ggf. würden wir den Sensor nochmals an einer anderen Stelle aufhängen. Idealerweise bist Du damit einverstanden, dass die Messdaten aus dem Testbetrieb durch die Forschungsgruppe von [Prof. Müller an der HTW Berlin](https://www.htw-berlin.de/forschung/online-forschungskatalog/projekte/person/?eid=4648) analysiert werden.
 
 ### Variante 2: Early-Adopter
 
-Du möchtest unbedingt vorne dabei sein, hast aber keinen Platz als Test-Teilnehmer erhalten? Dann kannst Du trotzdem sofort loslegen, wenn Du Dir selbst einen Sensor zulegst. Weiter unten auf der Seite haben wir einige kommerziell erhältlichen Sensoren aufgelistet. Am schnellsten geht es mit dem bereits genannten Elsys ERS CO<sub>2</sub> Lite. Aber auch andere Sensoren binden wir gerne an.
+Du möchtest unbedingt vorne dabei sein, hast aber keinen Platz als Test-Teilnehmer erhalten? Dann kannst Du trotzdem sofort loslegen, wenn Du Dir selbst einen Sensor zulegst. Der Prozess ist noch nicht optimiert und erfordert einige Handarbeit. Aber als Early-Adopter bist Du das wahrscheinlich gewohnt. Um den Onboarding-Prozess für alle anderen Nutzer einfacher zu gestalten, freuen wir uns ganz besonders über Early-Adopter Feedback.
 
-Auch für diese Variante solltest Du Dich zuerst über unser [Mitmach-Formular](mitmachen.md) registrieren, um die nötigen Zugangsdaten und Schlüssel zu erhalten.
+Weiter unten auf der Seite haben wir einige kommerziell erhältlichen Sensoren aufgelistet. Am schnellsten geht es mit dem bereits genannten Elsys ERS CO<sub>2</sub> Lite. Aber auch andere Sensoren binden wir gerne an. Auch für diese Variante solltest Du Dich zuerst über unser [Mitmach-Formular](mitmachen.md) registrieren, um die nötigen Zugangsdaten und Schlüssel zu erhalten.
 
 #### Anbindung des Elsys ERS CO<sub>2</sub> Lite
 
@@ -46,13 +46,12 @@ Zum Selberkonfigurieren benötigst Du ein Smartphone mit [NFC](https://de.wikipe
   - `qsize` =
 - Wenn Du die Einstellungen vorgenommen hast, kannst Du sie an den Sensor per NFC übertragen. Dazu musst Du das Smartphone nahe an das Sensorgehäuse heranführen, wie jeweils in der App-Anleitung beschrieben.
 - Nach erfolgter Konfiguration versucht der Sensor automatisch, sich mit der Clair Berlin Plattform zu verbinden. Je nach Empfangsqualität und Auslastung des TTN kann diese sehr schnell gehen oder bis zu zwei Tagen dauern. Während jedes Verbindungsversuchs blinkt der Sensor orange.
-- 
 
 #### Was machen bei schlechtem Empfang?
 
-Ähnlich zum Mobilfunk braucht auch ein LoRaWAN-Netzwerk Basisstationen, hier _Gateways_ genannt. Anders aber als im Mobilfunk, wo kommerzielle Funklochanbieter Abdeckung gegen Geld anbieten, lebt das TTN von Gateways, die Freiwillige unentgeltlich bereitstellen. Es kann also sein, dass genau in Deinem Raum der Empfang schlecht ist oder es keinen Empfang gibt. Anders als beim Mobilfunk kannst Du Dir selbst helfen, indem Du ein eigenes Gateway installierst. Das ist vergleichbar schwierig oder einfach, wie einen WLAN-Router aufzusetzen. Es gibt günstige Indoor-Gateways mit geringer Reichweite für unter 100€ (z.B. das [TTN Indoor Gateway](https://www.thethingsnetwork.org/docs/gateways/thethingsindoor/)), oder professionelle Outdoor-Gateways für das zehnfache, wie diese [Übersicht](https://www.thethingsnetwork.org/docs/gateways/) zeigt.
+Sowohl der ERS-Sensor als auch unser Sensor [Clairchen](selbstbau-sensor.md) zum Selberbauen nutzen das freie LoRaWAN Funknetz [The Things Network](https://www.thethingsnetwork.org/community/berlin/)(TTN). Ähnlich zum Mobilfunk braucht auch ein LoRaWAN-Netzwerk Basisstationen, hier _Gateways_ genannt. Anders aber als im Mobilfunk, wo kommerzielle Funklochanbieter Abdeckung gegen Geld anbieten, lebt das TTN von Gateways, die Freiwillige unentgeltlich bereitstellen. Es kann also sein, dass genau in Deinem Raum der Empfang schlecht oder nicht vorhanden ist. Anders als beim Mobilfunk kannst Du Dir selbst helfen, indem Du ein eigenes Gateway installierst. Das ist vergleichbar schwierig oder einfach, wie einen WLAN-Router aufzusetzen. Es gibt günstige Indoor-Gateways mit ein paar-hundert Metern Reichweite für unter 100€ (z.B. das [TTN Indoor Gateway](https://www.thethingsnetwork.org/docs/gateways/thethingsindoor/)), oder professionelle Outdoor-Gateways für das zehnfache, wie diese [Übersicht](https://www.thethingsnetwork.org/docs/gateways/) zeigt.
 
-Jedes LoRaWAN Gateway steht automatisch allen Nutzern in der Umgebung zur Verfügung. Wenn Du ein eigenes Gateway installierst, verbesserst Du somit gleichzeitig den Empfang für viele Andere und unterstützt die TTN-Community. Das einfache TTN-Indoor-Gateway verbindest Du mit einem lokalen WLAN. Da LoRaWAN Sensoren so wenig Daten schicken, fällt die zusätzliche Datenmenge eines TTN-Gateways nicht ins Gewicht.
+Jedes LoRaWAN Gateway steht automatisch allen TTN-Nutzern in der Umgebung zur Verfügung. Wenn Du ein eigenes Gateway installierst, verbesserst Du somit gleichzeitig den Empfang für viele Andere und unterstützt die TTN-Community. Das einfache TTN-Indoor-Gateway verbindest Du mit einem lokalen WLAN. Da LoRaWAN Sensoren so wenig Daten schicken, fällt die zusätzliche Datenmenge eines TTN-Gateways nicht ins Gewicht.
 
 #### Vom Early-Adopter zum Regelbetrieb
 
@@ -60,11 +59,15 @@ Wie in der vorangegangenen Beschreibung ersichtlich, musst Du aktuell noch etwas
 
 ### Variante 3: Bereits vorhandene Sensoren an die Clair Plattform anbinden
 
-Du besitzt bereits Sensoren für CO<sub>2</sub> und Luftqualität? Diese verfügen über eine Kommunikationsschnittstelle? Dann sollte es möglich sein, sie an die Clair Plattform anzubinden. Vereinfacht gesagt: Wenn es möglich ist, die Messwerten in einen HTTP-Request umzuwandeln, können wir den Sensor an die Clair-Plattform anbinden. Es ist gut möglich, dass der Aufwand zu hoch ist, oder der Sensor so speziell, dass es kaum Aussicht auf eine weitere Verwendung der Anbindung gib. Dann würden wir selbst keinen Aufwand investieren. Wenn aber jemand Drittes funktionierende Software dafür beisteuert, nehmen wir diese gerne in die Plattform auf.
+Du besitzt bereits Sensoren für CO<sub>2</sub> und Luftqualität? Diese verfügen über eine Kommunikationsschnittstelle? Dann sollte es möglich sein, sie an die Clair Plattform anzubinden. Vereinfacht gesagt: Wenn es möglich ist, die Messwerten in einen HTTP-Request umzuwandeln, können wir technisch gesehen den Sensor sehr wahrscheinlich an die Clair-Plattform anbinden. Es kann sein, dass der Aufwand zu hoch ist, oder der Sensor so speziell, dass es kaum Aussicht auf eine weitere Verwendung der Anbindung gib. Dann würden wir selbst keinen Aufwand investieren. Wenn aber eine Dritte oder ein Dritter funktionierende Software dafür als [Pull Request](https://guides.github.com/activities/hello-world/#pr) beisteuert, nehmen wir diese gerne in die Plattform auf.
 
 ### Variante 4: Sensoren im Eigenbau
 
-Wenn Du Elektronik-Erfahrung hast oder Interesse mitbringst Dich einzuarbeiten, kannst Du Sensoren selbst bauen. Je nachdem wie viel Aufwand Du investieren möchtest bieten solche Selbstbau-Lösungen nicht alle Features der kommerziellen Modelle; dafür kannst Du sie aber besser auf Deine speziellen Anforderungen abstimmen. Das Clair-Berlin-Team hat einen [LoRaWAN-Sensor zum Selberbauen](selbstbau-sensor.md) entwickelt, genannt _Clairchen_. Wenn Du jedoch in einer Umgebung arbeitest, in der nur zertifizierte Lösungen zum Einsatz kommen dürfen, sind Do-it-yourself-Sensoren keine Option.
+Wenn Du Elektronik-Erfahrung hast oder Interesse mitbringst Dich einzuarbeiten, kannst Du Sensoren selbst bauen. Je nachdem, wie viel Aufwand Du investieren möchtest bieten solche Selbstbau-Lösungen nicht alle Features der kommerziellen Modelle; dafür kannst Du sie aber besser auf Deine speziellen Anforderungen abstimmen. Das Clair-Berlin-Team hat einen [LoRaWAN-Sensor zum Selberbauen](selbstbau-sensor.md) entwickelt, genannt _Clairchen_. Auf der gleichen Seite haben wir auch weitere Bauanleitungen verlinkt.
+
+![Clairchen]({{ "/img/clairchen.jpg" | relative_url }})
+
+Do-it-yourself-Sensoren keine Option, wenn Du in einer Umgebung arbeitest, in der nur zertifizierte Lösungen zum Einsatz kommen dürfen.
 
 ## Andere Sensormodelle und andere Kommunikationstechnik
 
@@ -93,7 +96,7 @@ Bei sehr gutem Empfang sind die Nachrichten sehr kurz, so dass die TTN-FUP keine
 Derzeit haben wir Decoder implementiert für folgende Sensoren:
 
 - [Elsys ERS CO<sub>2</sub>](https://www.elsys.se/en/ers-co2/) and [Elsys ERS CO<sub>2</sub> Lite](https://www.elsys.se/en/ers-co2-lite/). Der Elsys ERS-Sensor ist oben näher beschrieben. Wir setzen ihn aktuell im Testbetrieb ein. Bei schlechtem Empfang lassen wir die Messwerte für Temperatur und Luftfeuchtigkeit weg, und senden mehrere Messwerte pro Nachricht. Damit gelingt es meistens, die TTN-FUP einzuhalten.
-- [Talkpool OY1210](https://talkpool.com/oy1210-lorawan-co2-meter/). Der Hersteller hat uns freundlicherweise ein Testgerät bereitgestellt, so dass wir auch dieses Modell bereits an die Clair Plattform angebunden haben. Leider ist die Programmierung dieses Sensors weniger flexibel, er sendet immer genau einen CO<sub>2</sub>, Temperatur und Luftfeuchtigkeit pro Nachricht. Bei schlechtem Empfang hält er damit die TTN-FUP nicht ein.
+- [Talkpool OY1210](https://talkpool.com/oy1210-lorawan-co2-meter/). Der Hersteller hat uns freundlicherweise ein Testgerät bereitgestellt, so dass wir auch dieses Modell bereits an die Clair Plattform angebunden haben. Leider ist die Programmierung dieses Sensors weniger flexibel, er sendet für jede Messung von CO<sub>2</sub>, Temperatur und Luftfeuchtigkeit eine eigene Nachricht. Dies ist bei schlechtem Empfang ineffizient, so dass der Sensor die TTN-FUP nicht einhält. Also: Du kannst Stand jetzt auch den Talkpool OY1210 mit der Clair Plattform betreiben. Allerdings musst Du sicherstellen, dass der TTN-Empfang in Deinem Raum sehr gut ist.
 
 #### Weitere LoRaWAN-Sensoren
 
