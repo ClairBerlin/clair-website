@@ -90,7 +90,7 @@ Die Fair Access Policy des TTN schreibt vor, dass jedes Gerät *max. 30 s Airtim
 nun darin, dass ein Gerät, das relativ weit von einem Gateway entfernt ist, eine hohen [Spreading Factor](https://www.thethingsnetwork.org/docs/lorawan/modulation-data-rate.html) verwenden muss, damit seine Nachrichten vom Gateway empfangen werden.
 Solcherart kodierte Nachrichten können aber leider über eine Sekunde lang werden, so dass das tägliche Airtime-Kontingent schnell verbraucht ist.
 Deshalb haben wir für unsere Clairchen-Software die Mess- und die Übertragungsfrequenz vom jeweils aktuellen _Modulation and Coding Scheme_ abhängig gemacht. Die
-Details unseres so entworfenen Übertragungsschemas sind in einem [Design-Dokument](https://github.com/ClairBerlin/clair-doc/blob/master/node-protocol/sampling-and-transmission-scheme.pdf) beschrieben.
+Details unseres so entworfenen Übertragungsschemas sind in einem [Design-Dokument](https://github.com/ClairBerlin/clairchen/blob/master/docs/sampling-and-transmission-scheme.pdf) beschrieben.
 
 Die komplette Clairchen-Software mit der oben beschriebenen Optimierung liegt in einem [Github Repository](https://github.com/ClairBerlin/clairchen) bereit. Ihr könnt sie direkt aufspielen und benutzen, oder sie verbessern und euren Bedürfnissen anpassen.
 
