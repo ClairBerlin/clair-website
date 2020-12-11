@@ -14,6 +14,8 @@ Der CO<sub>2</sub>-Sensor misst den CO<sub>2</sub>-Gehalt der Umgebungsluft. Als
 - Darauf achten, dass die Gehäuseöffnungen gut zugänglich sind, so dass ein ungehinderter Luftaustausch möglich ist.
 - Der Sensor ist zwar nicht schwer; aber von der Wand fallen sollte er trotzdem nicht. Achte also auf eine gute Befestigung: Am besten mit zwei Schrauben; alternativ sollte auch starkes doppelseitiges Klebeband ausreichen.
 
+Wenn der Sensor den Personen im Raum möglichst nahe ist, können er leider auch beschädigt werden. Denke daher an mögliche Unfälle oder sogar mutwillige Beschädigung. Vielleicht ist deswegen der perfekte Installationsort doch nicht perfekt, und Du musst einen praktischen Kompromiss finden.
+
 ## Ungünstige Installation
 
 Überall dort, wo die Luftverhältnisse _nicht_ denen im Raum entsprechen, solltest Du den Sensor nicht anbringen. Ungeeignet sind daher folgende Orte:
