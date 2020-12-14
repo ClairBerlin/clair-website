@@ -4,8 +4,8 @@ title:  "Übertragung von SARS-CoV-2 durch Aerosole"
 date:   2020-12-13 14:00:00 +0100
 author: Ulrich Schuster
 category: Wissenschaft
-image: /img/201123_PM_Clair_th.png
-excerpt: Wie viele Viruskopien atmet eine infizierte Person aus? Wie verteilen sich diese in einem Raum, wie hoch ist das Infektionsrisiko, wenn ich mich in einem Raum aufhalte, und wie viel hilfen Masken, Lüften und Filter? Den Stand der Forschung fassen wir hier zusammen, auf der Grundlage einer Präsentation vom [Paul-Scherer-Institut](https://www.psi.ch/de) und einer Arbeit des Max-Planck-Instituts für Chemie. 
+image: /img/2020-12-14-PSI.png
+excerpt: Wie viele Viruskopien atmet eine infizierte Person aus? Wie verteilen sich diese in einem Raum, wie hoch ist das Infektionsrisiko, wenn ich mich in einem Raum aufhalte, und wie viel hilfen Masken, Lüften und Filter? Den Stand der Forschung fassen wir hier zusammen, auf der Grundlage einer Präsentation vom Paul-Scherer-Institut und einer Arbeit des Max-Planck-Instituts für Chemie.
 ---
 
 ## Stand der Forschung zur Übertragung des SARS-Cov-2 Virus durch Aerosole
