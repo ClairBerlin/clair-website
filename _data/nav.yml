@@ -3,6 +3,8 @@ links:
     submenu:
       - title: Registrieren
         url: /mitmachen.html
+      - title: Sensor installieren
+        url: /installation.html
       - title: Sensor selbst bauen
         url: /selbstbau-sensor.html
 
