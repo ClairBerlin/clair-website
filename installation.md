@@ -6,7 +6,7 @@ image: /img/elsys-ers-co2-lite.jpg
 
 # Sensor-Installation
 
-Der CO<sub>2</sub>-Sensor misst den CO<sub>2</sub>-Gehalt der Umgebungsluft. Also sollte so angebracht werden, dass die Umgebungsluft ungehindert in das Sensorgehäuse eintreten kann. Mehr noch, wir möchten möglichst die Qualität der Luft bestimmen, welche die Personen im Raum einatmen; also sollte der Sensor möglichst dort angebracht werden, wo tatsächlich Personen sind. Mit den folgenden Faustregeln liegst Du daher richtig:
+Der CO<sub>2</sub>-Sensor misst den CO<sub>2</sub>-Gehalt der Umgebungsluft. Also sollte er so angebracht werden, dass die Umgebungsluft ungehindert in das Sensorgehäuse eintreten kann. Mehr noch, wir möchten möglichst die Qualität der Luft bestimmen, welche die Personen im Raum einatmen; also sollte der Sensor möglichst dort angebracht werden, wo tatsächlich Personen sind. Mit den folgenden Faustregeln liegst Du daher richtig:
 
 - Den Sensor in etwa auf Kopfhöhe installieren.
 - Am besten an einer Innenwand.
