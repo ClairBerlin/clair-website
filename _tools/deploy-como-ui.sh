@@ -27,6 +27,7 @@ git commit -m "Build for production"
 git push origin
 
 LATEST_TAG=`git tag | sort -n | tail -n 1`
+LATEST_TAG=${LATEST_TAG//[!0-9]/}
 read -p "enter tag [$(( LATEST_TAG + 1 ))]: " NEW_TAG
 echo "tag: ${NEW_TAG:=$(( LATEST_TAG + 1 ))}"
 
