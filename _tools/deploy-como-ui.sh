@@ -17,19 +17,24 @@ popd
 rm -rf dashboard/*
 cp -R ../como-ui/dist/* dashboard/
 
-git add dashboard
-git commit -m "Update como UI" || fail "nothing to commit"
-
 bundle exec jekyll build || fail "Jekyll build failed"
-git add _site
-git commit -m "Build for production"
 
-git push origin
+git add dashboard
+git add _site
+
+DEFAULT_COMMIT_MESSAGE="Update como UI"
+read -p "enter git commit message [$DEFAULT_COMMIT_MESSAGE]: " COMMIT_MESSAGE
+echo "git commit message: ${COMMIT_MESSAGE:=$DEFAULT_COMMIT_MESSAGE}"
+
+git commit -m "$COMMIT_MESSAGE" || fail "nothing to commit"
 
 LATEST_TAG=`git tag | sort -n | tail -n 1`
 LATEST_TAG=${LATEST_TAG//[!0-9]/}
-read -p "enter tag [$(( LATEST_TAG + 1 ))]: " NEW_TAG
-echo "tag: ${NEW_TAG:=$(( LATEST_TAG + 1 ))}"
+DEFAULT_TAG=$(( LATEST_TAG + 1))
+read -p "enter git tag [$DEFAULT_TAG]: " TAG
+echo "git tag: ${TAG:=$DEFAULT_TAG}"
 
-git tag $NEW_TAG
-git push origin $NEW_TAG
+git tag $TAG
+
+git push origin
+git push origin $TAG
