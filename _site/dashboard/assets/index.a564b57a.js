@@ -1,1 +1,0 @@
-import{Q as e}from"./vendor.7fd933d8.js";const a=r=>{switch(r.toLowerCase()){case"o":return"role.owner";case"i":return"role.inspector";case"a":return"role.assistant";default:return"-"}},t=2147483647,s=r=>r===t?"\u2014":e.unix(r).format("YYYY-MM-DD"),n=r=>r===t?"\u2014":e.unix(r).format("YYYY-MM-DD HH:mm");export{n as a,s as d,t as m,a as r};
