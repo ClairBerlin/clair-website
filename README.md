@@ -13,7 +13,11 @@ Der Inhalt der Website ist lizenziert unter einer
 
 ## How To Development
 
-Install dependencies: `gem install jekyll bundler`
+Install dependencies:
+```sh
+  $ gem install jekyll bundler`
+  $ bundle install
+```
 
 Deploy locally: `jekyll serve --livereload`
 
