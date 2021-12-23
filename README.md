@@ -15,7 +15,7 @@ Der Inhalt der Website ist lizenziert unter einer
 
 Install dependencies:
 ```sh
-  $ gem install jekyll bundler`
+  $ gem install jekyll bundler
   $ bundle install
 ```
 
