@@ -180,14 +180,4 @@ layout: default
       </div>
     </div>
   </div>
-  <!-- about section -->
-  <div class="container d-flex align-items-center flex-column pb-4">
-    <div class="row p-3 text-center">
-      <h1>{{ site.data.home.about.title }}</h1>
-    </div>
-    <div class="text-center">
-      {{ site.data.home.about.paragraph | liquify | markdownify }}
-    </div>
-    {% include partners.html %}
-  </div>
 </main>
