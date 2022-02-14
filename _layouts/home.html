@@ -22,6 +22,25 @@ layout: default
           </div>
         </div>
       </div>
+      <div class="row d-flex align-items-center justify-content-between mt-5">
+        <div class="col-12 col-md-4 my-3">
+          <img src="{{ "/img/como_logo_schrift_untereinander.png" | relative_url }}" width="200" alt="Logo COMo">
+        </div>
+        <div class="col-12 col-md-8 my-3">
+          <img src="{{ "/img/Logo-Skzl.jpg" | relative_url }}" width="400" alt="Logo Fördergeber Senatskanzlei Berlin">
+        </div>
+      </div>
+      <div class="row d-flex align-items-center justify-content-between my-4">
+        <div class="col-12 col-md-4 my-3">
+          <img src="{{ "/img/TSB_Logo_DE_V_P_RGB.png" | relative_url }}" width="150" alt="Logo Technologoiestiftung Berlin">
+        </div>
+        <div class="col-12 col-md-4 my-3">
+          <img src="{{ "/img/S04_HTW_Berlin_Logo_pos_FARBIG_RGB.jpg" | relative_url }}" width="200" alt="Logo Hochschule für Technik und Wirtschaft Berlin">
+        </div>
+        <div class="col-12 col-md-4 my-3">
+          <img src="{{ "/img/koing-logo-ladder-for-web-nobackground-01.svg" | relative_url }}" width="100" alt="Logo KOING GmbH">
+        </div>
+      </div>
     </div>
   </div>
   <!-- join section -->
@@ -160,15 +179,5 @@ layout: default
         {% endfor %}
       </div>
     </div>
-  </div>
-  <!-- about section -->
-  <div class="container d-flex align-items-center flex-column pb-4">
-    <div class="row p-3 text-center">
-      <h1>{{ site.data.home.about.title }}</h1>
-    </div>
-    <div class="text-center">
-      {{ site.data.home.about.paragraph | liquify | markdownify }}
-    </div>
-    {% include partners.html %}
   </div>
 </main>
