@@ -1,6 +1,6 @@
 # clair-berlin.de
 
-In diesem Repository liegt der Quellcode der Clair Berlin Website. Wir verwenden [Jekyll](https://jekyllrb.com/) als _Static Site Generator_.
+In diesem Repository liegt der Quellcode der Clair Berlin Website[^como-note]. Wir verwenden [Jekyll](https://jekyllrb.com/) als _Static Site Generator_.
 
 Der Inhalt der Website ist lizenziert unter einer
 <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">
@@ -73,3 +73,5 @@ Folgende Kategorien sollten verwendet werden:
 
 * Technik
 * Presse
+
+[^como-note]: The Clair Platform and the Clair-Berlin initiative are now part of the [CO2-Monitoring (COMo) project](https://www.technologiestiftung-berlin.de/projekte/como-berlin), funded by a grant from the [Senate Chancellery of the Governing Mayor of Berlin](https://www.berlin.de/rbmskzl/en/).
