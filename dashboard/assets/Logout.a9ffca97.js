@@ -1,1 +1,0 @@
-import{u as s,b3 as n,D as r,o as c,f as i,b as l,t as u}from"./vendor.2e3a8e12.js";const g={async setup(p){let o,t;const e=s();return[o,t]=n(()=>e.dispatch("authuser/logout")),await o,t(),r.remove("csrftoken"),window.location.href=window.location.origin+"/accounts/login/",(a,_)=>(c(),i("div",null,[l("h1",null,u(a.$t("logging-out")),1)]))}};export{g as default};
